@@ -73,9 +73,17 @@
 				
 			</div><!-- phone_wrapper -->
 			
+			<nav>
+				
+				<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'main_menu' ) ); ?>
+				
+			</nav>
+			
+			<!-- https://codepen.io/ihzh/pen/QjGMEL -->
+			
 		</div><!-- header_right -->
 		
-		<?php // wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'main_menu' ) ); ?>
+		
 		
 	</header>
 				

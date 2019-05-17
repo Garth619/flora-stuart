@@ -25,6 +25,8 @@ header {
 .header_right {
 	flex-grow:1;
 	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
 	margin:53px 0 0;
 	.phone_wrapper {
 		text-align: right;
@@ -57,7 +59,19 @@ header {
 		}
 		a.phone {
 			color:$yellow;
-				margin-left:14px;
+			margin-left:14px;
 		}
+	}
+}
+
+
+nav {
+	display: flex;
+	justify-content: flex-end;
+	ul {
+		list-style: none;
+	}
+	ul.menu {
+		display: flex;
 	}
 }
