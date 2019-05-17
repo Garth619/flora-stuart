@@ -1,0 +1,77 @@
+$themePath: '/wp-content/themes/florastuart/';
+
+
+// fonts
+
+
+// source sans pro
+
+
+@mixin source_reg {
+  font-family: quatro, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@mixin source_reg_italic {
+  font-family: quatro, sans-serif;
+	font-weight: 400;
+	font-style: italic;
+}
+
+@mixin source_bold {
+  font-family: quatro, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+
+@mixin source_bold_italic {
+  font-family: quatro, sans-serif;
+	font-weight: 700;
+	font-style: italic;
+}
+
+
+
+// escrow
+
+
+@mixin escrow_banner_bold {
+  font-family: escrow-banner, serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+
+@mixin escrow_banner_bold_italic {
+  font-family: escrow-banner,serif;
+	font-weight: 700;
+	font-style: italic;
+}
+
+
+@mixin escrow_txt_bold {
+  font-family: escrow-text, serif;
+  font-weight: 700;
+	font-style: normal;
+}
+
+
+@mixin escrow_txt_bold_italic {
+ 	font-family: escrow-text,serif;
+ 	font-weight: 700;
+ 	font-style: italic;
+}
+
+
+// color
+
+$yellow: #ffd400;
+$orange: #ffae00;
+$red: #bc0712;
+$blue:#05153f;
+$greylight: #e8ecef;
+$grey:#7a7a7a;
+$greydark: #54595f;
+

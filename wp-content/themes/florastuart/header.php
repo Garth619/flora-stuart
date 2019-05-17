@@ -31,6 +31,9 @@
 
 <style>
 
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i&display=swap');
+
+@import url("https://use.typekit.net/zji7bks.css");
 
 <?php the_field( 'review_css','option'); ?>
 
@@ -46,6 +49,7 @@
 
 <body <?php body_class(); ?>>
 	
+	Garrett
 	
 	<header>
 		
