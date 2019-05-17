@@ -49,9 +49,31 @@
 
 <body <?php body_class(); ?>>
 	
-	Garrett
-	
 	<header>
+		
+		<div class="header_left">
+			
+			<a class="logo" href="<?php bloginfo('url');?>">
+				
+				<img src="<?php bloginfo('template_directory');?>/images/hero_logo-01.svg" alt=""/>
+	
+			</a><!-- logo -->
+			
+		</div><!-- header_left -->
+		
+		<div class="header_right">
+			
+			<div class="phone_wrapper">
+				
+				<span>Call 24/7</span>
+				
+				<span>No Fee Unless You Win</span>
+				
+				<a class="phone" href="tel:(888) 782-9090">(888) 782-9090</a>
+				
+			</div><!-- phone_wrapper -->
+			
+		</div><!-- header_right -->
 		
 		<?php // wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'main_menu' ) ); ?>
 		

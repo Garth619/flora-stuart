@@ -8,26 +8,26 @@ $themePath: '/wp-content/themes/florastuart/';
 
 
 @mixin source_reg {
-  font-family: quatro, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 400;
 	font-style: normal;
 }
 
 @mixin source_reg_italic {
-  font-family: quatro, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 400;
 	font-style: italic;
 }
 
 @mixin source_bold {
-  font-family: quatro, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 700;
 	font-style: normal;
 }
 
 
 @mixin source_bold_italic {
-  font-family: quatro, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 700;
 	font-style: italic;
 }
