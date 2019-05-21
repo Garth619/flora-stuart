@@ -71,27 +71,45 @@ header {
 nav {
 	margin-top:50px;
 	position: relative;
+	padding-bottom: 17px;
+	border-bottom:1px solid #fff;
 	.menu-header {
 		width:100%;
 	}
 	ul {
 		list-style: none;
-		
+		li {
+			a {
+				cursor: pointer;
+			}
+		}
 	}
 	ul.menu {
 		display: flex;
-		justify-content: space-between;
-		border-bottom:1px solid #fff;
-		padding-bottom:30px;
+		justify-content: space-around;
 		padding-right:51px;
 		#magic-line {
       position: absolute;
-      top: 45px;
+      bottom: -3px;
       left: 0;
       padding: 0;
       width: 100px;
       height: 5px;
       background: #ffd400;
+    }
+    > li.menu-item-has-children {
+	    > a {
+		    	&:after {
+						content:"";
+						display: block;
+						margin:11px auto 0;
+						width: 0; 
+						height: 0; 
+						border-left: 4px solid transparent;
+						border-right: 4px solid transparent;
+						border-top: 6px solid #fff;
+					}
+	    }
     }
 		> li {
 				text-transform: uppercase;
@@ -102,6 +120,8 @@ nav {
 				> a {
 					color:#fff;
 					text-decoration: none;
+					position: relative;
+					
 				}
 		}
 	}
