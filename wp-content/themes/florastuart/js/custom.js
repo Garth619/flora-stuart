@@ -362,6 +362,31 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
 
 
     });
+    
+    
+    
+    // nav check width
+    
+    
+    	
+    	var windowWidth = $(window).width();
+    
+    
+    
+    	function checkWidthcase() {
+        
+        if (windowWidth > 1066) {
+            
+          
+        	$('nav').addClass('desktop');
+        	   		
+        		
+        } 
+        
+    	};
+    	
+    
+			checkWidthcase();
   
   
 
