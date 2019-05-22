@@ -131,7 +131,9 @@ nav {
 					color:#fff;
 					text-decoration: none;
 					position: relative;
-					
+					&:hover {
+						color:$yellow;
+					}
 				}
 		}
 	}
@@ -282,6 +284,10 @@ nav.desktop {
 	
 	header {
 		height:90px;
+		position: fixed;
+		width:100%;
+		top:0;
+		left:0;
 	}
 	
 	.header_right {

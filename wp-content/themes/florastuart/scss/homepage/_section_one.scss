@@ -1,9 +1,10 @@
 #section_one {
 	height:1055px;
 	padding:0 100px;
+	position: relative;
 	img.hero {
 		width:100%;
-		height:1055px;
+		height:100%;
 		position: absolute;
 		top:0;
 		left:0;
@@ -162,6 +163,182 @@ span.featured_on {
 }
 
 
+a.tablet_logo {
+	display: none;	
+}
 
 
+@media screen and (max-width: 1450px) {
+	
+	#section_one {
+		height:927px;
+		padding-right:50px;
+		img.hero {
+			
+		}
+	}
+	
+	span.sec_one_header {
+		font-size: 100px;
+		line-height: 85px;
+	}
+	
+	.inner_sec_one {
+		padding: 268px 0 0;
+	}
+	
+	
+	a.free_consulation {
+    margin-top: 44px;
+  }
+  
+  
+  span.featured_on {
+	  margin-top: 62px;
+  }
+  
+  .featured_slider {
+	  margin-top: 35px;
+  }
+  
+  
+  .play_wrapper {
+	  margin: 340px 0 0 0px;
+  }
+  
+  
+  .inner_sec_one {
+	  justify-content: space-between;
+  }
+	
+	
+} /* Media Query */
+
+
+
+@media screen and (max-width: 1310px) {
+	
+	
+	#section_one {
+		margin-top:90px;
+		height:785px;
+	}
+	
+	
+	a.tablet_logo {
+		display: block;	
+		img {
+			width:424px;
+			height:82px;
+		}
+	}
+	
+	
+	.inner_sec_one {
+    padding: 43px 0 0;
+	}
+	
+	
+	span.sec_one_header {
+		font-size: 87px;
+		line-height: 74px;
+		padding-top: 56px;
+		max-width:611px;
+	}
+	
+	a.free_consulation {
+		height:68px;
+		margin-top: 46px;
+		padding-left:46px;
+		&:after {
+			content:"Free Case Evaluation";
+			margin-top: 24px;
+		}
+		svg {
+			top: 24px;
+		}
+	}
+	
+	span.featured_on {
+    margin-top: 76px;
+	}
+	
+	
+	.play_wrapper {
+    margin: 507px 20px 0 0px;
+	}
+	
+	
+} /* Media Query */
+
+
+
+@media screen and (max-width: 1066px) {
+	
+	
+	
+	#section_one {
+		padding-left:70px;
+		padding-right:70px;
+		img.hero {
+
+		}
+	}
+	
+	
+
+	
+	
+	.play_wrapper {
+		height: 169px;
+    width: 169px;
+    margin: 545px 20px 0 0px;
+		.play_text {
+			width: 155px;
+			height: 155px;
+			top: -13px;
+		}
+		.play_outer {
+			width:137px;
+			height:137px;
+			margin: 28px 0 0 28px;
+			.play_inner {
+				width:92px;
+				height:92px;
+				margin:19px 0 0 19px;
+				&:before {
+					width:92px;
+				height:92px;
+				}
+				&:after {
+					border-top: 10px solid transparent;
+					border-bottom: 10px solid transparent;
+					border-left: 12px solid #fff;
+					top: 35px;
+					left: 42px;
+				}
+			}
+		}
+	}
+	
+		
+	.featured_slider {
+		display: block;
+		max-width:425px;
+		margin-left:-40px;
+	}
+	
+	.featured_slide {
+		height:79px;
+	}
+	
+
+	.featured_inner_slide {
+		display: flex;
+		height:100%;
+		justify-content: center;
+		align-items: center;
+	}
+	
+} /* Media Query */
 

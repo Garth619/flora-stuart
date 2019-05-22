@@ -263,45 +263,20 @@ jQuery(document).ready(function($){
 --------------------------------------------------------------------------------------- */
 
 
-/*
-$('.sec_three_slider').slick({
+
+$('.featured_slider').slick({
   infinite: true,
-  slidesToShow: 6,
-  slidesToScroll: 6,
-	arrows:true,
-	prevArrow:".arrow_left",
-	nextArrow:".arrow_right",
-	responsive: [
-    {
-      breakpoint: 1450,
-      settings: {
-      slidesToShow: 5,
-      slidesToScroll: 5,
-     }
-   },
-   {
-      breakpoint: 1100,
-      settings: {
-      slidesToShow: 3,
-      slidesToScroll: 3,
-      dots:true,
-     }
-   },
-   {
-      breakpoint: 767,
-      settings: {
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      dots:true,
-     }
-   }
-	]
+  slidesToShow: 3,
+  slidesToScroll: 3,
+	arrows:false,
+	autoplay: true,
+  autoplaySpeed: 3000,
  });
  
-*/
  
 
 	
+
 
 /* Remove "#" from menu anchor items to avoid jump to the top of the page
 --------------------------------------------------------------------------------------- */

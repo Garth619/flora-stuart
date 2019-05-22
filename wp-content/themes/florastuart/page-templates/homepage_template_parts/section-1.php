@@ -4,6 +4,12 @@
 	<div class="inner_sec_one">
 		
 		<div class="sec_one_content">
+			
+			<a class="tablet_logo" href="">
+				
+				<img src="<?php bloginfo('template_directory');?>/images/hero_logo-01.svg"/>
+				
+			</a><!-- tablet_logo -->
 		
 			<span class="sec_one_header">The law firm that cares about you</span><!-- sec_one_header -->
 		
@@ -20,34 +26,55 @@
 				<div class="featured_slider">
 				
 					<div class="featured_slide">
+						
+						<div class="featured_inner_slide">
 					
-						<img src="<?php bloginfo('template_directory');?>/images/header_logo-01.svg"/>
+							<img src="<?php bloginfo('template_directory');?>/images/header_logo-01.svg"/>
+						
+						</div><!-- featured_inner_slide -->
 					
 					</div><!-- featured_slide -->
-				
+					
 					<div class="featured_slide">
+						
+						<div class="featured_inner_slide">
 					
-						<img src="<?php bloginfo('template_directory');?>/images/header_logo-02.svg"/>
+							<img src="<?php bloginfo('template_directory');?>/images/header_logo-02.svg"/>
+						
+						</div><!-- featured_inner_slide -->
 					
 					</div><!-- featured_slide -->
-				
+					
 					<div class="featured_slide">
+						
+						<div class="featured_inner_slide">
 					
-						<img src="<?php bloginfo('template_directory');?>/images/header_logo-03.svg"/>
+							<img src="<?php bloginfo('template_directory');?>/images/header_logo-03.svg"/>
+						
+						</div><!-- featured_inner_slide -->
 					
 					</div><!-- featured_slide -->
-				
+					
 					<div class="featured_slide">
+						
+						<div class="featured_inner_slide">
 					
-						<img src="<?php bloginfo('template_directory');?>/images/header_logo-04.svg"/>
+							<img src="<?php bloginfo('template_directory');?>/images/header_logo-04.svg"/>
+						
+						</div><!-- featured_inner_slide -->
 					
 					</div><!-- featured_slide -->
-				
+					
 					<div class="featured_slide">
+						
+						<div class="featured_inner_slide">
 					
-						<img src="<?php bloginfo('template_directory');?>/images/header_logo-05.svg"/>
+							<img src="<?php bloginfo('template_directory');?>/images/header_logo-05.svg"/>
+						
+						</div><!-- featured_inner_slide -->
 					
 					</div><!-- featured_slide -->
+					
 				
 				</div><!-- featured_slider -->
 			
