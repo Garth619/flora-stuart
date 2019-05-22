@@ -3,57 +3,63 @@
 	
 	<div class="inner_sec_one">
 		
-		<span class="sec_one_header">The law firm that cares about you</span><!-- sec_one_header -->
+		<div class="sec_one_content">
 		
-		<a class="free_consulation" href="#consultation">
-			
-			<?php echo file_get_contents("wp-content/themes/florastuart/images/arrow.svg"); ?>
-			
-		</a><!-- free_consulation -->
+			<span class="sec_one_header">The law firm that cares about you</span><!-- sec_one_header -->
 		
-		<span class="featured_on">Flora's Story Featured On</span><!-- featured_on -->
+			<a class="free_consulation" href="#consultation">
+			
+				<?php echo file_get_contents("wp-content/themes/florastuart/images/arrow.svg"); ?>
+			
+			</a><!-- free_consulation -->
 		
-		<div class="featured_wrapper">
+			<span class="featured_on">Flora's Story Featured On</span><!-- featured_on -->
+		
+			<div class="featured_wrapper">
 			
-			<div class="featured_slider">
+				<div class="featured_slider">
 				
-				<div class="featured_slide">
+					<div class="featured_slide">
 					
-					<img src="<?php bloginfo('template_directory');?>/images/header_logo-01.svg"/>
+						<img src="<?php bloginfo('template_directory');?>/images/header_logo-01.svg"/>
 					
-				</div><!-- featured_slide -->
+					</div><!-- featured_slide -->
 				
-				<div class="featured_slide">
+					<div class="featured_slide">
 					
-					<img src="<?php bloginfo('template_directory');?>/images/header_logo-02.svg"/>
+						<img src="<?php bloginfo('template_directory');?>/images/header_logo-02.svg"/>
 					
-				</div><!-- featured_slide -->
+					</div><!-- featured_slide -->
 				
-				<div class="featured_slide">
+					<div class="featured_slide">
 					
-					<img src="<?php bloginfo('template_directory');?>/images/header_logo-03.svg"/>
+						<img src="<?php bloginfo('template_directory');?>/images/header_logo-03.svg"/>
 					
-				</div><!-- featured_slide -->
+					</div><!-- featured_slide -->
 				
-				<div class="featured_slide">
+					<div class="featured_slide">
 					
-					<img src="<?php bloginfo('template_directory');?>/images/header_logo-04.svg"/>
+						<img src="<?php bloginfo('template_directory');?>/images/header_logo-04.svg"/>
 					
-				</div><!-- featured_slide -->
+					</div><!-- featured_slide -->
 				
-				<div class="featured_slide">
+					<div class="featured_slide">
 					
-					<img src="<?php bloginfo('template_directory');?>/images/header_logo-05.svg"/>
+						<img src="<?php bloginfo('template_directory');?>/images/header_logo-05.svg"/>
 					
-				</div><!-- featured_slide -->
+					</div><!-- featured_slide -->
 				
-			</div><!-- featured_slider -->
+				</div><!-- featured_slider -->
 			
-		</div><!-- featured_wrapper -->
+			</div><!-- featured_wrapper -->
+		
+		</div><!-- sec_one_content -->
 		
 		<div class="play_wrapper">
 			
 			<a class="" href="">
+				
+				<img class="play_text" src="<?php bloginfo('template_directory');?>/images/play_text.svg"/>
 			
 				<div class="play_outer">
 				
