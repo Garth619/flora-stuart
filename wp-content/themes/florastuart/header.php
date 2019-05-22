@@ -83,7 +83,15 @@
 			
 		</div><!-- header_right -->
 		
-		
+		<div class="menu_wrapper">
+			
+			<span class="menu_bar"></span><!-- menu_bar -->
+			<span class="menu_bar"></span><!-- menu_bar -->
+			<span class="menu_bar"></span><!-- menu_bar -->
+			
+			<span class="menu_title">Menu</span><!-- menu_bar -->
+			
+		</div><!-- menu_wrapper -->
 		
 	</header>
 	
