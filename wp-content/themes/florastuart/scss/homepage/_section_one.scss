@@ -2,7 +2,110 @@
 	height:1055px;
 	img.hero {
 		width:100%;
-		height:100%;
+		height:1055px;
+		position: absolute;
+		top:0;
+		left:0;
 		object-fit:cover;
+	}
+}
+
+
+.inner_sec_one {
+	max-width:1610px;
+	margin:0 auto;
+	position: relative;
+	z-index:1;
+	padding:290px 0 0;
+}
+
+
+span.sec_one_header {
+	color:#fff;
+	font-size: 115px;
+	line-height: 100px;
+	display: block;
+	max-width:650px;
+	@include escrow_banner_bold;
+}
+
+
+
+a.free_consulation {
+	background: $red;
+	margin-top:58px;
+	height:80px;
+	color:#fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 20px;
+	letter-spacing: 0.1em;
+	display: inline-block;
+	padding:0 53px 0 35px;
+	position: relative;
+	border-radius: 3px;
+	transition: all 200ms ease-in-out;
+	@include source_bold;
+	&:hover {
+		background: $yellow;
+	}
+	&:after {
+		content:"request free case evaluation";
+		margin-top:28px;
+		display: block;
+	}
+	svg {
+		position: absolute;
+		top:28px;
+		right:-45px;
+		width:73px;
+		height:22px;
+	}
+}
+
+
+span.featured_on {
+	display: block;
+	text-transform: uppercase;
+	color:$grey;
+	font-size:15px;
+	letter-spacing: 0.2em;
+	margin-top:80px;
+	@include source_bold;
+}
+
+
+.featured_wrapper {
+	width:100%;
+	max-width:628px;
+}
+
+.featured_slider {
+	display: flex;
+	align-items: center;
+	margin-top:47px;
+	justify-content: space-between;
+	.featured_slide {
+		img {
+			max-height:76px;
+		}
+	}
+}
+
+
+
+.play_wrapper {
+	.play_outer {
+		height:165px;
+		width:165px;
+		border:2px solid $yellow;
+		border-radius:50%;
+		.play_inner {
+			height:111px;
+			width:111px;
+			background: $yellowgradient;
+			border-radius:50%;
+			margin:25px 0 0 25px;
+		}
 	}
 }

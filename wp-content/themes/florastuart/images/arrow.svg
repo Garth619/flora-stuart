@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="73.4" height="22.14" viewBox="0 0 73.4 22.14">
+  <defs>
+    <style>
+      .arrow-cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>Asset 2</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Capa_1" data-name="Capa 1">
+      <path class="arrow-cls-1" d="M63.13,21.81a1.12,1.12,0,0,1-1.59-1.57l8.05-8L1.13,11.94a1.12,1.12,0,1,1,0-2.23L69.59,10l-8.05-8a1.14,1.14,0,0,1,0-1.59,1.12,1.12,0,0,1,1.59,0l9.95,10a1.13,1.13,0,0,1,0,1.58Z"/>
+    </g>
+  </g>
+</svg>
