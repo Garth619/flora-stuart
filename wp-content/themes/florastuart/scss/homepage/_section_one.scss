@@ -287,7 +287,10 @@ a.tablet_logo {
 	}
 	
 	
-
+.inner_sec_one {
+	
+}
+	
 	
 	
 	.play_wrapper {
@@ -326,8 +329,9 @@ a.tablet_logo {
 		
 	.featured_slider {
 		display: block;
-		max-width:425px;
-		margin-left:-40px;
+		max-width: 335px;
+		margin-top:-15px;
+		margin-left:0px;
 	}
 	
 	.featured_slide {
@@ -342,6 +346,8 @@ a.tablet_logo {
 		align-items: center;
 	}
 	
+	
+	
 } /* Media Query */
 
 
@@ -351,7 +357,7 @@ a.tablet_logo {
 	
 	.play_wrapper {
 		position: absolute;
-		bottom:-27px;
+		//bottom:27px;
 		right:0;
 	}
 	

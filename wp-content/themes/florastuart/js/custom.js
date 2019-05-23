@@ -272,11 +272,30 @@ jQuery(document).ready(function($){
   mobileFirst: true,
   slidesToScroll: 3,
 	arrows:false,
+	autoplay: true,
+  autoplaySpeed: 3000,
+  responsive: [
+    {
+      breakpoint: 1066,
+      settings: "unslick",
+     }
+	]
+ });
+ 
+ 
+ 
+ $('.sec_two_slider').slick({
+  infinite: true,
+  slidesToShow: 1,
+  mobileFirst: true,
+  slidesToScroll: 1,
+	arrows:false,
+	dots:true,
 	//autoplay: true,
   //autoplaySpeed: 3000,
   responsive: [
     {
-      breakpoint: 1066,
+      breakpoint: 1280,
       settings: "unslick",
      }
 	]
