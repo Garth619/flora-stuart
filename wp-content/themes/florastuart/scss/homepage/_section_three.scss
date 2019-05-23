@@ -1,0 +1,212 @@
+#section_three {
+
+}
+
+
+.sec_three_inner {
+	max-width:1285px;
+	margin:140px auto;
+	padding-left:100px;
+	padding-right:100px;
+	h1 {
+		text-align: center;
+		color:$blue;
+		font-size: 100px;
+		line-height: 100px;
+		@include escrow_banner_bold;
+	}
+}
+
+
+.kentucky_wrapper {
+	max-width:785px;
+	margin:77px auto 79px;
+	position: relative;
+	img {
+		display: block;
+		margin:0 auto;
+		position: relative;
+		z-index: 1;
+		max-width:100%;
+		height:auto;
+		display: block;
+	}
+	&:before {
+		content:"";
+		width:100%;
+		height:2px;
+		background: red;
+		display: block;
+		position: absolute;
+		top:53px;
+		left:0;
+	}
+}
+
+
+
+.sec_three_bottom {
+	background:$greylight;
+	margin:402px 0 0;
+	padding:1px 100px 111px;
+}
+
+.sec_three_image_wrapper {
+	display: flex;
+	max-width: 1428px;
+	margin:-267px auto 0;
+	justify-content: space-between;
+	div {
+		flex-basis: 32%;
+	}
+	img {
+		
+		max-width:100%;
+		height:auto;
+		display: block;
+	}
+}
+
+
+.meet_attorneys {
+	text-align: center;
+	margin:55px 0 0;
+	span.meet_attorney_title {
+		display: block;
+		font-size: 55px;
+		color:$blue;
+		@include escrow_banner_bold;
+	}
+	a.att_button {
+		background: #fff;
+		color:$red;
+		border-radius: 3px;
+		margin:0 8px;
+		text-transform: uppercase;
+		text-decoration: none;
+		margin-top:45px;
+		display: inline-block;
+		font-size: 20px;
+		letter-spacing: 0.1em;
+		padding:24px 80px;
+		transition: all 200ms ease-in-out;
+		@include source_black;
+		&:hover {
+			background: $red;
+			color:#fff;
+		}
+	}
+}
+
+
+img.sec_three_tablet_img {
+	display: none;
+}
+
+
+@media screen and (max-width: 1450px) {
+	
+	
+	
+	.sec_three_inner {
+		margin: 118px auto;
+		h1 {
+			font-size: 80px;
+			line-height: 80px;
+		}
+	}
+	
+	
+	.kentucky_wrapper {
+		margin: 58px auto 62px;
+	}
+	
+	.sec_three_bottom {
+		margin: 378px 0 0;
+		padding-bottom:90px;
+	}
+	
+	
+	.sec_three_image_wrapper {
+		margin: -235px auto 0;
+	}
+	
+	
+	.meet_attorneys {
+    margin: 44px 0 0;
+   }
+	
+	
+} /* Media Query */
+
+
+
+@media screen and (max-width: 1066px) {
+	
+	
+	
+	.sec_three_inner {
+		margin: 95px auto;
+		padding-left:70px;
+		padding-right:70px;
+		h1 {
+			font-size: 75px;
+			line-height: 78px;
+			max-width: 645px;
+			margin:0 auto;
+		}
+	}
+	
+	
+	
+	.kentucky_wrapper {
+		margin: 58px auto 70px;
+		&:before {
+			top: 43px;
+		}
+		img {
+			width:120px;
+		}
+	}
+	
+	.sec_three_image_wrapper {
+		margin: -203px auto 0;
+		div {
+			display: none;
+		}
+	}
+	
+	img.sec_three_tablet_img {
+		display: block;
+		margin:0 auto;
+	}
+	
+	
+	.sec_three_bottom {
+    margin: 298px 0 0;
+    padding-bottom: 68px;
+   }
+   
+   .meet_attorneys {
+    	margin: 50px 0 0;
+    	span.meet_attorney_title {
+	    	margin-bottom:50px;
+    	}
+    	a.att_button {
+	    	margin-top:0;
+	    	margin-bottom:25px;
+	    	width:424px;
+	    	padding-left:20px;
+	    	padding-right:20px;
+    	}
+	}
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 767px) {
+	
+	
+	
+} /* Media Query */

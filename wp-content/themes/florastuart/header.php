@@ -31,7 +31,7 @@
 
 <style>
 
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700,700i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700,700i,900&display=swap');
 
 @import url("https://use.typekit.net/zji7bks.css");
 

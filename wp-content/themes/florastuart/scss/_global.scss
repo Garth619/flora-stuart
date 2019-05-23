@@ -1,3 +1,8 @@
+body {
+	color:$blue;
+}
+
+
 .alignleft,
 img.alignleft {
 	display: inline;
@@ -46,6 +51,34 @@ h1,h2,h3,h4 {
    color: #000; }
  .gform_wrapper ul li ::-moz-placeholder {
     opacity: 1; }
+
+
+
+
+.content {
+	font-size: 18px;
+	line-height: 36px;
+	@include source_reg;
+	h2 {
+		color:$orange;
+		text-transform: uppercase;
+		font-size: 30px;
+		line-height: 31px;
+		margin-bottom:35px;
+		@include source_black;
+	}
+	h3 {
+		color:$blue;
+		font-size: 22px;
+		line-height: 33px;
+		margin-bottom:37px;
+		@include source_bold;
+	}
+	p {
+		margin-bottom:37px;
+	}
+}
+
 
 
 @media screen and (max-width: 767px) {
