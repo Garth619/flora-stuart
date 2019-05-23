@@ -264,19 +264,27 @@ jQuery(document).ready(function($){
 
 
 
-$('.featured_slider').slick({
+
+ 
+ $('.featured_slider').slick({
   infinite: true,
   slidesToShow: 3,
+  mobileFirst: true,
   slidesToScroll: 3,
 	arrows:false,
-	autoplay: true,
-  autoplaySpeed: 3000,
+	//autoplay: true,
+  //autoplaySpeed: 3000,
+  responsive: [
+    {
+      breakpoint: 1066,
+      settings: "unslick",
+     }
+	]
  });
  
  
 
 	
-
 
 /* Remove "#" from menu anchor items to avoid jump to the top of the page
 --------------------------------------------------------------------------------------- */

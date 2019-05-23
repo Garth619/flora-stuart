@@ -107,9 +107,9 @@
 	
 	<picture>
 		
-<!-- 		<source type="image/webp" media="(max-width: 1450px)" srcset="<?php echo $section_one_banner_ipad_webp['url']; ?>" > -->
+		<source type="image/webp" media="(max-width: 500px)" srcset="<?php bloginfo('template_directory');?>/images/header_img_mob.jpg">
 			
-<!-- 		<source type="image/jpg" media="(max-width: 1450px)" srcset="<?php echo $section_one_banner_ipad['url']; ?>"> -->
+		<source type="image/jpg" media="(max-width: 935px)" srcset="<?php bloginfo('template_directory');?>/images/header_img_tab.jpg">
 				
 		<img class="hero" src="<?php bloginfo('template_directory');?>/images/header_img_desk.jpg" alt=""/>
 	

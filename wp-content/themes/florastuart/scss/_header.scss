@@ -389,7 +389,33 @@ nav.desktop {
 		width:75px;
 		padding: 19px 13px 0;
 	}
+	
+	
+	
+	
 
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 370px) {
+	
+	
+	.header_right {
+		padding-top: 20px;
+		padding-right:20px;
+		.phone_wrapper {
+			span {
+				display: none;
+			}
+			a {
+				text-align: center;
+			}
+		}
+	}
+	
+	
 	
 	
 } /* Media Query */
