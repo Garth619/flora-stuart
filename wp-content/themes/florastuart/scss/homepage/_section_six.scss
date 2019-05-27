@@ -52,4 +52,49 @@ a.sec_six_button {
 	margin-bottom: 23px;
 	background: $greylight;
 	overflow: hidden;
+	&:hover {
+		img {
+			transform: scale(1.1);
+		}
+	}
+	img {
+		object-fit:cover;
+		width:100%;
+		height:100%;
+		transform: scale(1);
+		transition: all 1800ms cubic-bezier(.17,.66,.34,.98);
+	}
+	span {
+		display: block;
+	}
+	span.case_title {
+		font-size: 55px;
+		letter-spacing: 0.04em;
+		margin-top:93px;
+		@include escrow_banner_bold;
+	}
+	span.case_type {
+		text-transform: uppercase;
+		font-size: 22px;
+		display: inline-block;
+		letter-spacing: 0.1em;
+		padding:0 5px 0;
+		margin-top:30px;
+		&:after {
+			content:"";
+			display: block;
+			width:185px;
+			height:2px;
+			background: $red;
+			margin:26px auto 0;
+		}
+		@include source_black;
+	}
+	span.case_description {
+		font-size: 17px;
+		line-height: 24px;
+		margin:23px auto 0;
+		max-width:255px;
+		@include source_semibold;
+	}
 }
