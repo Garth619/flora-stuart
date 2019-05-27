@@ -1,0 +1,51 @@
+#section_four {
+	padding:0 200px;
+}
+
+
+.sec_four_inner {
+	margin:130px auto 145px;
+	max-width: 1085px;
+}
+
+@media screen and (max-width: 1450px) {
+	
+	
+	.sec_four_inner {
+		margin:100px auto 135px;
+	}
+	
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1066px) {
+	
+	
+	#section_four {
+		padding:0 70px;
+	}
+	
+	
+	.sec_four_inner {
+		margin:80px auto 85px;
+	}
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 767px) {
+	
+	
+	#section_four {
+		padding:0 40px;
+	}
+	
+	
+	.sec_four_inner {
+    margin: 67px auto 80px;
+	}
+	
+	
+} /* Media Query */

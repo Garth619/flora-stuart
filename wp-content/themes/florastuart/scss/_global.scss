@@ -74,11 +74,48 @@ h1,h2,h3,h4 {
 		margin-bottom:37px;
 		@include source_bold;
 	}
-	p {
+	p, ul, ol {
 		margin-bottom:37px;
+	}
+	ul {
+		list-style: none;
+		li {
+			padding-left:30px;
+			position: relative;
+			margin-bottom:25px;
+			&:last-of-type {
+				margin-bottom:0;
+			}
+			@include source_bold;
+			&:before {
+				content:"";
+				display: block;
+				width:6px;
+				height:6px;
+				border-radius: 50%;
+				background: $red;
+				position: absolute;
+				top:16px;
+				left:0;
+			}
+		}
 	}
 }
 
+
+@media screen and (max-width: 1066px) {
+	
+	
+	
+	.content {
+		h2 {
+			
+		}
+	}
+	
+	
+	
+} /* Media Query */
 
 
 @media screen and (max-width: 767px) {
@@ -95,6 +132,14 @@ img.aligncenter {
 	max-width:100%;
 	height:auto;
 }
+
+
+.content {
+		h2 {
+			font-size: 25px;
+			line-height: 30px;
+		}
+	}
 	
 	
 	

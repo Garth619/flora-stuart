@@ -4,10 +4,10 @@
 
 
 .sec_three_inner {
-	max-width:1285px;
+	max-width:1485px;
 	margin:140px auto;
-	padding-left:100px;
-	padding-right:100px;
+	padding-left:200px;
+	padding-right:200px;
 	h1 {
 		text-align: center;
 		color:$blue;
@@ -35,7 +35,7 @@
 		content:"";
 		width:100%;
 		height:2px;
-		background: red;
+		background: $red;
 		display: block;
 		position: absolute;
 		top:53px;
@@ -170,7 +170,8 @@ img.sec_three_tablet_img {
 	}
 	
 	.sec_three_image_wrapper {
-		margin: -203px auto 0;
+		margin: -190px auto 0;
+		display: block;
 		div {
 			display: none;
 		}
@@ -183,8 +184,8 @@ img.sec_three_tablet_img {
 	
 	
 	.sec_three_bottom {
-    margin: 298px 0 0;
-    padding-bottom: 68px;
+    margin: 264px 0 0;
+    padding:1px 70px 68px;
    }
    
    .meet_attorneys {
@@ -193,8 +194,7 @@ img.sec_three_tablet_img {
 	    	margin-bottom:50px;
     	}
     	a.att_button {
-	    	margin-top:0;
-	    	margin-bottom:25px;
+	    	margin:0 0 25px;
 	    	width:424px;
 	    	padding-left:20px;
 	    	padding-right:20px;
@@ -206,6 +206,57 @@ img.sec_three_tablet_img {
 
 
 @media screen and (max-width: 767px) {
+	
+	
+.sec_three_inner {
+	margin:60px auto;
+	padding-left:40px;
+	padding-right:40px;
+	h1 {
+		font-size: 53px;
+		line-height: 56px;
+	}
+}
+
+
+.kentucky_wrapper {
+	margin: 35px auto 31px;
+	&:before {
+		top: 57px;
+	}
+	img {
+		width:110px;
+		height:110px;
+	}
+}
+
+
+.sec_three_bottom {
+	padding: 1px 40px 59px;
+	margin: 209px 0 0;
+}
+
+.sec_three_image_wrapper {
+	margin: -137px auto 0;
+}
+
+.meet_attorneys {
+	margin: 27px 0 0;
+	span.meet_attorney_title {
+		font-size: 38px;
+		line-height: 46px;
+		margin-bottom: 40px;
+		
+	}
+	a.att_button {
+		font-size: 18px;
+		width:100%;
+		text-align: center;
+		max-width:334px;
+		margin-bottom: 11px;
+		padding: 21px 0px;
+	}
+}
 	
 	
 	
