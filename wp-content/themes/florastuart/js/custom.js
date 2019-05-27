@@ -302,6 +302,21 @@ jQuery(document).ready(function($){
  });
  
  
+ 
+ $('.sec_five_slider').slick({
+  infinite: true,
+  slidesToShow: 1,
+  mobileFirst: true,
+  fade:true,
+  slidesToScroll: 1,
+	arrows:true,
+	prevArrow:'.sec_five_left_arrow',
+	nextArrow:'.sec_five_right_arrow',
+	dots:false,
+
+ });
+ 
+ 
 
 	
 

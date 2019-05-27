@@ -1,0 +1,141 @@
+#section_five {
+	width:100%;
+	height:906px;
+	background: $blue;
+	padding:0 110px;
+}
+
+
+.sec_five_inner {
+	padding:108px 0 0;
+}
+
+
+span.sec_five_title {
+	text-transform: uppercase;
+	color:$yellow;
+	font-size: 20px;
+	display: block;
+	letter-spacing: 0.1em;
+	@include source_black;
+}
+
+
+
+.sec_five_slider_wrapper {
+	display: flex;
+	max-width:1325px;
+	margin:0 auto;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.sec_five_slider {
+	order:2;
+	max-width:880px;
+}
+
+.sec_five_slide {
+	text-align: center;
+}
+
+.sec_five_profile {
+	img {
+		max-width:100%;
+		height: auto;
+		display: block;
+		margin:0 auto;
+	}
+	img.red_arc {
+		width:169px;
+		height:84px;
+	}
+	img.profile {
+		border-radius: 50%;
+		width:137px;
+		height:137px;
+		margin-top:-67px;
+	}
+	img.stars {
+		margin-top:-13px;
+	}
+}
+
+span.sec_five_slide_title {
+	color:#fff;
+	margin:30px auto 43px;
+	display: block;
+	font-size: 65px;
+	max-width:800px;
+	line-height: 77px;
+	@include escrow_banner_bold;
+}
+
+
+span.sec_five_description {
+	display: block;
+	color:#fff;
+	font-size: 25px;
+	line-height: 44px;
+	@include source_semibold;
+}
+
+span.sec_five_name {
+	color:$yellow;
+	text-transform: uppercase;
+	font-size: 18px;
+	display: block;
+	letter-spacing: 0.1em;
+	margin:47px 0 0;
+	@include source_black;
+}
+
+
+.sec_five_arrows {
+	
+}
+
+
+
+.sec_five_arrow {
+	width:71px;
+	height:71px;
+	flex-shrink:0;
+	border:1px solid $yellow;
+	border-radius: 3px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: transparent;
+	transition: all 200ms ease-in-out;
+	cursor: pointer;
+	&:hover {
+		background: $yellow;
+	}
+	&:before {
+		content:"";
+		display: block;
+		width: 0; 
+		height: 0; 
+		border-top: 15px solid transparent;
+		border-bottom: 15px solid transparent;
+	}
+}
+
+.sec_five_left_arrow {
+	order:1;
+	&:before {
+		 border-right:15px solid #fff;
+		margin-left:-2px;
+	}
+}
+
+
+.sec_five_right_arrow {
+	order:3;
+	&:before {
+		border-left:15px solid #fff; 
+		margin-right:-2px;
+	}
+}
