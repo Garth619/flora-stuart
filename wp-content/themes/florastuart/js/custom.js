@@ -317,6 +317,23 @@ jQuery(document).ready(function($){
  });
  
  
+ 	// adds a div to center arrows 
+ 
+ 	function checksliderwidth() {
+        
+        if ($(window).width() <= 767) {
+            
+          
+        	$('.sec_five_arrow').wrapAll('<div class="sec_five_arrows"></div>');
+        	   		
+        		
+        } 
+        
+    	};
+    	
+    
+checksliderwidth();
+ 
 
 	
 
@@ -385,14 +402,9 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
     // nav check width
     
     
-    	
-    	var windowWidth = $(window).width();
-    
-    
-    
-    	function checkWidthcase() {
+    function checkNavwidth() {
         
-        if (windowWidth > 1066) {
+        if ($(window).width() > 1066) {
             
           
         	$('nav').addClass('desktop');
@@ -403,7 +415,7 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
     	};
     	
     
-			checkWidthcase();
+			checkNavwidth();
   
   
 

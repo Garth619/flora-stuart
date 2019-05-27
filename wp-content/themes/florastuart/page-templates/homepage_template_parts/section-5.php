@@ -12,7 +12,7 @@
 					
 					<div class="sec_five_profile">
 						
-						<img class="red_arc" src="<?php bloginfo('template_directory');?>/images/test_image_icon_01.svg"/>
+						<img class="red_arch" src="<?php bloginfo('template_directory');?>/images/test_image_icon_01.svg"/>
 						
 						<img class="profile" src="<?php bloginfo('template_directory');?>/images/sec_five_1.png"/>
 						
@@ -32,7 +32,7 @@
 					
 					<div class="sec_five_profile">
 						
-						<img class="red_arc" src="<?php bloginfo('template_directory');?>/images/test_image_icon_01.svg"/>
+						<img class="red_arch" src="<?php bloginfo('template_directory');?>/images/test_image_icon_01.svg"/>
 						
 						<img class="profile" src="<?php bloginfo('template_directory');?>/images/sec_five_2.png"/>
 						
@@ -52,7 +52,7 @@
 					
 					<div class="sec_five_profile">
 						
-						<img class="red_arc" src="<?php bloginfo('template_directory');?>/images/test_image_icon_01.svg"/>
+						<img class="red_arch" src="<?php bloginfo('template_directory');?>/images/test_image_icon_01.svg"/>
 						
 						<img class="profile" src="<?php bloginfo('template_directory');?>/images/sec_five_3.png"/>
 						
