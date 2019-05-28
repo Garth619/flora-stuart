@@ -49,7 +49,9 @@
 
 <body <?php body_class(); ?>>
 	
-	<header>
+	<?php if(is_page_template('page-templates/template-home.php')) { ?>
+	
+	<header class="front_page">
 		
 		<div class="header_left">
 			
@@ -99,7 +101,45 @@
 			
 		</div><!-- menu_close -->
 		
-	</header>
+	</header><!-- front_page -->
 	
+	<?php }
+	
+	
+	if(! is_page_template('page-templates/template-home.php')) { ?>
+	
+	
+		<header class="internal">
+			
+			<div class="int_header_left">
+				
+				<a class="int_logo" href="<?php bloginfo('url');?>">
+					
+					<img src="<?php bloginfo('template_directory');?>/images/hero_logo-01.svg" alt=""/>
+					
+				</a><!-- int_logo -->
+				
+			</div><!-- int_header_left -->
+			
+			<div class="internal_nav">
+				
+				<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'main_menu' ) ); ?>
+				
+			</div><!-- internal_nav -->
+			
+			<div class="int_header_right">
+				
+				<span class="no_fees">No Fee Unless You Win</span><!-- no_fees -->
+				
+				<a class="int_phone" href="">(888) 782-9090</a><!-- int_phone -->
+				
+			</div><!-- int_header_right -->
+			
+			
+			
+		</header>
+	
+	
+	<?php } ?>
 
 			

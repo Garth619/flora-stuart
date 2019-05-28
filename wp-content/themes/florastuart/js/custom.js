@@ -348,6 +348,9 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
 		// nav
 	
 	
+		
+		
+		
 		$('.current-menu-item').addClass('active');
 	
 
