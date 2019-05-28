@@ -50,6 +50,11 @@ $themePath: '/wp-content/themes/florastuart/';
 
 // escrow
 
+@mixin escrow_banner_semibold {
+	font-family: escrow-banner, serif;
+	font-weight: 600;
+	font-style: normal;
+}
 
 @mixin escrow_banner_bold {
   font-family: escrow-banner, serif;

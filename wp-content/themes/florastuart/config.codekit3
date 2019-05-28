@@ -153,6 +153,17 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/images/footer_play.png": {
+		"ft": 32768,
+		"iS": 60579,
+		"oA": 0,
+		"oAP": "/images/footer_play.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/images/header_img_desk.jpg": {
 		"ft": 16384,
 		"iS": 210618,
