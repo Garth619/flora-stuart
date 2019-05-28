@@ -42,7 +42,7 @@
 			
 			<span class="footer_location_title">Phone</span><!-- footer_location_title -->
 			
-			<a class="footer_phone" href="tel:888782909">Call 24/7 (888) 782-9090</a>
+			<a class="footer_phone" href="tel:888782909"><span>Call 24/7</span> <span>(888) 782-9090</span></a>
 			
 			<span class="footer_location_title">Office Locations</span><!-- footer_location_title -->
 			
@@ -72,7 +72,7 @@
 			
 			<div class="footer_form_inner">
 				
-				<span class="form_title">Request your <strong>free</strong><br/> case evaluation</span><!-- form_title -->
+				<span class="form_title">Request<br class="mobile"/> your <strong>free</strong><br class="tablet"/> case<br class="mobile"/> evaluation</span><!-- form_title -->
 				
 				<span class="form_disclaimer">REMEMBER, YOU WON’T HAVE TO PAY ANY FEES OR COSTS UNLESS YOU RECEIVE COMPENSATION FOR YOUR INJURIES</span><!-- form_disclaimer -->
 			
