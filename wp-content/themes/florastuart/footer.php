@@ -66,9 +66,19 @@
 			
 		</div><!-- footer_locations -->
 		
-		<div class="footer_form">
+		<div id="consultation" class="footer_form">
 			
-			<?php gravity_form(1, false, false, false, '', true, 12); ?>
+			<div class="footer_form_inner">
+				
+				<span class="form_title">Request your <strong>free</strong><br/> case evaluation</span><!-- form_title -->
+				
+				<span class="form_disclaimer">REMEMBER, YOU WON’T HAVE TO PAY ANY FEES OR COSTS UNLESS YOU RECEIVE COMPENSATION FOR YOUR INJURIES</span><!-- form_disclaimer -->
+			
+				<?php gravity_form(1, false, false, false, '', true, 12); ?>
+				
+				<span class="myrequired">*All Fields Required</span><!-- myrequired -->
+			
+			</div><!-- footer_form_inner -->
 			
 		</div><!-- footer_form -->
 		
