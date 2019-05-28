@@ -5,15 +5,7 @@
 		<div class="field_trip_wrapper">
 			
 			<div class="field_trip_inner">
-			
-			<img class="poppy_img" src="<?php bloginfo('template_directory');?>/images/footer_img_01.jpg"/>
-			
-			<span class="poppy_title">poppy’s field trip visits</span><!-- poppy_title -->
-			
-			<span class="comm_description">Flora Stuart is dedicated to making a difference in the lives of her clients. Our law firm is in the community to make a difference in the lives of others. </span><!-- comm_description -->
-			
-			<a class="visit_comm" href="">Visit Our Community Page</a><!-- visit_comm -->
-			
+				
 			<div class="footer_play_wrapper">
 				
 				<a href="">
@@ -31,6 +23,16 @@
 				</a>
 				
 			</div><!-- footer_play_wrapper -->
+			
+			<img class="poppy_img" src="<?php bloginfo('template_directory');?>/images/footer_img_01.jpg"/>
+			
+			<span class="poppy_title">poppy’s field trip visits</span><!-- poppy_title -->
+			
+			<span class="comm_description">Flora Stuart is dedicated to making a difference in the lives of her clients. Our law firm is in the community to make a difference in the lives of others. </span><!-- comm_description -->
+			
+			<a class="visit_comm" href="">Visit Our Community Page</a><!-- visit_comm -->
+			
+			
 			
 			</div><!-- field_trip_inner -->
 			
@@ -84,7 +86,21 @@
 		
 	</div><!-- footer_inner -->
 	
-	
+	<div class="copyright">
+		
+		<ul>
+			<li>&copy; 2019 Flora Templeton Stuart, Personal Injury Lawyer</li>
+			<li><a href="">Privacy Policy</a></li>
+			<li><a href="">Disclaimer</a></li>
+		</ul>
+		
+		<a class="ilawyer" href="//ilawyermarketing.com" target="_blank" rel="noopener">
+			
+			<img src="<?php bloginfo('template_directory');?>/images/footer_logo-01.svg"/>
+			
+		</a><!-- ilawyer -->
+		
+	</div><!-- copyright -->
 		
 </footer>
 
