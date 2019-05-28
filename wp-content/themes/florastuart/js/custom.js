@@ -404,7 +404,7 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
     
     function checkNavwidth() {
         
-        if ($(window).width() > 1066) {
+        if ($(window).width() > 1310) {
             
           
         	$('nav').addClass('desktop');
@@ -412,10 +412,37 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
         		
         } 
         
+        else {
+	        
+	        $('nav ul.menu > li.menu-item-has-children > a').on('click', function(e) {
+		        
+		        $(this).next('ul.sub-menu').toggleClass('open');
+	          
+	        });
+	        
+        }
+        
     	};
     	
     
 			checkNavwidth();
+			
+			
+		$('.menu_wrapper').on('click', function(e) {
+		  
+			$('nav').slideDown(300);
+			
+			$('.menu_close').addClass('open');
+		
+		});
+		
+		$('.menu_close').on('click', function(e) {
+		  
+			$('nav').slideUp(300);
+			
+			$(this).removeClass('open');
+		
+		});
   
   
 

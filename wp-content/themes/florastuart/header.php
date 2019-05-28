@@ -93,6 +93,12 @@
 			
 		</div><!-- menu_wrapper -->
 		
+		<div class="menu_close">
+			
+			<span class="close"></span><!-- close -->
+			
+		</div><!-- menu_close -->
+		
 	</header>
 	
 
