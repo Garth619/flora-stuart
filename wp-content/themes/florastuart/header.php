@@ -129,11 +129,15 @@
 			
 			<div class="int_header_right">
 				
-				<span class="int_call">Call 24/7</span><!-- no_fees -->
+				<div class="int_header_right_inner">
 				
-				<span class="no_fees">No Fee Unless You Win</span><!-- no_fees -->
+					<span class="int_call">Call 24/7</span><!-- no_fees -->
 				
-				<a class="int_phone" href="tel:8887829090">(888) 782-9090</a><!-- int_phone -->
+					<span class="no_fees">No Fee Unless You Win</span><!-- no_fees -->
+				
+					<a class="int_phone" href="tel:8887829090">(888) 782-9090</a><!-- int_phone -->
+				
+				</div><!-- int_header_right_inner -->
 				
 			</div><!-- int_header_right -->
 			
@@ -146,6 +150,12 @@
 				<span class="menu_title">Menu</span><!-- menu_bar -->
 			
 			</div><!-- menu_wrapper -->
+			
+			<div class="menu_close">
+			
+				<span class="close"></span><!-- close -->
+			
+			</div><!-- menu_close -->
 			
 		</header>
 	

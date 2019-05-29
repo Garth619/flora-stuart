@@ -417,7 +417,7 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
         
         else {
 	        
-	        $('nav ul.menu > li.menu-item-has-children > a').on('click', function(e) {
+	        $('nav ul.menu > li.menu-item-has-children > a, .internal_nav ul.menu > li.menu-item-has-children > a').on('click', function(e) {
 		        
 		        $(this).next('ul.sub-menu').toggleClass('open');
 	          
@@ -433,7 +433,7 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
 			
 		$('.menu_wrapper').on('click', function(e) {
 		  
-			$('nav').slideDown(300);
+			$('nav, .internal_nav').slideDown(300);
 			
 			$('.menu_close').addClass('open');
 		
@@ -441,7 +441,7 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
 		
 		$('.menu_close').on('click', function(e) {
 		  
-			$('nav').slideUp(300);
+			$('nav, .internal_nav').slideUp(300);
 			
 			$(this).removeClass('open');
 		
