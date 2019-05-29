@@ -410,7 +410,7 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
         if ($(window).width() > 1310) {
             
           
-        	$('nav').addClass('desktop');
+        	$('nav, .internal_nav').addClass('desktop');
         	   		
         		
         } 

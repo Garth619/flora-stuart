@@ -131,11 +131,9 @@
 				
 				<span class="no_fees">No Fee Unless You Win</span><!-- no_fees -->
 				
-				<a class="int_phone" href="">(888) 782-9090</a><!-- int_phone -->
+				<a class="int_phone" href="tel:8887829090">(888) 782-9090</a><!-- int_phone -->
 				
 			</div><!-- int_header_right -->
-			
-			
 			
 		</header>
 	

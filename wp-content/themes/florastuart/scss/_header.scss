@@ -238,7 +238,21 @@ header.internal {
 		display: flex;
 		width:100%;
 		justify-content: space-between;
+		> li.current-menu-item, > li.current-menu-ancestor {
+			> a {
+				color:$yellow;
+			}
+		}
 		> li.menu-item-has-children {
+				position: relative;
+				&:hover {
+					ul.sub-menu {
+						opacity: 1;
+						visibility: visible;
+						//transform: translateY(0);
+						transition: all 200ms ease-in-out;
+					}
+				}
 				> a {
 					&:after {
 						content:"";
@@ -256,6 +270,7 @@ header.internal {
 				text-transform: uppercase;
 				font-size: 17px;
 				letter-spacing: 0.1em;
+				padding-bottom: 27px;
 				@include source_bold;
 			> a {
 				color:#fff;
@@ -264,7 +279,36 @@ header.internal {
 		}
 	}
 	ul.sub-menu {
-		display: none;
+		background: $blue;
+		text-transform: none;
+		width:300px;
+		position: absolute;
+		top:59px;
+		left:0;
+		padding:33px 37px;
+		opacity: 0;
+		visibility: hidden;
+		//transform: translateY(-5px);
+		transition: all 250ms ease-in-out;
+		@include source_reg;
+		li.current-menu-item {
+			a {
+				color:$yellow;
+			}
+		}
+		li {
+			margin-bottom:29px;
+			font-size: 18px;
+			letter-spacing: 0.02em;
+			&:last-of-type {
+				margin-bottom:0;
+			}
+			a {
+				color:#fff;
+				text-decoration: none;
+			}
+		}
+		// display: none;
 	}
 }
 
@@ -291,6 +335,20 @@ header.internal {
 	}
 }
 
+
+.internal_nav.desktop {
+	ul {
+		li {
+			a {
+				transition: all 200ms ease-in-out;
+				&:hover {
+					color:$yellow;
+				}
+			}
+		}
+	}
+}
+
 @media screen and (max-width: 1665px) {
 	
 	.header_left {
@@ -313,7 +371,104 @@ header.internal {
 } /* Media Query */
 
 
+@media screen and (max-width: 1700px) {
+	
 
+	
+	.internal_nav.desktop {
+		.menu-header {
+			max-width: 859px;
+		}
+		ul.menu{
+			> li {
+					font-size:16px;
+				a {
+					
+				}
+			}
+		}
+	}
+	
+	.int_header_right {
+		flex-basis: 250px;
+		span {
+			font-size: 17px;
+			margin-top: 25px;
+		}
+		a {
+			font-size: 29px;
+			margin-top: 2px;
+		}
+	}
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1620px) {
+	
+	
+	
+	.int_header_left {
+		padding-top: 24px;
+		a.int_logo {
+			img {
+				width: 280px;
+			}
+		}
+	}
+
+	
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1520px) {
+	
+	
+	.internal_nav.desktop {
+		.menu-header {
+			max-width: 825px;
+		}
+		ul.menu{
+			> li {
+					font-size:15px;
+				a {
+					
+				}
+			}
+		}
+	}
+	
+	
+	
+} /* Media Query */
+
+
+
+@media screen and (max-width: 1480px) {
+	
+	
+	.int_header_left {
+		margin-right:35px;
+		padding-left: 35px;
+		a.int_logo {
+			img {
+				
+			}
+		}
+	}
+
+	.internal_nav {
+		padding-right:30px;
+	}
+	
+	.int_header_right {
+		flex-basis: 237px;
+	}
+	
+} /* Media Query */
 
 @media screen and (max-width: 1450px) {
 	
