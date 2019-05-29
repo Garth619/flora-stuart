@@ -396,7 +396,7 @@
 		"oAP": "/images/intl_blog_header.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/images/intl_contact_icon-01.svg": {
@@ -1209,6 +1209,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/images/sp_icon-03.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/images/stars-orange.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/stars-orange.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
