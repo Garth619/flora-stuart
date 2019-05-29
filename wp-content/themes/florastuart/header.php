@@ -129,11 +129,23 @@
 			
 			<div class="int_header_right">
 				
+				<span class="int_call">Call 24/7</span><!-- no_fees -->
+				
 				<span class="no_fees">No Fee Unless You Win</span><!-- no_fees -->
 				
 				<a class="int_phone" href="tel:8887829090">(888) 782-9090</a><!-- int_phone -->
 				
 			</div><!-- int_header_right -->
+			
+			<div class="menu_wrapper">
+			
+				<span class="menu_bar"></span><!-- menu_bar -->
+				<span class="menu_bar"></span><!-- menu_bar -->
+				<span class="menu_bar"></span><!-- menu_bar -->
+			
+				<span class="menu_title">Menu</span><!-- menu_bar -->
+			
+			</div><!-- menu_wrapper -->
 			
 		</header>
 	

@@ -5,7 +5,7 @@
 		
 		<div class="sec_one_content">
 			
-			<a class="tablet_logo" href="">
+			<a class="tablet_logo" href="<?php bloginfo('url');?>">
 				
 				<img src="<?php bloginfo('template_directory');?>/images/hero_logo-01.svg"/>
 				
