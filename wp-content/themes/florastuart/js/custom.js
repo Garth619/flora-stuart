@@ -446,6 +446,19 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
 			$(this).removeClass('open');
 		
 		});
+		
+		
+		// sidebar
+		
+		$('.sidebar_box ul.menu > li.menu-item-has-children > a').on('click', function(e) {
+		  
+			$('.sidebar_box ul.menu > li.menu-item-has-children > a').removeClass('active');
+			
+			$(this).addClass('active');
+			
+			$(this).next('ul.sub-menu').slideToggle(200);
+		
+		});
   
   
 

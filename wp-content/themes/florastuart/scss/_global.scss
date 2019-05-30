@@ -130,6 +130,33 @@ h1,h2,h3,h4 {
 }
 
 
+@media screen and (max-width: 1350px) {
+	
+	
+	.internal_header {
+		font-size:60px;
+		line-height: 60px;
+	}
+	
+	
+} /* Media Query */
+
+
+
+@media screen and (max-width: 1260px) {
+	
+	
+	.content {
+		blockquote {
+			max-width: 870px;
+		}
+	}
+	
+	
+	
+} /* Media Query */
+
+
 @media screen and (max-width: 1066px) {
 	
 	
@@ -139,6 +166,25 @@ h1,h2,h3,h4 {
 			
 		}
 	}
+	
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 940px) {
+	
+	
+	.content {
+		blockquote {
+			max-width: 580px;
+			line-height: 48px;
+			padding-top: 15px;
+			font-size: 40px;
+			margin: 0px auto 45px;
+		}
+	}
+	
 	
 	
 	
@@ -165,6 +211,13 @@ img.aligncenter {
 		h2 {
 			font-size: 25px;
 			line-height: 30px;
+		}
+		blockquote {
+			font-size: 32px;
+			line-height: 40px;
+			&:before {
+				margin: 0 auto 21px;
+			}
 		}
 	}
 	
