@@ -63,6 +63,23 @@ h1,h2,h3,h4 {
 	@include escrow_banner_bold;
 }
 
+
+.internal_centered_header {
+	font-size: 100px;
+	text-align: center;
+	padding-top:108px;
+	line-height: 93px;
+	@include escrow_banner_bold;
+	&:after {
+		content:"";
+		display: block;
+		background: url(images/stars-orange.svg) top left no-repeat;
+		width: 158px;
+		height: 25px;
+		margin:37px auto 28px;
+	}
+}
+
 .content {
 	font-size: 18px;
 	line-height: 36px;
