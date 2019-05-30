@@ -1,12 +1,15 @@
 
 .blog_feed {
-	margin-top:-43px;
+	padding-top:-43px;
 }
 
 
+.blog_meta.single {
+	margin-top:-20px;
+}
 
 .blog_meta {
-	span, ul, li {
+	span, ul {
 		display: inline-block;
 		font-size: 22px;
 		line-height: 20px;
@@ -18,16 +21,22 @@
 		li {
 			padding:0;
 			text-transform: uppercase;
+			display: inline-block;
+			position: static;
 			&:before {
-				margin:0 25px;
+				margin:0 16px;
 				position: static;
 				display: inline-block;
 				vertical-align: top;
-				margin:9px 16px 0;
+				margin-top:8px;
 			}
 			a {
 				color:$orange;
 				text-decoration: none;
+				transition: all 200ms ease-in-out;
+				&:hover {
+					color:$red;
+				}
 			}
 		}
 	}
@@ -100,3 +109,13 @@
 		}
 	}
 }
+
+
+@media screen and (max-width: 1066px) {
+	
+	
+	.sidebar_wrapper {
+    margin-top: 20px;
+	}
+	
+} /* Media Query */
