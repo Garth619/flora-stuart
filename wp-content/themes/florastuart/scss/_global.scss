@@ -58,6 +58,7 @@ h1,h2,h3,h4 {
 	line-height: 75px;
 	padding-bottom: 45px;
 	margin-bottom:50px;
+	display: block;
 	border-bottom:2px solid $red;
 	@include escrow_banner_bold;
 }
