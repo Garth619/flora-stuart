@@ -897,7 +897,7 @@
 		"oAP": "/images/intl_mainPA_header_img_01.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/images/intl_pa_img_01.jpg": {
@@ -1086,7 +1086,7 @@
 		"opt": 1,
 		"q": 100
 		},
-	"/images/mta_img_03_desk.jpg": {
+	"/images/MTA_img_03_desk.jpg": {
 		"ft": 16384,
 		"iS": 65047,
 		"jF": 0,
@@ -1509,6 +1509,14 @@
 		"oAP": "/page-templates/template-padirectory.php",
 		"oF": 0
 		},
+	"/page-templates/template-paextended.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-templates/template-paextended.php",
+		"oF": 0
+		},
 	"/page-templates/template-testimonials.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1713,6 +1721,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/scss/_page-paextended.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/scss/_page-paextended.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/scss/_page-results.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1896,6 +1917,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/sidebar-blog.php",
+		"oF": 0
+		},
+	"/sidebar-paextended.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/sidebar-paextended.php",
 		"oF": 0
 		},
 	"/sidebar.php": {

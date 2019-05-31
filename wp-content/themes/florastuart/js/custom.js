@@ -459,6 +459,16 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
 			$(this).next('ul.sub-menu').slideToggle(200);
 		
 		});
+		
+		
+		// faqs
+		
+		
+		$('span.question').on('click', function(e) {
+			
+			$(this).next('span.answer').slideToggle(300);
+		  
+		});
   
   
 
