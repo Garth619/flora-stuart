@@ -14,87 +14,147 @@ get_header(); ?>
 			<div class="pa_inner">
 			
 			<div class="pa_col">
-			
-				<div class="pa_directory_box">
 				
-					<div class="pa_img">
+				<?php if(get_field('pa_box')): ?>
+				 
+					<?php while(has_sub_field('pa_box')): ?>
+				 
+						<div class="pa_directory_box">
 				
-						<img src="<?php bloginfo('template_directory');?>/images/intl_pa_img_01.jpg"/>
+							<div class="pa_img">
 				
-					</div><!-- pa_img -->
+								<?php $pa_image = get_sub_field( 'pa_image' ); ?>
+								
+								<?php if ( $pa_image ) { ?>
+								
+									<img src="<?php echo $pa_image['url']; ?>" alt="<?php echo $pa_image['alt']; ?>" />
+								
+								<?php } ?>
 				
-					<div class="pa_lower_content">
+							</div><!-- pa_img -->
+				
+							<div class="pa_lower_content">
 					
-						<h2>Auto Accidents</h2>
+								<h2><?php the_sub_field( 'pa_title' ); ?></h2>
+								
+								<?php if(get_sub_field('pa_subtitles')): ?>
+								
+									<ul>
+								 
+									<?php while(has_sub_field('pa_subtitles')): ?>
+								 
+										<li><a href="<?php the_sub_field( 'pa_page_link' ); ?>"><?php the_sub_field( 'pa_subtitle' ); ?></a></li>
+								    
+									<?php endwhile; ?>
+									
+									</ul>
+								 
+								<?php endif; ?>
 					
-						<ul>
-							<li><a href="">Car Accidents</a></li>
-							<li><a href="">Truck Accidents</a></li>
-							<li><a href="">Motorcycle Accidents</a></li>
-							<li><a href="">Drunk Drivers (DUI)</a></li>
-							<li><a href="">Pedestrian</a></li>
-						</ul>
-					
-					</div><!-- pa_lower_content -->
+							</div><!-- pa_lower_content -->
 				
-				</div><!-- pa_directory_box -->
-			
-			</div><!-- pa_col -->
-			
-			<div class="pa_col">
-			
-				<div class="pa_directory_box">
-				
-					<div class="pa_img">
-				
-						<img src="<?php bloginfo('template_directory');?>/images/intl_pa_img_02.jpg"/>
-				
-					</div><!-- pa_img -->
-				
-					<div class="pa_lower_content">
-					
-						<h2>Semi-Truck</h2>
-					
-						<ul>
-							<li><a href="">Car Accidents</a></li>
-							<li><a href="">Truck Accidents</a></li>
-							<li><a href="">Motorcycle Accidents</a></li>
-							<li><a href="">Drunk Drivers (DUI)</a></li>
-							<li><a href="">Pedestrian</a></li>
-						</ul>
-					
-					</div><!-- pa_lower_content -->
-				
-				</div><!-- pa_directory_box -->
-				
+						</div><!-- pa_directory_box -->
+				    
+					<?php endwhile; ?>
+				 
+				<?php endif; ?>
 			
 			</div><!-- pa_col -->
 			
 			<div class="pa_col">
+			
+				<?php if(get_field('pa_box_two')): ?>
+				 
+					<?php while(has_sub_field('pa_box_two')): ?>
+				 
+						<div class="pa_directory_box">
 				
-				<div class="pa_directory_box">
+							<div class="pa_img">
 				
-					<div class="pa_img">
+								<?php $pa_image = get_sub_field( 'pa_image' ); ?>
+								
+								<?php if ( $pa_image ) { ?>
+								
+									<img src="<?php echo $pa_image['url']; ?>" alt="<?php echo $pa_image['alt']; ?>" />
+								
+								<?php } ?>
 				
-						<img src="<?php bloginfo('template_directory');?>/images/intl_pa_img_01.jpg"/>
+							</div><!-- pa_img -->
 				
-					</div><!-- pa_img -->
-				
-					<div class="pa_lower_content">
+							<div class="pa_lower_content">
 					
-						<h2>Personal Injury</h2>
+								<h2><?php the_sub_field( 'pa_title' ); ?></h2>
+								
+								<?php if(get_sub_field('pa_subtitles')): ?>
+								
+									<ul>
+								 
+									<?php while(has_sub_field('pa_subtitles')): ?>
+								 
+										<li><a href="<?php the_sub_field( 'pa_page_link' ); ?>"><?php the_sub_field( 'pa_subtitle' ); ?></a></li>
+								    
+									<?php endwhile; ?>
+									
+									</ul>
+								 
+								<?php endif; ?>
 					
-						<ul>
-							<li><a href="">Car Accidents</a></li>
-							<li><a href="">Truck Accidents</a></li>
-							<li><a href="">Motorcycle Accidents</a></li>
-							<li><a href="">Drunk Drivers (DUI)</a></li>
-							<li><a href="">Pedestrian</a></li>
-						</ul>
-					
-					</div><!-- pa_lower_content -->
+							</div><!-- pa_lower_content -->
 				
-				</div><!-- pa_directory_box -->
+						</div><!-- pa_directory_box -->
+				    
+					<?php endwhile; ?>
+				 
+				<?php endif; ?>
+				
+			
+			</div><!-- pa_col -->
+			
+			<div class="pa_col">
+				
+				<?php if(get_field('pa_box_three')): ?>
+				 
+					<?php while(has_sub_field('pa_box_three')): ?>
+				 
+						<div class="pa_directory_box">
+				
+							<div class="pa_img">
+				
+								<?php $pa_image = get_sub_field( 'pa_image' ); ?>
+								
+								<?php if ( $pa_image ) { ?>
+								
+									<img src="<?php echo $pa_image['url']; ?>" alt="<?php echo $pa_image['alt']; ?>" />
+								
+								<?php } ?>
+				
+							</div><!-- pa_img -->
+				
+							<div class="pa_lower_content">
+					
+								<h2><?php the_sub_field( 'pa_title' ); ?></h2>
+								
+								<?php if(get_sub_field('pa_subtitles')): ?>
+								
+									<ul>
+								 
+									<?php while(has_sub_field('pa_subtitles')): ?>
+								 
+										<li><a href="<?php the_sub_field( 'pa_page_link' ); ?>"><?php the_sub_field( 'pa_subtitle' ); ?></a></li>
+								    
+									<?php endwhile; ?>
+									
+									</ul>
+								 
+								<?php endif; ?>
+					
+							</div><!-- pa_lower_content -->
+				
+						</div><!-- pa_directory_box -->
+				    
+					<?php endwhile; ?>
+				 
+				<?php endif; ?>
 			
 			</div><!-- pa_col -->
 			
