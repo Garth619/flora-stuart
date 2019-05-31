@@ -69,6 +69,8 @@ h1,h2,h3,h4 {
 	text-align: center;
 	padding-top:108px;
 	line-height: 93px;
+	padding-left: 100px;
+	padding-right:100px;
 	@include escrow_banner_bold;
 	&:after {
 		content:"";
@@ -186,6 +188,17 @@ h1,h2,h3,h4 {
 	}
 	
 	
+	.internal_centered_header {
+		padding:67px 70px 0;
+		font-size: 65px;
+		line-height: 60px;
+		&:after {
+			margin: 25px auto 15px;
+		}
+	}
+	
+	
+	
 	
 } /* Media Query */
 
@@ -224,6 +237,15 @@ img.aligncenter {
 	height:auto;
 }
 
+
+.internal_centered_header {
+		padding:41px 40px 0;
+		font-size: 60px;
+		line-height: 55px;
+		&:after {
+			margin: 20px auto 15px;
+		}
+	}
 
 .content {
 		h2 {

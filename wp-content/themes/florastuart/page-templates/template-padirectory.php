@@ -11,61 +11,94 @@ get_header(); ?>
 		
 		<div class="pa_directory">
 			
-			<div class="pa_directory_box">
-				
-				<div class="pa_img">
-				
-					<img src="<?php bloginfo('template_directory');?>/images/intl_pa_img_01.jpg"/>
-				
-				</div><!-- pa_img -->
-				
-				<div class="pa_lower_content">
-					
-					<h2>Auto Accidents</h2>
-					
-					<ul>
-						<li><a href="">Car Accidents</a></li>
-						<li><a href="">Truck Accidents</a></li>
-						<li><a href="">Motorcycle Accidents</a></li>
-						<li><a href="">Drunk Drivers (DUI</a></li>
-						<li><a href="">Pedestrian</a></li>
-					</ul>
-					
-				</div><!-- pa_lower_content -->
-				
-			</div><!-- pa_directory_box -->
+			<div class="pa_inner">
 			
-			<div class="pa_directory_box">
-				
-				<div class="pa_img">
-				
-					<img src="<?php bloginfo('template_directory');?>/images/intl_pa_img_02.jpg"/>
-				
-				</div><!-- pa_img -->
-				
-				<div class="pa_lower_content">
-					
-					<h2>Auto Accidents</h2>
-					
-				</div><!-- pa_lower_content -->
-				
-			</div><!-- pa_directory_box -->
+			<div class="pa_col">
 			
-			<div class="pa_directory_box">
+				<div class="pa_directory_box">
 				
-				<div class="pa_img">
+					<div class="pa_img">
 				
-					<img src="<?php bloginfo('template_directory');?>/images/intl_pa_img_03.jpg"/>
+						<img src="<?php bloginfo('template_directory');?>/images/intl_pa_img_01.jpg"/>
 				
-				</div><!-- pa_img -->
+					</div><!-- pa_img -->
 				
-				<div class="pa_lower_content">
+					<div class="pa_lower_content">
 					
-					<h2>Auto Accidents</h2>
+						<h2>Auto Accidents</h2>
 					
-				</div><!-- pa_lower_content -->
+						<ul>
+							<li><a href="">Car Accidents</a></li>
+							<li><a href="">Truck Accidents</a></li>
+							<li><a href="">Motorcycle Accidents</a></li>
+							<li><a href="">Drunk Drivers (DUI)</a></li>
+							<li><a href="">Pedestrian</a></li>
+						</ul>
+					
+					</div><!-- pa_lower_content -->
 				
-			</div><!-- pa_directory_box -->
+				</div><!-- pa_directory_box -->
+			
+			</div><!-- pa_col -->
+			
+			<div class="pa_col">
+			
+				<div class="pa_directory_box">
+				
+					<div class="pa_img">
+				
+						<img src="<?php bloginfo('template_directory');?>/images/intl_pa_img_02.jpg"/>
+				
+					</div><!-- pa_img -->
+				
+					<div class="pa_lower_content">
+					
+						<h2>Semi-Truck</h2>
+					
+						<ul>
+							<li><a href="">Car Accidents</a></li>
+							<li><a href="">Truck Accidents</a></li>
+							<li><a href="">Motorcycle Accidents</a></li>
+							<li><a href="">Drunk Drivers (DUI)</a></li>
+							<li><a href="">Pedestrian</a></li>
+						</ul>
+					
+					</div><!-- pa_lower_content -->
+				
+				</div><!-- pa_directory_box -->
+				
+			
+			</div><!-- pa_col -->
+			
+			<div class="pa_col">
+				
+				<div class="pa_directory_box">
+				
+					<div class="pa_img">
+				
+						<img src="<?php bloginfo('template_directory');?>/images/intl_pa_img_01.jpg"/>
+				
+					</div><!-- pa_img -->
+				
+					<div class="pa_lower_content">
+					
+						<h2>Personal Injury</h2>
+					
+						<ul>
+							<li><a href="">Car Accidents</a></li>
+							<li><a href="">Truck Accidents</a></li>
+							<li><a href="">Motorcycle Accidents</a></li>
+							<li><a href="">Drunk Drivers (DUI)</a></li>
+							<li><a href="">Pedestrian</a></li>
+						</ul>
+					
+					</div><!-- pa_lower_content -->
+				
+				</div><!-- pa_directory_box -->
+			
+			</div><!-- pa_col -->
+			
+			</div><!-- pa_inner -->
 						
 		</div><!-- pa_directory -->
 		
