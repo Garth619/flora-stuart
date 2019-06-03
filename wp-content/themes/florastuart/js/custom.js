@@ -345,8 +345,18 @@ checksliderwidth();
 	nextArrow:'.ex_cr_arrow_right',
   responsive: [
     {
-      breakpoint: 1280,
-      settings: "unslick",
+      breakpoint: 1800,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      }
+     },
+     {
+      breakpoint: 1320,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
      }
 	]
  });

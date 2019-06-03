@@ -84,7 +84,7 @@ span.sidebar_description {
 	}
 	.gform_footer {
 		display: flex;
-		justify-content: flex-end;
+		justify-content: center;
 	}
 	input[type="submit"] {
 		background:$red;
@@ -154,7 +154,7 @@ span.sidebar_description {
 
 .faq_extended_slide {
 	text-align: center;
-	padding-bottom:75px;
+	padding:0 45px 75px;
 }
 
 
@@ -267,7 +267,7 @@ span.sidebar_description {
 				font-size: 18px;
 				line-height: 31px;
 				margin-top:5px;
-				display: none;
+				//display: none;
 				@include source_reg;
 			}
 		}
@@ -319,7 +319,7 @@ span.sidebar_description {
 	 }
 	.slick-list {
 	  margin: 0 -21px;
-	 }
+	}
 }
 
 
@@ -333,6 +333,7 @@ span.sidebar_description {
 	align-items: center;
 	transition: all 200ms ease-in-out;
 	cursor: pointer;
+	flex-shrink: 0;
 	&:after {
 		content:"";
 		display: block;
@@ -377,6 +378,7 @@ span.sidebar_description {
 	}
 	span.ex_cr_amount {
 		font-size: 55px;
+		line-height: 50px;
 		@include escrow_banner_bold;
 	}
 	span.ex_cr_type {
@@ -411,7 +413,7 @@ img.ex_cr_img {
 
 span.ex_cr_title {
 	font-size: 60px;
-	line-height: 65px;
+	line-height: 55px;
 	margin-top:47px;
 	margin-bottom:23px;
 	display: block;
@@ -440,8 +442,9 @@ a.get_consultation_button {
 	letter-spacing: 0.1em;
 	display: inline-block;
 	border-radius: 3px;
-	padding:20px 45px;
+	padding:29px 45px;
 	margin-top:12px;
+	line-height: 21px;
 	transition: all 200ms ease-in-out;
 	@include source_bold;
 	&:hover {
@@ -450,3 +453,130 @@ a.get_consultation_button {
 }
 
 
+@media screen and (max-width: 1320px) {
+	
+	
+	
+	.extended_cr_slider_wrapper {
+    max-width: 840px;
+  }
+	
+	
+	
+} /* Media Query */
+
+@media screen and (max-width: 1260px) {
+	
+	
+	
+	.faq_wrapper {
+		padding-left:70px;
+		padding-right:70px;
+	}
+	
+	
+	.faq_inner {
+		display: block;
+	}
+	
+	
+	.faq_quote_wrapper {
+		max-width:800px;
+		margin: 0 auto;
+	}
+	
+	
+	.faq_questions {
+		padding-left:0;
+		margin-top:95px;
+	}
+	
+	
+	.extended_content_inner {
+		column-count:1;
+	}
+	
+	.extended_content {
+		padding: 90px 70px 135px;
+	}
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1066px) {
+	
+	
+	.ex_cr_slider {
+    //width: calc(100% - 248px);
+   .slick-slide {
+       margin: 0 27px;
+     }
+     .slick-list {
+       margin: 0 -27px;
+     }
+	}
+	
+	
+	.extended_case_results_wrapper {
+		padding-left:40px;
+		padding-right:40px;
+	}
+	
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 767px) {
+	
+	
+	body.page-template-template-paextended {
+		.internal_wrapper {
+			padding-bottom:25px;
+		}
+	}
+	
+	
+	.faq_wrapper {
+		padding-left:40px;
+		padding-right:40px;
+	}
+	
+	
+	.faq_inner {
+		padding: 57px 0;
+	}
+	
+	.faq_questions {
+		margin-top: 55px;
+		span.faq_header {
+			font-size: 50px;
+		}
+	}
+	
+	.extended_content {
+		padding: 75px 40px 35px;
+	}
+	
+	
+	.extended_cr_slider_wrapper {
+		display: none;
+	}
+	
+	span.ex_cr_title {
+		margin-top: 60px;
+	}
+	
+	
+	.extended_case_results_wrapper {
+		padding-bottom:95px;
+	}
+	
+	
+	a.get_consultation_button {
+		font-size: 18px;
+		padding: 21px 18px;
+	}
+	
+	
+} /* Media Query */

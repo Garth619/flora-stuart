@@ -168,6 +168,12 @@
 					
 				</div><!-- ex_cr_slide -->
 				
+				<div class="ex_cr_slide">
+					
+					<img class="ex_cr_img" src="<?php bloginfo('template_directory');?>/images/cr_pic.jpg"/><!-- ex_cr_img -->
+					
+				</div><!-- ex_cr_slide -->
+				
 			</div><!-- ex_cr_slider -->
 			
 			<div class="ex_cr_arrow ex_cr_arrow_right"></div><!-- ex_cr_arrow -->
@@ -184,7 +190,7 @@
 		
 				<p>If you or a loved one has been injured, don’t wait. Contact an experienced trucking accident lawyer immediately. When we receive a call from a client who has been injured, we go to work immediately to protect their rights to full and fair compensation. Our law firm goes the extra mile, using our 40-plus years of experience to right the wrongs and make our clients whole again. If you’ve been injured, contact us now. Call Flora Templeton Stuart at (888) 782-9090 or contact us online today.</p>
 				
-				<a class="get_consultation_button" href="">Get Your Free Consultation</a><!-- get_consultation_button -->
+				<a class="get_consultation_button" href="#consultation">Get Your Free Consultation</a><!-- get_consultation_button -->
 			
 			</div><!-- extended_bottom_content_inner -->
 		
