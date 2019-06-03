@@ -333,6 +333,23 @@ jQuery(document).ready(function($){
     	
     
 checksliderwidth();
+
+
+ $('.ex_cr_slider').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+	arrows:true,
+	dots:false,
+	prevArrow:'.ex_cr_arrow_left',
+	nextArrow:'.ex_cr_arrow_right',
+  responsive: [
+    {
+      breakpoint: 1280,
+      settings: "unslick",
+     }
+	]
+ });
  
 
 	

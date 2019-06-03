@@ -121,6 +121,17 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/images/cr_pic.jpg": {
+		"ft": 16384,
+		"iS": 30743,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/cr_pic.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/images/footer_img_01.jpg": {
 		"ft": 16384,
 		"iS": 43874,
