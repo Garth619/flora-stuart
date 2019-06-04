@@ -2,10 +2,9 @@
 
 .testimonials_wrapper {
 	width:100%;
-	height:3000px;
 	background: $greylight;
 	margin-top: 215px;
-	padding: 1px 100px 94px;
+	padding: 1px 100px 133px;
 }
 
 
@@ -93,3 +92,150 @@
 		}
 	}
 }
+
+
+span.testi_quote {
+	font-size: 51px;
+	line-height: 59px;
+	display: block;
+	max-width:940px;
+	margin:58px auto 0;
+	@include escrow_txt_bold;
+}
+
+
+
+.top_testi_wrapper {
+	display: flex;
+	justify-content: space-between;
+	margin:135px auto 0;
+	max-width:1610px;
+}
+
+
+.single_top_testi {
+	background: #fff;
+	flex-basis:31.7%;
+	height:824px;
+	padding:60px 50px;
+	box-shadow: 0px 2px 40px 0px rgba(5, 21, 63, 0.2);
+	text-align: center;
+	span {
+		display: block;
+	}
+	span.single_top_quote {
+		font-size: 35px;
+		line-height: 40px;
+		margin:60px auto 0;
+		max-width:340px;
+		@include escrow_txt_bold;
+	}
+	span.single_top_description {
+		font-size: 22px;
+		line-height: 38px;
+		margin-top:30px;
+		max-width: 385px;
+		margin-left:auto;
+		margin-right:auto;
+		@include source_semibold;
+	}
+	span.single_top_name {
+		color:$orange;
+		font-size: 18px;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		margin-top:35px;
+		@include source_black;
+	}
+}
+
+.single_top_profile {
+	width:167px;
+	margin:0 auto;
+	img {
+		max-width: 100%;
+		height:auto;
+		margin:0 auto;
+		display: block;
+	}
+	img.testi_profile {
+		width:137px;
+		height:137px;
+		border-radius: 50%;
+		margin-top:-68px;
+	}
+	img.testi_stars {
+		margin-top:-17px;
+	}
+	
+}
+
+
+.bottom_testi_wrapper {
+	background: #fff;
+	padding: 85px 100px 133px;
+}
+
+.bottom_testi_inner {
+	max-width: 1610px;
+	margin:0 auto;
+}
+
+.bottom_test_title {
+	margin:0 auto;
+	img {
+		display: block;
+		margin:0 auto;
+	}
+	img.star {
+		margin-top:-42px;
+	}
+	span {
+		display: block;
+		text-align: center;
+		font-size:60px;
+		margin-top:30px;
+		@include escrow_banner_bold;
+	}
+}
+
+
+.bottom_test_wrapper {
+	display: flex;
+	justify-content: space-between;
+	margin:95px 0;
+	.bottom_test_col {
+		flex-basis: 32%;
+	}
+}
+
+.single_bottom_testi {
+	background: $greylight;
+	text-align: center;
+	padding:58px 40px 65px;
+	margin-bottom:40px;
+	img {
+		display: block;
+		margin:0 auto;
+	}
+	span.single_bottom_description {
+		font-size: 30px;
+		line-height: 38px;
+		border-top:2px solid $grey;
+		display: block;
+		margin-top:37px;
+		padding-top:32px;
+		@include escrow_txt_bold;
+	}
+	span.single_bottom_name {
+		color:$red;
+		text-transform: uppercase;
+		font-size: 18px;
+		letter-spacing: 0.1em;
+		margin-top:38px;
+		display: block;
+		@include source_black;
+	}
+}
+
+
