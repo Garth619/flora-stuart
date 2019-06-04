@@ -1266,6 +1266,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/images/video.jpg": {
+		"ft": 16384,
+		"iS": 55730,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/video.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/index.php": {
 		"cB": 0,
 		"ft": 8192,
