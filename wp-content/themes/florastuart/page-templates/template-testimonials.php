@@ -14,9 +14,11 @@ get_header(); ?>
 			
 			<div class="testi_vid">
 					
-				<a href="https://www.youtube.com/embed/jofuRDGkZY4?autoplay=1" data-lity>
+				<a href="https://www.youtube.com/embed/<?php the_field( 'youtube_id' ); ?>?autoplay=1" data-lity>
 					
-					<img class="video_thumb" src="<?php bloginfo('template_directory');?>/images/video.jpg"/>
+					<?php $video_thumbnail = get_field( 'video_thumbnail' ); ?>
+					
+					<img class="video_thumb" src="<?php echo $video_thumbnail['url']; ?>" alt="<?php echo $video_thumbnail['alt']; ?>" />
 					
 					<div class="testi_play_wrapper">
 			
@@ -34,71 +36,39 @@ get_header(); ?>
 				
 			</div><!-- testi_vid -->
 			
-			<span class="testi_quote">“FTS has a great reputation all over Bowling Green and she’s a good lawyer.”</span><!-- testi_quote -->
+			<span class="testi_quote"><?php the_field( 'testimonial_video_quote' ); ?></span><!-- testi_quote -->
 			
 			<div class="top_testi_wrapper">
 				
-				<div class="single_top_testi">
+				<?php if(get_field('top_testimonials')): ?>
+				 
+					<?php while(has_sub_field('top_testimonials')): ?>
+				 
+						<div class="single_top_testi">
 					
-					<div class="single_top_profile">
+							<div class="single_top_profile">
 						
-						<img class="redline" src="<?php bloginfo('template_directory');?>/images/test_image_icon_01.svg"/>
+								<img class="redline" src="<?php bloginfo('template_directory');?>/images/test_image_icon_01.svg"/>
+								
+								<?php $profile_image = get_sub_field( 'profile_image' ); ?>
+								
+								<img class="testi_profile" src="<?php echo $profile_image['url']; ?>" alt="<?php echo $profile_image['alt']; ?>" />
 						
-						<img class="testi_profile" src="<?php bloginfo('template_directory');?>/images/sec_five_3.png"/>
+								<img class="testi_stars" src="<?php bloginfo('template_directory');?>/images/stars-orange.svg"/>
 						
-						<img class="testi_stars" src="<?php bloginfo('template_directory');?>/images/stars-orange.svg"/>
-						
-					</div><!-- single_top_profile -->
+							</div><!-- single_top_profile -->
 					
-					<span class="single_top_quote">“Our son was in the accident with us.</span><!-- single_top_quote -->
+							<span class="single_top_quote"><?php the_sub_field( 'testimonials_quote' ); ?></span><!-- single_top_quote -->
 					
-					<span class="single_top_description">Flora took his case and was able to get him an annuity and to have it set up for later on to use it for college … We called several other lawyers and never got a response as fast as Flora did … They were there within an hour.”</span><!-- single_top_description -->
+							<span class="single_top_description"><?php the_sub_field( 'testimonial_description' ); ?></span><!-- single_top_description -->
 					
-					<span class="single_top_name">Josh R.</span><!-- single_top_name -->
+							<span class="single_top_name"><?php the_sub_field( 'testimonial_name' ); ?></span><!-- single_top_name -->
 					
-				</div><!-- single_top_testi -->
-				
-				<div class="single_top_testi">
-					
-					<div class="single_top_profile">
-						
-						<img class="redline" src="<?php bloginfo('template_directory');?>/images/test_image_icon_01.svg"/>
-						
-						<img class="testi_profile" src="<?php bloginfo('template_directory');?>/images/sec_five_1.png"/>
-						
-						<img class="testi_stars" src="<?php bloginfo('template_directory');?>/images/stars-orange.svg"/>
-						
-					</div><!-- single_top_profile -->
-					
-					<span class="single_top_quote">“This particular law firm has organization skills; they have good people skills.</span><!-- single_top_quote -->
-					
-					<span class="single_top_description">They were able to anticipate the next step in the process and kept me informed the whole way through. I felt like she did such a good job, and she would do a good job for everyone who is involved in a motor vehicle collision.”</span><!-- single_top_description -->
-					
-					<span class="single_top_name">Laura P.</span><!-- single_top_name -->
-
-					
-				</div><!-- single_top_testi -->
-				
-				<div class="single_top_testi">
-					
-					<div class="single_top_profile">
-						
-						<img class="redline" src="<?php bloginfo('template_directory');?>/images/test_image_icon_01.svg"/>
-						
-						<img class="testi_profile" src="<?php bloginfo('template_directory');?>/images/sec_five_2.png"/>
-						
-						<img class="testi_stars" src="<?php bloginfo('template_directory');?>/images/stars-orange.svg"/>
-						
-					</div><!-- single_top_profile -->
-					
-					<span class="single_top_quote">“I would recommend that you call Flora, because they make you feel important.</span><!-- single_top_quote -->
-					
-					<span class="single_top_description">I feel like I have made a friend with the staff members instead of just being a&nbsp;client.”</span><!-- single_top_description -->
-					
-					<span class="single_top_name">Charlene C.</span><!-- single_top_name -->
-
-					
-				</div><!-- single_top_testi -->
+					</div><!-- single_top_testi -->
+				    
+					<?php endwhile; ?>
+				 
+				<?php endif; ?>
 				
 			</div><!-- top_testi_wrapper -->
 			
@@ -124,73 +94,67 @@ get_header(); ?>
 				
 				<div class="bottom_test_col">
 					
-					<div class="single_bottom_testi">
+					<?php if(get_field('bottom_testimonials_column_one_copy')): ?>
+					 
+						<?php while(has_sub_field('bottom_testimonials_column_one_copy')): ?>
+					 
+							<div class="single_bottom_testi">
 						
-						<img src="<?php bloginfo('template_directory');?>/images/stars-orange.svg"/>
+								<img src="<?php bloginfo('template_directory');?>/images/stars-orange.svg"/>
 						
-						<span class="single_bottom_description">All of our needs were met in a very timely fashion. The entire process was explained in detail along with way. Thank you.</span><!-- single_bottom_description -->
+								<span class="single_bottom_description"><?php the_sub_field( 'testimonials_quote' ); ?></span><!-- single_bottom_description -->
 						
-						<span class="single_bottom_name">Ali T.</span><!-- single_bottom_name -->
+								<span class="single_bottom_name"><?php the_sub_field( 'testimonials_name' ); ?></span><!-- single_bottom_name -->
 						
-					</div><!-- single_bottom_testi -->
-					
-					<div class="single_bottom_testi">
-						
-						<img src="<?php bloginfo('template_directory');?>/images/stars-orange.svg"/>
-						
-						<span class="single_bottom_description">All of our needs were met in a very timely fashion. The entire process was explained in detail along with way. Thank you.</span><!-- single_bottom_description -->
-						
-						<span class="single_bottom_name">Ali T.</span><!-- single_bottom_name -->
-						
-					</div><!-- single_bottom_testi -->
+							</div><!-- single_bottom_testi -->
+					    
+						<?php endwhile; ?>
+					 
+					<?php endif; ?>
 					
 				</div><!-- bottom_test_col -->
 				
 				<div class="bottom_test_col">
 					
-					<div class="single_bottom_testi">
+					<?php if(get_field('bottom_testimonials_column_two')): ?>
+					 
+						<?php while(has_sub_field('bottom_testimonials_column_two')): ?>
+					 
+							<div class="single_bottom_testi">
 						
-						<img src="<?php bloginfo('template_directory');?>/images/stars-orange.svg"/>
+								<img src="<?php bloginfo('template_directory');?>/images/stars-orange.svg"/>
 						
-						<span class="single_bottom_description">All of our needs were met in a very timely fashion. The entire process was explained in detail along with way. Thank you.</span><!-- single_bottom_description -->
+								<span class="single_bottom_description"><?php the_sub_field( 'testimonials_quote' ); ?></span><!-- single_bottom_description -->
 						
-						<span class="single_bottom_name">Ali T.</span><!-- single_bottom_name -->
+								<span class="single_bottom_name"><?php the_sub_field( 'testimonials_name' ); ?></span><!-- single_bottom_name -->
 						
-					</div><!-- single_bottom_testi -->
-					
-					<div class="single_bottom_testi">
-						
-						<img src="<?php bloginfo('template_directory');?>/images/stars-orange.svg"/>
-						
-						<span class="single_bottom_description">All of our needs were met in a very timely fashion. The entire process was explained in detail along with way. Thank you.</span><!-- single_bottom_description -->
-						
-						<span class="single_bottom_name">Ali T.</span><!-- single_bottom_name -->
-						
-					</div><!-- single_bottom_testi -->
+							</div><!-- single_bottom_testi -->
+					    
+						<?php endwhile; ?>
+					 
+					<?php endif; ?>
 					
 				</div><!-- bottom_test_col -->
 				
 				<div class="bottom_test_col">
 					
-					<div class="single_bottom_testi">
+						<?php if(get_field('bottom_testimonials_column_three')): ?>
+					 
+						<?php while(has_sub_field('bottom_testimonials_column_three')): ?>
+					 
+							<div class="single_bottom_testi">
 						
-						<img src="<?php bloginfo('template_directory');?>/images/stars-orange.svg"/>
+								<img src="<?php bloginfo('template_directory');?>/images/stars-orange.svg"/>
 						
-						<span class="single_bottom_description">All of our needs were met in a very timely fashion. The entire process was explained in detail along with way. Thank you.</span><!-- single_bottom_description -->
+								<span class="single_bottom_description"><?php the_sub_field( 'testimonials_quote' ); ?></span><!-- single_bottom_description -->
 						
-						<span class="single_bottom_name">Ali T.</span><!-- single_bottom_name -->
+								<span class="single_bottom_name"><?php the_sub_field( 'testimonials_name' ); ?></span><!-- single_bottom_name -->
 						
-					</div><!-- single_bottom_testi -->
-					
-					<div class="single_bottom_testi">
-						
-						<img src="<?php bloginfo('template_directory');?>/images/stars-orange.svg"/>
-						
-						<span class="single_bottom_description">All of our needs were met in a very timely fashion. The entire process was explained in detail along with way. Thank you.</span><!-- single_bottom_description -->
-						
-						<span class="single_bottom_name">Ali T.</span><!-- single_bottom_name -->
-						
-					</div><!-- single_bottom_testi -->
+							</div><!-- single_bottom_testi -->
+					    
+						<?php endwhile; ?>
+					 
+					<?php endif; ?>
 					
 				</div><!-- bottom_test_col -->
 				
