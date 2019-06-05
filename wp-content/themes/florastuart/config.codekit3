@@ -548,7 +548,7 @@
 		"oAP": "/images/intl_givingback_foot_img_01.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/images/intl_givingback_foot_img_02.jpg": {
@@ -559,7 +559,7 @@
 		"oAP": "/images/intl_givingback_foot_img_02.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/images/intl_givingback_foot_img_03.jpg": {
@@ -1475,12 +1475,12 @@
 		"oAP": "/page-templates/template-about.php",
 		"oF": 0
 		},
-	"/page-templates/template-bio.php": {
+	"/page-templates/template-biobrown.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/page-templates/template-bio.php",
+		"oAP": "/page-templates/template-biobrown.php",
 		"oF": 0
 		},
 	"/page-templates/template-blog.php": {
@@ -1673,7 +1673,7 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/scss/_page-attbio.scss": {
+	"/scss/_page-attbiobrown.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1681,7 +1681,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/scss/_page-attbio.css",
+		"oAP": "/scss/_page-attbiobrown.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

@@ -138,7 +138,7 @@ get_header(); ?>
 				
 				<div class="bottom_test_col">
 					
-						<?php if(get_field('bottom_testimonials_column_three')): ?>
+					<?php if(get_field('bottom_testimonials_column_three')): ?>
 					 
 						<?php while(has_sub_field('bottom_testimonials_column_three')): ?>
 					 
