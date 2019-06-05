@@ -265,3 +265,14 @@ img.aligncenter {
 	
 	
 } /* Media Query */
+
+
+@media screen and (max-width: 390px) {
+	
+	
+	.internal_centered_header {
+		font-size: 50px;
+		line-height: 45px;
+	}
+	
+} /* Media Query */

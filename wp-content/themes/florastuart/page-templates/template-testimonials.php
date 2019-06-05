@@ -120,7 +120,7 @@ get_header(); ?>
 					
 			</div><!-- bottom_test_title -->
 			
-			<div class="bottom_test_wrapper">
+			<div class="bottom_test_grid">
 				
 				<div class="bottom_test_col">
 					
@@ -194,9 +194,11 @@ get_header(); ?>
 					
 				</div><!-- bottom_test_col -->
 				
-			</div><!-- bottom_test_wrapper -->
+			</div><!-- bottom_test_grid -->
 				
 		</div><!-- bottom_testi_inner -->
+		
+		<a class="testimonials_button">View More Testimonials</a><!-- testimonials_button -->
 				
 	</div><!-- bottom_testi_wrapper -->
 
