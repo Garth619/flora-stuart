@@ -19,8 +19,13 @@
 		max-width:100%;
 		height:auto;
 		display: block;
+		box-shadow: 0px 2px 40px 0px rgba(5, 21, 63, 0.2);
 	}
 }
+
+
+
+
 
 .att_bio_content {
 	flex-grow:1;
@@ -111,7 +116,7 @@ body.page-template-template-biobrown {
 }
 
 .att_bio_slide {
-	height:580px;
+	//height:580px;
 	img {
 		width:100%;
 		height:auto;
@@ -143,6 +148,9 @@ span.comm_title {
 	font-size: 60px;
 	margin-top:60px;
 	@include escrow_banner_bold;
+	br {
+		display: none;
+	}
 }
 
 
@@ -176,14 +184,65 @@ span.comm_title {
 @media screen and (max-width: 1310px) {
 	
 	
+	body.page-template-template-biobrown {
+		.internal_wrapper {
+			padding-top: 68px;
+		}
+	}
+	
+	.att_bio_wrapper {
+		//margin-top:100px;
+	}
+	
 	.att_bio_inner {
 		display: block;
+		margin-top:0;
 	}
 	
 	
 	.att_bio_content {
 		padding-left:0;
 	}
+	
+	
+	.att_bio_sidebar {
+		margin-bottom:65px;
+		img {
+			margin:0 auto;
+			width:100%;
+			max-width:475px;
+		}
+	}
+	
+	h1.att_header {
+		font-size: 60px;
+		line-height: 55px;
+	}
+	
+	
+	span.att_postion {
+		font-size: 25px;
+		margin-top: 23px;
+		padding-bottom: 31px;
+		margin-bottom: 30px;
+	}
+	
+	
+	.att_bio_community_inner {
+    max-width: 900px;
+    margin: -156px auto 0;
+   }
+   	
+	
+	.att_bio_community {
+		margin-top: 85px;
+	}
+	
+	span.comm_title {
+		margin-top: 28px;
+	}
+	
+	
 	
 } /* Media Query */
 
@@ -195,6 +254,50 @@ span.comm_title {
 		margin: 0px auto 0;
 		
 	}
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1066px) {
+	
+	
+	.att_bio_community {
+		padding: 1px 70px 123px;
+	}
+	
+	.att_bio_slider {
+    padding: 0 50px;
+	}
+	
+span.comm_title {
+	
+	br {
+		display: inline-block;
+	}
+}
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 767px) {
+	
+	
+	body.page-template-template-biobrown .internal_wrapper {
+    padding-top: 43px;
+	}
+	
+	
+	.att_bio_sidebar {
+    margin-bottom: 44px;
+	}
+	
+	
+	
+	.att_bio_community {
+		display: none;
+	}
+	
 	
 	
 } /* Media Query */

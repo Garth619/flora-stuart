@@ -373,6 +373,7 @@ checksliderwidth();
 	prevArrow:'.att_bio_arrow_left',
 	nextArrow:'.att_bio_arrow_right',
   responsive: [
+/*
     {
       breakpoint: 1800,
       settings: {
@@ -380,8 +381,9 @@ checksliderwidth();
         slidesToScroll: 2,
       }
      },
+*/
      {
-      breakpoint: 1320,
+      breakpoint: 1310,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,

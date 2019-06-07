@@ -83,7 +83,7 @@ get_header(); ?>
 				
 			</div><!-- att_bio_community_inner -->
 			
-			<span class="comm_title">We Serve Our Community</span><!-- comm_title -->
+			<span class="comm_title">We Serve<br class="tablet"/> Our Community</span><!-- comm_title -->
 			
 		</div><!-- att_bio_community -->
 	
