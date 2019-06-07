@@ -515,7 +515,7 @@
 		"oAP": "/images/intl_flora_img_01.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/images/intl_flora_img_02.jpg": {
@@ -526,7 +526,7 @@
 		"oAP": "/images/intl_flora_img_02.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/images/intl_flora_img_03.jpg": {
@@ -537,7 +537,7 @@
 		"oAP": "/images/intl_flora_img_03.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/images/intl_givingback_foot_img_01.jpg": {
@@ -1483,6 +1483,14 @@
 		"oAP": "/page-templates/template-biobrown.php",
 		"oF": 0
 		},
+	"/page-templates/template-biostuart.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-templates/template-biostuart.php",
+		"oF": 0
+		},
 	"/page-templates/template-blog.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1682,6 +1690,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/scss/_page-attbiobrown.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/scss/_page-attbiostuart.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/scss/_page-attbiostuart.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

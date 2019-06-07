@@ -8,7 +8,8 @@
 .att_bio_inner {
 	display: flex;
 	max-width:1530px;
-	margin:145px auto 0;
+	margin:0px auto 0;
+	padding-top:145px;
 }
 
 
@@ -98,7 +99,7 @@ body.page-template-template-biobrown {
 		border-bottom: 15px solid transparent; 
 	}
 	&:hover {
-		background: $yellow;
+		background: $orange;
 	}
 }
 
@@ -106,6 +107,8 @@ body.page-template-template-biobrown {
 .att_bio_slider {
 	width:calc(100% - 148px);
 	padding:0 60px;
+	margin-left:auto;
+  margin-right:auto;
 	.slick-slide {
 	   margin: 0 19px;
 	   padding:20px 0;
@@ -196,7 +199,7 @@ span.comm_title {
 	
 	.att_bio_inner {
 		display: block;
-		margin-top:0;
+		padding-top:0;
 	}
 	
 	
@@ -283,8 +286,10 @@ span.comm_title {
 @media screen and (max-width: 767px) {
 	
 	
-	body.page-template-template-biobrown .internal_wrapper {
-    padding-top: 43px;
+	body.page-template-template-biobrown {
+		.internal_wrapper {
+    	padding-top: 43px;
+		}
 	}
 	
 	

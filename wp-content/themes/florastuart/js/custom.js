@@ -392,6 +392,64 @@ checksliderwidth();
 	]
  });
  
+ 
+ 
+ 
+ $('.att_bio_awards_slider').slick({
+  infinite: true,
+  slidesToShow: 5,
+  slidesToScroll: 5,
+	arrows:false,
+	dots:true,
+  responsive: [
+    {
+      breakpoint: 1300,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      }
+     },
+     {
+      breakpoint: 1310,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+     }
+	]
+ });
+ 
+ 
+ 
+ $('.att_history_slider').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+	arrows:true,
+	dots:false,
+	prevArrow:'.att_history_button_left',
+	nextArrow:'.att_history_button_right',
+  responsive: [
+/*
+    {
+      breakpoint: 1800,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      }
+     },
+*/
+     {
+      breakpoint: 1310,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+     }
+	]
+ });
+
+ 
 
 	
 
