@@ -28,7 +28,7 @@ get_header(); ?>
 				
 						</div><!-- play_outer -->
 			
-					</div><!-- play_wrapper -->
+					</div><!-- testi_play_wrapper -->
 					
 					<div class="test_vid_overlay"></div><!-- test_vid_overlay -->
 					
