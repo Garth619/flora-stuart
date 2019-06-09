@@ -165,11 +165,249 @@ get_header(); ?>
 				
 				<div class="history_wrapper">
 					
-					<div class="history_col"></div><!-- history_col -->
+					<div class="history_col first">
+						
+						<div class="single_event">
+							
+							<div class="single_event_inner">
+							
+								<div class="single_event_overlay">
+								
+									<img src="<?php bloginfo('template_directory');?>/images/single-event.jpg"/>
+								
+								</div><!-- single_event_overlay -->
+								
+								<span class="single_event_year">1929</span><!-- single_event_year -->
+								
+								<span class="single_event_description">My Great Grandparents, Judge Clay Elliot with Flora Elliot</span><!-- single_event_description -->
+							
+							</div><!-- single_event_inner -->
+							
+						</div><!-- single_event -->
+						
+						<div class="single_event">
+							
+							<div class="single_event_inner">
+							
+								<div class="single_event_overlay">
+								
+									<img src="<?php bloginfo('template_directory');?>/images/single-event.jpg"/>
+								
+								</div><!-- single_event_overlay -->
+								
+								<span class="single_event_year">1952</span><!-- single_event_year -->
+								
+								<span class="single_event_description">My Mother, Elise Talmage Lieb with me</span><!-- single_event_description -->
+							
+							</div><!-- single_event_inner -->
+							
+						</div><!-- single_event -->
+						
+						<div class="single_event">
+							
+							<div class="single_event_inner">
+							
+								<div class="single_event_overlay">
+								
+									<img src="<?php bloginfo('template_directory');?>/images/single-event.jpg"/>
+								
+								</div><!-- single_event_overlay -->
+								
+								<span class="single_event_year">1969</span><!-- single_event_year -->
+								
+								<span class="single_event_description">As a single mom, I worked my way through college and law school</span><!-- single_event_description -->
+							
+							</div><!-- single_event_inner -->
+							
+						</div><!-- single_event -->
+						
+						<div class="single_event">
+							
+							<div class="single_event_inner">
+							
+								<div class="single_event_overlay">
+								
+									<img src="<?php bloginfo('template_directory');?>/images/single-event.jpg"/>
+								
+								</div><!-- single_event_overlay -->
+								
+								<span class="single_event_year">1976</span><!-- single_event_year -->
+								
+								<span class="single_event_description">Blazing the trail for women, I received my law degree</span><!-- single_event_description -->
+							
+							</div><!-- single_event_inner -->
+							
+						</div><!-- single_event -->
+						
+							<div class="single_event">
+							
+							<div class="single_event_inner">
+							
+								<div class="single_event_overlay">
+								
+									<img src="<?php bloginfo('template_directory');?>/images/single-event.jpg"/>
+								
+								</div><!-- single_event_overlay -->
+								
+								<span class="single_event_year">1978</span><!-- single_event_year -->
+								
+								<span class="single_event_description">Appearances on Phil Donahue and Good Morning America</span><!-- single_event_description -->
+							
+							</div><!-- single_event_inner -->
+							
+						</div><!-- single_event -->
+						
+							<div class="single_event">
+							
+							<div class="single_event_inner">
+							
+								<div class="single_event_overlay">
+								
+									<img src="<?php bloginfo('template_directory');?>/images/single-event.jpg"/>
+								
+								</div><!-- single_event_overlay -->
+								
+								<span class="single_event_year">1984</span><!-- single_event_year -->
+								
+								<span class="single_event_description">Getting Married</span><!-- single_event_description -->
+							
+							</div><!-- single_event_inner -->
+							
+						</div><!-- single_event -->
+						
+						<div class="single_event">
+							
+							<div class="single_event_inner">
+							
+								<div class="single_event_overlay">
+								
+									<img src="<?php bloginfo('template_directory');?>/images/single-event.jpg"/>
+								
+								</div><!-- single_event_overlay -->
+								
+								<span class="single_event_year">1984</span><!-- single_event_year -->
+								
+								<span class="single_event_description">Getting Married</span><!-- single_event_description -->
+							
+							</div><!-- single_event_inner -->
+							
+						</div><!-- single_event -->
+						
+					</div><!-- history_col -->
 					
 					<div class="line_col"></div><!-- line_col -->
 					
-					<div class="history_col"></div><!-- history_col -->
+					<div class="history_col second">
+						
+						<div class="single_event">
+							
+							<div class="single_event_inner">
+							
+								<div class="single_event_overlay">
+								
+									<img src="<?php bloginfo('template_directory');?>/images/single-event.jpg"/>
+								
+								</div><!-- single_event_overlay -->
+								
+								<span class="single_event_year">1929</span><!-- single_event_year -->
+								
+								<span class="single_event_description">My Great Grandparents, Judge Clay Elliot with Flora Elliot</span><!-- single_event_description -->
+							
+							</div><!-- single_event_inner -->
+							
+						</div><!-- single_event -->
+						
+						<div class="single_event">
+							
+							<div class="single_event_inner">
+							
+								<div class="single_event_overlay">
+								
+									<img src="<?php bloginfo('template_directory');?>/images/single-event.jpg"/>
+								
+								</div><!-- single_event_overlay -->
+								
+								<span class="single_event_year">1929</span><!-- single_event_year -->
+								
+								<span class="single_event_description">My Great Grandparents, Judge Clay Elliot with Flora Elliot</span><!-- single_event_description -->
+							
+							</div><!-- single_event_inner -->
+							
+						</div><!-- single_event -->
+						
+						<div class="single_event">
+							
+							<div class="single_event_inner">
+							
+								<div class="single_event_overlay">
+								
+									<img src="<?php bloginfo('template_directory');?>/images/single-event.jpg"/>
+								
+								</div><!-- single_event_overlay -->
+								
+								<span class="single_event_year">1929</span><!-- single_event_year -->
+								
+								<span class="single_event_description">My Great Grandparents, Judge Clay Elliot with Flora Elliot</span><!-- single_event_description -->
+							
+							</div><!-- single_event_inner -->
+							
+						</div><!-- single_event -->
+						
+						<div class="single_event">
+							
+							<div class="single_event_inner">
+							
+								<div class="single_event_overlay">
+								
+									<img src="<?php bloginfo('template_directory');?>/images/single-event.jpg"/>
+								
+								</div><!-- single_event_overlay -->
+								
+								<span class="single_event_year">1929</span><!-- single_event_year -->
+								
+								<span class="single_event_description">My Great Grandparents, Judge Clay Elliot with Flora Elliot</span><!-- single_event_description -->
+							
+							</div><!-- single_event_inner -->
+							
+						</div><!-- single_event -->
+						
+						<div class="single_event">
+							
+							<div class="single_event_inner">
+							
+								<div class="single_event_overlay">
+								
+									<img src="<?php bloginfo('template_directory');?>/images/single-event.jpg"/>
+								
+								</div><!-- single_event_overlay -->
+								
+								<span class="single_event_year">1929</span><!-- single_event_year -->
+								
+								<span class="single_event_description">My Great Grandparents, Judge Clay Elliot with Flora Elliot</span><!-- single_event_description -->
+							
+							</div><!-- single_event_inner -->
+							
+						</div><!-- single_event -->
+						
+						<div class="single_event">
+							
+							<div class="single_event_inner">
+							
+								<div class="single_event_overlay">
+								
+									<img src="<?php bloginfo('template_directory');?>/images/single-event.jpg"/>
+								
+								</div><!-- single_event_overlay -->
+								
+								<span class="single_event_year">1929</span><!-- single_event_year -->
+								
+								<span class="single_event_description">My Great Grandparents, Judge Clay Elliot with Flora Elliot</span><!-- single_event_description -->
+							
+							</div><!-- single_event_inner -->
+							
+						</div><!-- single_event -->
+						
+					</div><!-- history_col -->
 					
 				</div><!-- history_wrapper -->
 			

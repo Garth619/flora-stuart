@@ -402,15 +402,15 @@ checksliderwidth();
 	arrows:false,
 	dots:true,
   responsive: [
-    {
-      breakpoint: 1300,
+     {
+      breakpoint: 1310,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2,
       }
      },
      {
-      breakpoint: 1310,
+      breakpoint: 767,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,

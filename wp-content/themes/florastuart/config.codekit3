@@ -132,6 +132,16 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/images/dash.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/dash.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/images/footer_img_01.jpg": {
 		"ft": 16384,
 		"iS": 43874,
@@ -1193,6 +1203,17 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
+		"q": 100
+		},
+	"/images/single-event.jpg": {
+		"ft": 16384,
+		"iS": 62300,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/single-event.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"/images/sp_icon-01.svg": {

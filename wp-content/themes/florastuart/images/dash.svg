@@ -1,0 +1,12 @@
+<svg id="dash" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2.8 23.99">
+  <defs>
+    <style>
+      .dash-cls-1 {
+        fill: #05153f;
+      }
+    </style>
+  </defs>
+  <title>dash</title>
+  <rect class="dash-cls-1" x="0.01" width="2.81" height="6.01"/>
+  <rect class="dash-cls-1" x="0.01" y="12.03" width="2.81" height="6.01"/>
+</svg>

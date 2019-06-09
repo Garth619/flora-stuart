@@ -233,7 +233,7 @@ span.comm_title {
 	
 	.att_bio_community_inner {
     max-width: 900px;
-    margin: -156px auto 0;
+    margin: -246px auto 0;
    }
    	
 	
@@ -245,7 +245,9 @@ span.comm_title {
 		margin-top: 28px;
 	}
 	
-	
+	.att_bio_arrow {
+		margin-top:-85px;
+	}
 	
 } /* Media Query */
 
@@ -266,7 +268,7 @@ span.comm_title {
 	
 	
 	.att_bio_community {
-		padding: 1px 70px 123px;
+		padding: 1px 35px 123px;
 	}
 	
 	.att_bio_slider {
