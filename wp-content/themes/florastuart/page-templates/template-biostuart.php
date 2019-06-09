@@ -15,11 +15,11 @@ get_header(); ?>
 				
 				<div class="att_bio_sidebar">
 					
-					<?php $att_bio_image = get_field( 'att_bio_image' ); ?>
+					<?php $att_bio_image_stuart = get_field( 'att_bio_image_stuart' ); ?>
+
+					<?php if ( $att_bio_image_stuart ) { ?>
 					
-					<?php if ( $att_bio_image ) { ?>
-					
-					<img src="<?php echo $att_bio_image['url']; ?>" alt="<?php echo $att_bio_image['alt']; ?>" />
+						<img src="<?php echo $att_bio_image_stuart['url']; ?>" alt="<?php echo $att_bio_image_stuart['alt']; ?>" />
 					
 					<?php } ?>
 					
@@ -29,9 +29,9 @@ get_header(); ?>
 					
 					<h1 class="att_header"><?php the_title();?></h1><!-- att_header -->
 					
-					<span class="att_postion"><?php the_field( 'att_position' ); ?></span><!-- att_postion -->
+					<span class="att_postion"><?php the_field( 'att_position_stuart' ); ?></span><!-- att_postion -->
 					
-					<?php the_field( 'att_bi_content' ); ?>
+					<?php the_field( 'att_bi_content_stuart' ); ?>
 					
 				</div><!-- att_bio_content -->
 				
@@ -43,55 +43,25 @@ get_header(); ?>
 					
 					<div class="att_bio_awards_slider">
 						
-						<div class="att_bio_awards_slide">
+						<?php if(get_field('att_awards_slider')): ?>
+						 
+							<?php while(has_sub_field('att_awards_slider')): ?>
+						 
+								<div class="att_bio_awards_slide">
 							
-							<div class="att_bio_awards_slide_inner">
+									<div class="att_bio_awards_slide_inner">
 							
-								<img src="<?php bloginfo('template_directory');?>/images/intl_flora_award_01.png"/>
+										<?php $awards_image = get_sub_field( 'awards_image' ); ?>
+	
+										<img src="<?php echo $awards_image['url']; ?>" alt="<?php echo $awards_image['alt']; ?>" />
+		
+										</div><!-- att_bio_awards_slide_inner -->
 							
-							</div><!-- att_bio_awards_slide_inner -->
-							
-						</div><!-- att_bio_awards_slide -->
-						
-						<div class="att_bio_awards_slide">
-							
-							<div class="att_bio_awards_slide_inner">
-							
-								<img src="<?php bloginfo('template_directory');?>/images/intl_flora_award_02.png"/>
-							
-							</div><!-- att_bio_awards_slide_inner -->
-							
-						</div><!-- att_bio_awards_slide -->
-						
-						<div class="att_bio_awards_slide">
-							
-							<div class="att_bio_awards_slide_inner">
-							
-								<img src="<?php bloginfo('template_directory');?>/images/intl_flora_award_03.png"/>
-							
-							</div><!-- att_bio_awards_slide_inner -->
-							
-						</div><!-- att_bio_awards_slide -->
-						
-						<div class="att_bio_awards_slide">
-							
-							<div class="att_bio_awards_slide_inner">
-							
-								<img src="<?php bloginfo('template_directory');?>/images/intl_flora_award_04.png"/>
-							
-							</div><!-- att_bio_awards_slide_inner -->
-							
-						</div><!-- att_bio_awards_slide -->
-						
-						<div class="att_bio_awards_slide">
-							
-							<div class="att_bio_awards_slide_inner">
-							
-								<img src="<?php bloginfo('template_directory');?>/images/intl_flora_award_05.png"/>
-							
-							</div><!-- att_bio_awards_slide_inner -->
-							
-						</div><!-- att_bio_awards_slide -->
+								</div><!-- att_bio_awards_slide -->
+						    
+							<?php endwhile; ?>
+						 
+						<?php endif; ?>
 						
 					</div><!-- att_bio_slider -->
 					
@@ -107,35 +77,21 @@ get_header(); ?>
 					
 					<div class="att_history_slider">
 						
-						<div class="att_history_slide">
+						<?php if(get_field('att_bio_history_slider')): ?>
+						 
+							<?php while(has_sub_field('att_bio_history_slider')): ?>
+						 
+								<div class="att_history_slide">
 							
-							<img src="<?php bloginfo('template_directory');?>/images/intl_flora_img_01.jpg"/>
-							
-						</div><!-- att_history_slide -->
-						
-						<div class="att_history_slide">
-							
-							<img src="<?php bloginfo('template_directory');?>/images/intl_flora_img_02.jpg"/>
-							
-						</div><!-- att_history_slide -->
-						
-						<div class="att_history_slide">
-							
-							<img src="<?php bloginfo('template_directory');?>/images/intl_flora_img_03.jpg"/>
-							
-						</div><!-- att_history_slide -->
-						
-						<div class="att_history_slide">
-							
-							<img src="<?php bloginfo('template_directory');?>/images/intl_flora_img_03.jpg"/>
-							
-						</div><!-- att_history_slide -->
-						
-						<div class="att_history_slide">
-							
-							<img src="<?php bloginfo('template_directory');?>/images/intl_flora_img_03.jpg"/>
-							
-						</div><!-- att_history_slide -->
+									<?php $image = get_sub_field( 'image' ); ?>
+		
+									<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+	
+								</div><!-- att_history_slide -->
+						    
+							<?php endwhile; ?>
+						 
+						<?php endif; ?>
 						
 					</div><!-- att_history_slider -->
 					
@@ -159,7 +115,7 @@ get_header(); ?>
 				
 					<img class="tree" src="<?php bloginfo('template_directory');?>/images/intl_flora_icon-01.svg"/>
 				
-					<span class="my_heritage_title">My Heritage</span><!-- my_heritage_title -->
+					<span class="my_heritage_title"><?php the_field( 'my_heritage_title' ); ?></span><!-- my_heritage_title -->
 				
 				</div><!-- my_heritage_wrapper -->
 				
@@ -167,131 +123,39 @@ get_header(); ?>
 					
 					<div class="history_col first">
 						
-						<div class="single_event">
+						<?php if(get_field('att_timeline')): 
+						 
+									while(has_sub_field('att_timeline')):
 							
-							<div class="single_event_inner">
+										if( get_row_index() % 2 == 0 ) :
+						 
+										else:?>
+								
+								<div class="single_event">
 							
-								<div class="single_event_overlay">
-								
-									<img src="<?php bloginfo('template_directory');?>/images/single-event.jpg"/>
-								
-								</div><!-- single_event_overlay -->
-								
-								<span class="single_event_year">1929</span><!-- single_event_year -->
-								
-								<span class="single_event_description">My Great Grandparents, Judge Clay Elliot with Flora Elliot</span><!-- single_event_description -->
+									<div class="single_event_inner">
 							
-							</div><!-- single_event_inner -->
-							
-						</div><!-- single_event -->
-						
-						<div class="single_event">
-							
-							<div class="single_event_inner">
-							
-								<div class="single_event_overlay">
+										<div class="single_event_overlay">
 								
-									<img src="<?php bloginfo('template_directory');?>/images/single-event.jpg"/>
+											<?php $single_event_image = get_sub_field( 'single_event_image' ); ?>
+		
+											<img src="<?php echo $single_event_image['url']; ?>" alt="<?php echo $single_event_image['alt']; ?>" />
+		
+										</div><!-- single_event_overlay -->
 								
-								</div><!-- single_event_overlay -->
+										<span class="single_event_year"><?php the_sub_field( 'year' ); ?></span><!-- single_event_year -->
 								
-								<span class="single_event_year">1952</span><!-- single_event_year -->
-								
-								<span class="single_event_description">My Mother, Elise Talmage Lieb with me</span><!-- single_event_description -->
+										<span class="single_event_description"><?php the_sub_field( 'description' ); ?></span><!-- single_event_description -->
 							
-							</div><!-- single_event_inner -->
+									</div><!-- single_event_inner -->
 							
-						</div><!-- single_event -->
-						
-						<div class="single_event">
-							
-							<div class="single_event_inner">
-							
-								<div class="single_event_overlay">
+								</div><!-- single_event -->
 								
-									<img src="<?php bloginfo('template_directory');?>/images/single-event.jpg"/>
-								
-								</div><!-- single_event_overlay -->
-								
-								<span class="single_event_year">1969</span><!-- single_event_year -->
-								
-								<span class="single_event_description">As a single mom, I worked my way through college and law school</span><!-- single_event_description -->
-							
-							</div><!-- single_event_inner -->
-							
-						</div><!-- single_event -->
-						
-						<div class="single_event">
-							
-							<div class="single_event_inner">
-							
-								<div class="single_event_overlay">
-								
-									<img src="<?php bloginfo('template_directory');?>/images/single-event.jpg"/>
-								
-								</div><!-- single_event_overlay -->
-								
-								<span class="single_event_year">1976</span><!-- single_event_year -->
-								
-								<span class="single_event_description">Blazing the trail for women, I received my law degree</span><!-- single_event_description -->
-							
-							</div><!-- single_event_inner -->
-							
-						</div><!-- single_event -->
-						
-							<div class="single_event">
-							
-							<div class="single_event_inner">
-							
-								<div class="single_event_overlay">
-								
-									<img src="<?php bloginfo('template_directory');?>/images/single-event.jpg"/>
-								
-								</div><!-- single_event_overlay -->
-								
-								<span class="single_event_year">1978</span><!-- single_event_year -->
-								
-								<span class="single_event_description">Appearances on Phil Donahue and Good Morning America</span><!-- single_event_description -->
-							
-							</div><!-- single_event_inner -->
-							
-						</div><!-- single_event -->
-						
-							<div class="single_event">
-							
-							<div class="single_event_inner">
-							
-								<div class="single_event_overlay">
-								
-									<img src="<?php bloginfo('template_directory');?>/images/single-event.jpg"/>
-								
-								</div><!-- single_event_overlay -->
-								
-								<span class="single_event_year">1984</span><!-- single_event_year -->
-								
-								<span class="single_event_description">Getting Married</span><!-- single_event_description -->
-							
-							</div><!-- single_event_inner -->
-							
-						</div><!-- single_event -->
-						
-						<div class="single_event">
-							
-							<div class="single_event_inner">
-							
-								<div class="single_event_overlay">
-								
-									<img src="<?php bloginfo('template_directory');?>/images/single-event.jpg"/>
-								
-								</div><!-- single_event_overlay -->
-								
-								<span class="single_event_year">1984</span><!-- single_event_year -->
-								
-								<span class="single_event_description">Getting Married</span><!-- single_event_description -->
-							
-							</div><!-- single_event_inner -->
-							
-						</div><!-- single_event -->
+								<?php endif;
+						    
+										endwhile;
+						 
+										endif; ?>
 						
 					</div><!-- history_col -->
 					
@@ -299,113 +163,37 @@ get_header(); ?>
 					
 					<div class="history_col second">
 						
-						<div class="single_event">
+						<?php if(get_field('att_timeline')): 
+						 
+									while(has_sub_field('att_timeline')):
 							
-							<div class="single_event_inner">
+										if( get_row_index() % 2 == 0 ) :?>
+								
+								<div class="single_event">
 							
-								<div class="single_event_overlay">
-								
-									<img src="<?php bloginfo('template_directory');?>/images/single-event.jpg"/>
-								
-								</div><!-- single_event_overlay -->
-								
-								<span class="single_event_year">1929</span><!-- single_event_year -->
-								
-								<span class="single_event_description">My Great Grandparents, Judge Clay Elliot with Flora Elliot</span><!-- single_event_description -->
+									<div class="single_event_inner">
 							
-							</div><!-- single_event_inner -->
-							
-						</div><!-- single_event -->
-						
-						<div class="single_event">
-							
-							<div class="single_event_inner">
-							
-								<div class="single_event_overlay">
+										<div class="single_event_overlay">
 								
-									<img src="<?php bloginfo('template_directory');?>/images/single-event.jpg"/>
+											<?php $single_event_image = get_sub_field( 'single_event_image' ); ?>
+		
+											<img src="<?php echo $single_event_image['url']; ?>" alt="<?php echo $single_event_image['alt']; ?>" />
+		
+										</div><!-- single_event_overlay -->
 								
-								</div><!-- single_event_overlay -->
+										<span class="single_event_year"><?php the_sub_field( 'year' ); ?></span><!-- single_event_year -->
 								
-								<span class="single_event_year">1929</span><!-- single_event_year -->
-								
-								<span class="single_event_description">My Great Grandparents, Judge Clay Elliot with Flora Elliot</span><!-- single_event_description -->
+										<span class="single_event_description"><?php the_sub_field( 'description' ); ?></span><!-- single_event_description -->
 							
-							</div><!-- single_event_inner -->
+									</div><!-- single_event_inner -->
 							
-						</div><!-- single_event -->
-						
-						<div class="single_event">
-							
-							<div class="single_event_inner">
-							
-								<div class="single_event_overlay">
+								</div><!-- single_event -->
 								
-									<img src="<?php bloginfo('template_directory');?>/images/single-event.jpg"/>
-								
-								</div><!-- single_event_overlay -->
-								
-								<span class="single_event_year">1929</span><!-- single_event_year -->
-								
-								<span class="single_event_description">My Great Grandparents, Judge Clay Elliot with Flora Elliot</span><!-- single_event_description -->
-							
-							</div><!-- single_event_inner -->
-							
-						</div><!-- single_event -->
-						
-						<div class="single_event">
-							
-							<div class="single_event_inner">
-							
-								<div class="single_event_overlay">
-								
-									<img src="<?php bloginfo('template_directory');?>/images/single-event.jpg"/>
-								
-								</div><!-- single_event_overlay -->
-								
-								<span class="single_event_year">1929</span><!-- single_event_year -->
-								
-								<span class="single_event_description">My Great Grandparents, Judge Clay Elliot with Flora Elliot</span><!-- single_event_description -->
-							
-							</div><!-- single_event_inner -->
-							
-						</div><!-- single_event -->
-						
-						<div class="single_event">
-							
-							<div class="single_event_inner">
-							
-								<div class="single_event_overlay">
-								
-									<img src="<?php bloginfo('template_directory');?>/images/single-event.jpg"/>
-								
-								</div><!-- single_event_overlay -->
-								
-								<span class="single_event_year">1929</span><!-- single_event_year -->
-								
-								<span class="single_event_description">My Great Grandparents, Judge Clay Elliot with Flora Elliot</span><!-- single_event_description -->
-							
-							</div><!-- single_event_inner -->
-							
-						</div><!-- single_event -->
-						
-						<div class="single_event">
-							
-							<div class="single_event_inner">
-							
-								<div class="single_event_overlay">
-								
-									<img src="<?php bloginfo('template_directory');?>/images/single-event.jpg"/>
-								
-								</div><!-- single_event_overlay -->
-								
-								<span class="single_event_year">1929</span><!-- single_event_year -->
-								
-								<span class="single_event_description">My Great Grandparents, Judge Clay Elliot with Flora Elliot</span><!-- single_event_description -->
-							
-							</div><!-- single_event_inner -->
-							
-						</div><!-- single_event -->
+								<?php endif;
+						    
+										endwhile;
+						 
+										endif; ?>
 						
 					</div><!-- history_col -->
 					
@@ -426,106 +214,45 @@ get_header(); ?>
 				
 					<img class="tree" src="<?php bloginfo('template_directory');?>/images/intl_flora_icon-01.svg"/>
 				
-					<span class="my_heritage_title">My Heritage</span><!-- my_heritage_title -->
+					<span class="my_heritage_title"><?php the_field( 'my_heritage_title' ); ?></span><!-- my_heritage_title -->
 				
 				</div><!-- my_heritage_wrapper -->
-					
-					<div class="single_event">
+				
+				
+					<?php if(get_field('att_timeline')): ?>
+					 
+						<?php while(has_sub_field('att_timeline')): ?>
+					 
+							<div class="single_event">
 							
-							<div class="single_event_inner">
+									<div class="single_event_inner">
 							
-								<div class="single_event_overlay">
+										<div class="single_event_overlay">
 								
-									<img src="<?php bloginfo('template_directory');?>/images/single-event.jpg"/>
+											<?php $single_event_image = get_sub_field( 'single_event_image' ); ?>
+		
+											<img src="<?php echo $single_event_image['url']; ?>" alt="<?php echo $single_event_image['alt']; ?>" />
+		
+										</div><!-- single_event_overlay -->
 								
-								</div><!-- single_event_overlay -->
+										<span class="single_event_year"><?php the_sub_field( 'year' ); ?></span><!-- single_event_year -->
 								
-								<span class="single_event_year">1929</span><!-- single_event_year -->
-								
-								<span class="single_event_description">My Great Grandparents, Judge Clay Elliot with Flora Elliot</span><!-- single_event_description -->
+										<span class="single_event_description"><?php the_sub_field( 'description' ); ?></span><!-- single_event_description -->
 							
-							</div><!-- single_event_inner -->
+									</div><!-- single_event_inner -->
 							
-						</div><!-- single_event -->
-						
-						<div class="single_event">
-							
-							<div class="single_event_inner">
-							
-								<div class="single_event_overlay">
-								
-									<img src="<?php bloginfo('template_directory');?>/images/single-event.jpg"/>
-								
-								</div><!-- single_event_overlay -->
-								
-								<span class="single_event_year">1929</span><!-- single_event_year -->
-								
-								<span class="single_event_description">My Great Grandparents, Judge Clay Elliot with Flora Elliot</span><!-- single_event_description -->
-							
-							</div><!-- single_event_inner -->
-							
-						</div><!-- single_event -->
-						
-						<div class="single_event">
-							
-							<div class="single_event_inner">
-							
-								<div class="single_event_overlay">
-								
-									<img src="<?php bloginfo('template_directory');?>/images/single-event.jpg"/>
-								
-								</div><!-- single_event_overlay -->
-								
-								<span class="single_event_year">1929</span><!-- single_event_year -->
-								
-								<span class="single_event_description">My Great Grandparents, Judge Clay Elliot with Flora Elliot</span><!-- single_event_description -->
-							
-							</div><!-- single_event_inner -->
-							
-						</div><!-- single_event -->
-						
-						<div class="single_event">
-							
-							<div class="single_event_inner">
-							
-								<div class="single_event_overlay">
-								
-									<img src="<?php bloginfo('template_directory');?>/images/single-event.jpg"/>
-								
-								</div><!-- single_event_overlay -->
-								
-								<span class="single_event_year">1929</span><!-- single_event_year -->
-								
-								<span class="single_event_description">My Great Grandparents, Judge Clay Elliot with Flora Elliot</span><!-- single_event_description -->
-							
-							</div><!-- single_event_inner -->
-							
-						</div><!-- single_event -->
-						
-						<div class="single_event">
-							
-							<div class="single_event_inner">
-							
-								<div class="single_event_overlay">
-								
-									<img src="<?php bloginfo('template_directory');?>/images/single-event.jpg"/>
-								
-								</div><!-- single_event_overlay -->
-								
-								<span class="single_event_year">1929</span><!-- single_event_year -->
-								
-								<span class="single_event_description">My Great Grandparents, Judge Clay Elliot with Flora Elliot</span><!-- single_event_description -->
-							
-							</div><!-- single_event_inner -->
-							
-						</div><!-- single_event -->
-					
+								</div><!-- single_event -->
+					    
+						<?php endwhile; ?>
+					 
+					<?php endif; ?>
+										
 					</div><!-- timeline_inner -->
 				
 			</div><!-- timeline_wrapper -->
 
 		
-		<?php if(get_field('att_bio_community_slider')): ?>
+		<?php if(get_field('att_bio_community_slider_stuart')): ?>
 	
 		<div class="att_bio_community">
 			
@@ -535,7 +262,7 @@ get_header(); ?>
 				
 				<div class="att_bio_slider">
 					
-					<?php while(has_sub_field('att_bio_community_slider')): ?>
+					<?php while(has_sub_field('att_bio_community_slider_stuart')): ?>
 					 
 							<div class="att_bio_slide">
 								
@@ -553,7 +280,7 @@ get_header(); ?>
 				
 			</div><!-- att_bio_community_inner -->
 			
-			<span class="comm_title">We Serve<br class="tablet"/> Our Community</span><!-- comm_title -->
+			<span class="comm_title"><?php the_field( 'att_community_title_stuart' ); ?></span><!-- comm_title -->
 			
 		</div><!-- att_bio_community -->
 		
