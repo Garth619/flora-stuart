@@ -149,7 +149,7 @@ get_header(); ?>
 		
 		</div><!-- internal_wrapper -->
 		
-		<div class="timeline_wrapper">
+		<div class="timeline_wrapper desktop">
 			
 			<div class="timeline_inner">
 			
@@ -414,6 +414,115 @@ get_header(); ?>
 			</div><!-- timeline_inner -->
 			
 		</div><!-- timeline_wrapper -->
+		
+		
+		<div class="timeline_wrapper tablet">
+				
+				<div class="timeline_inner">
+					
+					<div class="my_heritage_wrapper">
+				
+					<img class="redline" src="<?php bloginfo('template_directory');?>/images/test_image_icon_01.svg"/>
+				
+					<img class="tree" src="<?php bloginfo('template_directory');?>/images/intl_flora_icon-01.svg"/>
+				
+					<span class="my_heritage_title">My Heritage</span><!-- my_heritage_title -->
+				
+				</div><!-- my_heritage_wrapper -->
+					
+					<div class="single_event">
+							
+							<div class="single_event_inner">
+							
+								<div class="single_event_overlay">
+								
+									<img src="<?php bloginfo('template_directory');?>/images/single-event.jpg"/>
+								
+								</div><!-- single_event_overlay -->
+								
+								<span class="single_event_year">1929</span><!-- single_event_year -->
+								
+								<span class="single_event_description">My Great Grandparents, Judge Clay Elliot with Flora Elliot</span><!-- single_event_description -->
+							
+							</div><!-- single_event_inner -->
+							
+						</div><!-- single_event -->
+						
+						<div class="single_event">
+							
+							<div class="single_event_inner">
+							
+								<div class="single_event_overlay">
+								
+									<img src="<?php bloginfo('template_directory');?>/images/single-event.jpg"/>
+								
+								</div><!-- single_event_overlay -->
+								
+								<span class="single_event_year">1929</span><!-- single_event_year -->
+								
+								<span class="single_event_description">My Great Grandparents, Judge Clay Elliot with Flora Elliot</span><!-- single_event_description -->
+							
+							</div><!-- single_event_inner -->
+							
+						</div><!-- single_event -->
+						
+						<div class="single_event">
+							
+							<div class="single_event_inner">
+							
+								<div class="single_event_overlay">
+								
+									<img src="<?php bloginfo('template_directory');?>/images/single-event.jpg"/>
+								
+								</div><!-- single_event_overlay -->
+								
+								<span class="single_event_year">1929</span><!-- single_event_year -->
+								
+								<span class="single_event_description">My Great Grandparents, Judge Clay Elliot with Flora Elliot</span><!-- single_event_description -->
+							
+							</div><!-- single_event_inner -->
+							
+						</div><!-- single_event -->
+						
+						<div class="single_event">
+							
+							<div class="single_event_inner">
+							
+								<div class="single_event_overlay">
+								
+									<img src="<?php bloginfo('template_directory');?>/images/single-event.jpg"/>
+								
+								</div><!-- single_event_overlay -->
+								
+								<span class="single_event_year">1929</span><!-- single_event_year -->
+								
+								<span class="single_event_description">My Great Grandparents, Judge Clay Elliot with Flora Elliot</span><!-- single_event_description -->
+							
+							</div><!-- single_event_inner -->
+							
+						</div><!-- single_event -->
+						
+						<div class="single_event">
+							
+							<div class="single_event_inner">
+							
+								<div class="single_event_overlay">
+								
+									<img src="<?php bloginfo('template_directory');?>/images/single-event.jpg"/>
+								
+								</div><!-- single_event_overlay -->
+								
+								<span class="single_event_year">1929</span><!-- single_event_year -->
+								
+								<span class="single_event_description">My Great Grandparents, Judge Clay Elliot with Flora Elliot</span><!-- single_event_description -->
+							
+							</div><!-- single_event_inner -->
+							
+						</div><!-- single_event -->
+					
+					</div><!-- timeline_inner -->
+				
+			</div><!-- timeline_wrapper -->
 
 		
 		<?php if(get_field('att_bio_community_slider')): ?>

@@ -151,6 +151,12 @@ body.page-template-template-biostuart {
 }
 
 
+
+.timeline_wrapper.tablet {
+	display: none;
+}
+
+
 .timeline_wrapper {
 	width:100%;
 	background: #fff;
@@ -284,26 +290,6 @@ body.page-template-template-biostuart {
 }
 
 
-@media screen and (max-width: 1450px) {
-	
-/*
-	.single_event {
-		height: 570px;
-	}
-	
-	
-	.line_col {
-		
-		&:after {
-			height: calc(100% - 367px);
-		}
-	}
-*/
-	
-	
-} /* Media Query */
-
-
 
 
 
@@ -326,6 +312,49 @@ body.page-template-template-biostuart {
 	.att_bio_awards_inner {
 		max-width:900px;
 	}
+	
+	
+	
+	.timeline_wrapper.desktop {
+		display: none;
+	}
+	
+	
+	.timeline_wrapper.tablet {
+		display: block;
+		padding-bottom: 248px;
+	}
+	
+	.timeline_inner {
+		max-width:517px;
+		margin:203px auto 0;
+	}
+	
+	.my_heritage_wrapper {
+		margin-bottom:93px;
+	}
+	
+	
+	.single_event {
+		height:auto;
+		margin-bottom:60px;
+		.single_event_inner {
+			.single_event_overlay {
+				display: block;
+				img {
+					width:auto;
+					max-width:100%;
+					height:auto;
+					object-fit:initial;
+				}
+			}
+			span.single_event_year {
+				margin-top: 28px;
+			}
+		}
+	} 
+	
+	
 	    
 	
 	
@@ -372,9 +401,7 @@ body.page-template-template-biostuart {
   }
   
   
-  .timeline_inner {
-    margin: 203px 0 0;
-	}
+  
 	
 	
 } /* Media Query */
@@ -419,9 +446,51 @@ body.page-template-template-biostuart {
 	
 	
 	.timeline_inner {
-    margin: 58px 0 0;
+    margin: 58px auto 0;
 	}
+	
+	.my_heritage_wrapper {
+		margin-bottom: 58px;
+		span.my_heritage_title {
+			font-size: 44px;
+		}
+	}
+	
+	
+	.timeline_wrapper.tablet {
+		padding-left:40px;
+		padding-right:40px;
+		padding-bottom: 49px;
+	}
+	
+	
+	.single_event {
+		margin-bottom: 34px;
+		.single_event_inner {
+			span.single_event_year {
+				font-size: 35px;
+				margin-top: 15px;
+			}
+			span.single_event_description {
+				font-size: 20px;
+				line-height: 24px;
+				max-width: 335px;
+			}
+		}
+	}
+	
 	   
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 500px) {
+	
+	
+	.timeline_inner {
+		max-width:255px;
+	}
 	
 	
 } /* Media Query */
