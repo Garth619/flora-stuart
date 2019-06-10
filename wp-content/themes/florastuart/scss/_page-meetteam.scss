@@ -84,7 +84,6 @@
 			display: block;
 			text-transform: uppercase;
 			color:$blue;
-			padding:0 35px;
 			font-size:17px;
 			letter-spacing: 0.1em;
 			margin-top:20px;
@@ -172,6 +171,36 @@
 	}
 }
 
+@media screen and (max-width: 1525px) {
+	
+	
+	
+	.single_staffer {
+		height: 620px;
+	}
+	
+	
+} /* Media Query */
+
+
+
+@media screen and (max-width: 1350px) {
+	
+	
+	.meet_team_grid {
+		max-width: 930px;
+	}
+	
+	.single_staffer {
+		flex-basis: 48%;
+		height: 670px;
+	}
+	
+	
+	
+	
+} /* Media Query */
+
 
 @media screen and (max-width: 1245px) {
 	
@@ -192,6 +221,99 @@
 			margin-bottom:40px;
 		}
 	}
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1066px) {
+	
+	
+	
+		.meet_attorneys_content {
+			padding-left:70px;
+			padding-right:70px;
+		}
+		
+		
+		.meet_attorneys_wrapper {
+			padding-left:70px;
+			padding-right:70px;
+		}
+		
+		.meet_staff_wrapper {
+			padding-left:70px;
+			padding-right:70px;
+		}
+		
+		.single_staffer {
+			height: 565px;
+		}
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 900px) {
+	
+	.meet_team_grid {
+		display: block;
+		margin: 70px auto -55px;
+	}
+	
+	.single_staffer {
+		height:auto;
+		margin-bottom:55px;
+	}
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 767px) {
+	
+	
+	.meet_attorneys_content {
+		padding:46px 40px 0;
+	}
+	
+	
+	.meet_attorneys_wrapper {
+		padding-left:40px;
+		padding-right:40px;
+		margin: 166px 0 0;
+	}
+	
+	
+	.meet_staff_wrapper {
+		padding-left:40px;
+		padding-right:40px;
+	}
+	
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 500px) {
+	
+	
+	
+	.single_attorney {
+		.single_att_content {
+			span.single_att_name {
+				font-size: 33px;
+			}
+		}
+	}
+	
+	
+	.single_staffer {
+		span.staffer_name {
+			font-size: 33px;
+		}
+	}
+	
 	
 	
 } /* Media Query */
