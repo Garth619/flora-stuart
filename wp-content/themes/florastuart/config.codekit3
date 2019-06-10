@@ -111,6 +111,27 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/images/Asset 1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/Asset 1.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/images/Asset 2.png": {
+		"ft": 32768,
+		"iS": 4079,
+		"oA": 0,
+		"oAP": "/images/Asset 2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/images/content01_icon-01.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -438,7 +459,7 @@
 		"oAP": "/images/intl_contact_img_01.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/images/intl_contact_img_02.jpg": {

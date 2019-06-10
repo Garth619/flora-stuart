@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100.07 157.3">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="89.37" y1="248.21" x2="4.42" y2="146.97" gradientTransform="matrix(1, 0, 0, -1, 0, 266)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffd400"/>
+      <stop offset="1" stop-color="#ffae00"/>
+    </linearGradient>
+  </defs>
+  <title>Asset 1</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Calque_1" data-name="Calque 1">
+      <path class="cls-1" d="M50,0A49.78,49.78,0,0,0,0,50C0,86,50,157.3,50,157.3s50-70.05,50-107.26A50.17,50.17,0,0,0,50,0Zm0,78.49A30.65,30.65,0,1,1,80.68,47.85,30.7,30.7,0,0,1,50,78.49Z"/>
+    </g>
+  </g>
+</svg>
