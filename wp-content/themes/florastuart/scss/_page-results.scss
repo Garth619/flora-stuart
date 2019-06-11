@@ -1,25 +1,38 @@
 
 
 .cr_grid {
-	max-width:1700px;
-	margin:110px auto 30px;
+	max-width:1920px;
+	margin:110px auto 185px;
+	padding-left:90px;
+	padding-right:90px;
+	&:after {
+		content:"";
+		display: block;
+		clear:both;
+	}
+/*
 	display: flex;
 	justify-content: space-between;
 	flex-wrap:wrap;
+*/
+/*
 	&:after {
 		content:"";
 		flex-basis:32.5%;
 	}
+*/
 }
 
 
 .single_cr {
-	flex-basis:32.5%;
+	//flex-basis:32.5%;
+	width:32%;
+	float:left; /* floating bc I need parent div rows on tablet to style alternates */
 	background: $greylight;
 	position: relative;
 	height:404px;
-	margin-bottom:24px;
 	overflow: hidden;
+	margin:0 0.66% 24px;
 	.inner_cr_content {
 		text-align: center;
 		padding:90px 20px 0;
@@ -163,3 +176,141 @@
 		}
 	}
 }
+
+
+@media screen and (max-width: 1460px) {
+	
+	
+	.single_cr {
+		.inner_cr_content {
+			span.single_cr_amount {
+				font-size: 47px;
+			}
+		}
+	}
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1390px) {
+	
+	
+	
+	.cr_grid {
+		
+	}
+	
+	.single_cr_pair {
+		display: flex;
+		justify-content: space-between;
+		&:nth-of-type(2n + 2) {
+			.single_cr.info {
+				order:2;
+			}
+			.single_cr.image {
+				order:1;
+			}
+		}
+	}
+	
+	
+
+	.single_cr {
+		width:auto;
+		flex-basis:49%;
+		float:none;
+		margin: 0 0% 24px;
+	}
+
+	
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1120px) {
+	
+	
+	.cr_grid {
+   //margin-top:0;
+	}
+	
+	.single_cr.info {
+		
+	}
+	
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1066px) {
+	
+	
+	.cr_grid {
+		margin: 110px auto;
+		padding-left:70px;
+		padding-right:70px;
+	}
+	
+	
+	.single_cr {
+		flex-basis:48.5%;
+		.inner_cr_content {
+			span.single_cr_amount {
+				//font-size: 42px;
+			}
+		}
+	}  
+ 
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 910px) {
+	
+	.cr_grid {
+		max-width: 640px;
+	}
+	
+	.single_cr_pair {
+		display: block;
+	}
+	
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 767px) {
+	
+	
+	.cr_grid {
+		margin: 75px auto;
+		padding-left:40px;
+		padding-right:40px;
+	}
+	
+	
+	
+} /* Media Query */
+
+@media screen and (max-width: 450px) {
+	
+	
+	.single_cr {
+		.inner_cr_content {
+			padding:50px 30px;
+			span.single_cr_amount {
+				font-size: 40px;
+			}
+		}
+	}
+	
+	.single_cr.info {
+	height:auto;
+	}
+	
+} /* Media Query */
