@@ -13,123 +13,54 @@ get_header(); ?>
 		
 		<div class="cr_grid">
 			
-			<div class="single_cr_pair">
-			
-				<div class="single_cr info">
+			<?php if(get_field('case_results_page')): ?>
+			 
+				<?php while(has_sub_field('case_results_page')): ?>
 				
-					<div class="inner_cr_content">
+					<div class="single_cr_pair">
+			 
+						<?php if(get_sub_field('case_results_amount')) {?>
 					
-						<span class="single_cr_amount">$2.825 million</span><!-- single_cr_amount -->
+							<div class="single_cr info">
+				
+								<div class="inner_cr_content">
 					
-						<span class="single_cr_type">Brain Injury</span><!-- single_cr_type -->
+									<span class="single_cr_amount"><?php the_sub_field( 'case_results_amount' ); ?></span><!-- single_cr_amount -->
 					
-						<span class="single_cr_description">A young man with a family who suffered permanent brain damage and a crushed skull</span><!-- single_cr_description -->
+									<span class="single_cr_type"><?php the_sub_field( 'case_results_type' ); ?></span><!-- single_cr_type -->
+					
+									<span class="single_cr_description"><?php the_sub_field( 'case_results_excerpt' ); ?></span><!-- single_cr_description -->
 						
-						<span class="single_cr_description full">A young man wit dwaf adwf wq fwq fqew fqew f qwef qewf eq f eqwf ewf eq f ewqf eqf qwef h a family who suffered permanent brain damage and a crushed skull</span><!-- single_cr_description -->
+									<span class="single_cr_description full"><?php the_sub_field( 'case_results_overlay_description' ); ?></span><!-- single_cr_description -->
 					
-						<span class="single_cr_read_more">Read More</span><!-- single_cr_read_more -->
+									<span class="single_cr_read_more">Read More</span><!-- single_cr_read_more -->
 					
-					</div><!-- inner_cr_content -->
+								</div><!-- inner_cr_content -->
 				
-				</div><!-- single_cr -->
-			
-				<div class="single_cr iamge">
-				
-					<img src="<?php bloginfo('template_directory');?>/images/1.jpg"/>
-				
-				</div><!-- single_cr -->
-			
-			</div><!-- single_cr_pair -->
-			
-				<div class="single_cr_pair">
-			
-				<div class="single_cr info">
-				
-					<div class="inner_cr_content">
+							</div><!-- single_cr -->
 					
-						<span class="single_cr_amount">$2.825 million</span><!-- single_cr_amount -->
+							<?php } ?>
 					
-						<span class="single_cr_type">Brain Injury</span><!-- single_cr_type -->
+							<?php $case_results_image = get_sub_field( 'case_results_image' ); ?>
 					
-						<span class="single_cr_description">A young man with a family who suffered permanent brain damage and a crushed skull</span><!-- single_cr_description -->
+							<?php if ( $case_results_image ) { ?>
+					
+								<div class="single_cr image">
+				
+									<img src="<?php echo $case_results_image['url']; ?>" alt="<?php echo $case_results_image['alt']; ?>" />
+				
+								</div><!-- single_cr -->
 						
-						<span class="single_cr_description full">A young man wit dwaf adwf wq fwq fqew fqew f qwef qewf eq f eqwf ewf eq f ewqf eqf qwef h a family who suffered permanent brain damage and a crushed skull</span><!-- single_cr_description -->
+							<?php } ?>
 					
-						<span class="single_cr_read_more">Read More</span><!-- single_cr_read_more -->
-					
-					</div><!-- inner_cr_content -->
-				
-				</div><!-- single_cr -->
-			
-				<div class="single_cr iamge">
-				
-					<img src="<?php bloginfo('template_directory');?>/images/1.jpg"/>
-				
-				</div><!-- single_cr -->
-			
-			</div><!-- single_cr_pair -->
-			
-				<div class="single_cr_pair">
-			
-				<div class="single_cr info">
-				
-					<div class="inner_cr_content">
-					
-						<span class="single_cr_amount">$2.825 million</span><!-- single_cr_amount -->
-					
-						<span class="single_cr_type">Brain Injury</span><!-- single_cr_type -->
-					
-						<span class="single_cr_description">A young man with a family who suffered permanent brain damage and a crushed skull</span><!-- single_cr_description -->
-						
-						<span class="single_cr_description full">A young man wit dwaf adwf wq fwq fqew fqew f qwef qewf eq f eqwf ewf eq f ewqf eqf qwef h a family who suffered permanent brain damage and a crushed skull</span><!-- single_cr_description -->
-					
-						<span class="single_cr_read_more">Read More</span><!-- single_cr_read_more -->
-					
-					</div><!-- inner_cr_content -->
-				
-				</div><!-- single_cr -->
-			
-				<div class="single_cr iamge">
-				
-					<img src="<?php bloginfo('template_directory');?>/images/1.jpg"/>
-				
-				</div><!-- single_cr -->
-			
-			</div><!-- single_cr_pair -->
-			
-				<div class="single_cr_pair">
-			
-				<div class="single_cr info">
-				
-					<div class="inner_cr_content">
-					
-						<span class="single_cr_amount">$2.825 million</span><!-- single_cr_amount -->
-					
-						<span class="single_cr_type">Brain Injury</span><!-- single_cr_type -->
-					
-						<span class="single_cr_description">A young man with a family who suffered permanent brain damage and a crushed skull</span><!-- single_cr_description -->
-						
-						<span class="single_cr_description full">A young man wit dwaf adwf wq fwq fqew fqew f qwef qewf eq f eqwf ewf eq f ewqf eqf qwef h a family who suffered permanent brain damage and a crushed skull</span><!-- single_cr_description -->
-					
-						<span class="single_cr_read_more">Read More</span><!-- single_cr_read_more -->
-					
-					</div><!-- inner_cr_content -->
-				
-				</div><!-- single_cr -->
-			
-				<div class="single_cr iamge">
-				
-					<img src="<?php bloginfo('template_directory');?>/images/1.jpg"/>
-				
-				</div><!-- single_cr -->
-			
-			</div><!-- single_cr_pair -->
-			
+						</div><!-- single_cr_pair -->
+			    
+				<?php endwhile; ?>
+			 
+			<?php endif; ?>
 			
 		</div><!-- cr_grid -->
 		
-	
-	
 </div><!-- internal_main -->
 					
 <div class="cr_overlay">
