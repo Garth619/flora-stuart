@@ -588,6 +588,33 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
 			$(this).next('span.answer').slideToggle(300);
 		  
 		});
+		
+		// cr
+		
+		$('.single_cr.info').on('click', function(e) {
+		  
+			$('.cr_overlay').addClass('open');
+			
+			var cramount = $(this).find('span.single_cr_amount').text();
+			
+			$('.cr_overlay_inner').find('span.cr_overlay_amount').replaceWith('<span class="cr_overlay_amount">' +cramount+ '</span>');
+			
+			var crtype = $(this).find('span.single_cr_type').text();
+			
+			$('.cr_overlay_inner').find('span.cr_overlay_type').replaceWith('<span class="cr_overlay_type">' +crtype+ '</span>');
+			
+			var crdescription = $(this).find('span.single_cr_description.full').text();
+			
+			$('.cr_overlay_inner').find('span.cr_overlay_description').replaceWith('<span class="cr_overlay_description">' +crdescription+ '</span>');
+		
+		});
+		
+		
+		$('.cr_close').on('click', function(e) {
+		  
+			$('.cr_overlay').removeClass('open');
+		
+		});
   
   
 
