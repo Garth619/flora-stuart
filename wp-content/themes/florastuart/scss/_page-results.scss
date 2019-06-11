@@ -70,3 +70,78 @@
 		object-fit:cover;
 	}
 }
+
+
+
+.cr_overlay {
+	position: fixed;
+	z-index: 5;
+	overflow-y: scroll;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,0.7);
+}
+
+
+.cr_overlay_inner {
+	width:100%;
+	background: $blue;
+	max-width:1070px;
+	margin:180px auto 150px;
+	position: relative;
+	color:#fff;
+	text-align: center;
+	padding:144px 35px 175px;
+	span {
+		display: block;
+	}
+	span.cr_overlay_amount {
+		font-size: 55px;
+		@include escrow_banner_bold;
+	}
+	span.cr_overlay_type {
+		text-transform: uppercase;
+		font-size: 22px;
+		letter-spacing: 0.1em;
+		margin-top:14px;
+		display: inline-block;
+		padding-bottom:35px;
+		border-bottom:2px solid $red;
+		@include source_black;
+	}
+	span.cr_overlay_description {
+		font-size: 18px;
+		line-height: 30px;
+		margin:26px auto 0;
+		max-width:650px;
+		
+		@include source_semibold;
+	}
+}
+
+
+.cr_close {
+	position: absolute;
+	top:33px;
+	right:25px;
+	width:50px;
+	height:50px;
+	&:before, &:after {
+		content:"";
+		display: block;
+		width:50px;
+		height:4px;
+		background: $yellow;
+		position: absolute;
+		top:23px;
+		left:0;
+	}
+	&:before {
+		transform: rotate(45deg);
+	}
+	&:after {
+		transform: rotate(-45deg);
+	}
+}

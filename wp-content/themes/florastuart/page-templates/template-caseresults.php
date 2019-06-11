@@ -143,7 +143,21 @@ get_header(); ?>
 	
 </div><!-- internal_main -->
 					
-			  
+<div class="cr_overlay">
+	
+	<div class="cr_overlay_inner">
+		
+		<div class="cr_close"></div><!-- cr_close -->
+		
+		<span class="cr_overlay_amount">$2.825 million</span><!-- cr_overlay_amount -->
+		
+		<span class="cr_overlay_type">Brain Injury</span><!-- cr_overlay_type -->
+		
+		<span class="cr_overlay_description">Attorney Flora Templeton Stuart litigated a case for a young man with a family who suffered permanent brain damage and a crushed skull. The defendants paid $2.825 million for our client and his family. A portion of the funds were placed into lifetime annuities for the client and his family for college funds for his children. We obtained approximately $100,000.00 workers’ compensation settlement for the client and Social Security disability with lifetime payment of medical expenses.</span><!-- cr_overlay_description -->
+		
+	</div><!-- cr_overlay_inner -->
+	
+</div><!-- cr_overlay -->
 
 
 <?php get_footer(); ?>
