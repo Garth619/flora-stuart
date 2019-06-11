@@ -133,10 +133,9 @@ span.sponsorship_header {
 
 .gb_bottom_wrapper {
 	width:100%;
-	height:1000px;
 	background: $greylight;
 	margin-top:575px;
-	padding:1px 0 0 0;
+	padding:1px 0 90px 0;
 }
 
 .gb_bottom_inner {
@@ -265,3 +264,103 @@ span.sponsorship_header {
 	}
 }
 
+
+.gb_form_wrapper {
+	
+	span.gb_form_title {
+		display: block;
+		text-align: center;
+		font-size:60px;
+		margin-top:53px; 
+		@include escrow_banner_bold;
+	}
+}
+
+
+
+.gb_form {
+	max-width:1140px;
+	position: relative;
+	margin:53px auto 0;
+	ul {
+		list-style: none;
+		display: flex;
+		flex-wrap:wrap;
+		justify-content: space-between;
+		li#field_5_6 {
+			flex-basis:100%;
+		}
+		li {
+			position: relative;
+			margin-bottom:16px;
+			flex-basis:23.8%;
+			label {
+				font-size: 18px;
+				position: absolute;
+				top:19px;
+				left:20px;
+				letter-spacing: 0.1em;
+				@include source_bold;
+				span.gfield_required {
+					color:$orange;
+					display: inline-block;
+					margin-left:5px;
+				}
+			}
+			input,textarea {
+				border:none;
+				width:100%;
+				font-size: 18px;
+				letter-spacing: 0.1em;
+				color:$blue;
+				padding:16px 20px;
+				@include source_bold;
+			}
+			textarea {
+				height:131px;
+			}
+		}
+	}
+	input[type="submit"] {
+		background: $red;
+		margin-top:33px;
+		border-radius: 3px;
+		color:#fff;
+		text-transform: uppercase;
+		border:none;
+		padding:23px 65px;
+		font-size: 23px;
+		letter-spacing: 0.1em;
+		margin-bottom:35px;
+		cursor: pointer;
+		transition: all 200ms ease-in-out;
+		@include source_bold;
+		&:hover {
+			background: $orange;
+		}
+	}
+	.gfield_description, .validation_message {
+		color:$orange;
+		text-transform: uppercase;
+		font-size:13px;
+		letter-spacing: 0.1em;
+		margin:8px 0 0 20px;
+		@include source_bold;
+	}
+	.gform_footer {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+
+span.poppy_required {
+	position: absolute;
+	bottom:123px;
+	left:0;
+	color:$orange;
+	text-transform: uppercase;
+	font-size: 18px;
+	letter-spacing: 0.1em;
+	@include source_bold;
+}

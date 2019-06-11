@@ -226,6 +226,20 @@ get_header(); ?>
 				
 			</div><!-- gb_slider_wrapper -->
 			
+			<div class="gb_form_wrapper">
+				
+				<span class="gb_form_title">Invite Poppy to Your Next Community Event!</span><!-- gb_form_title -->
+				
+				<div class="gb_form">
+					
+					<?php gravity_form(5, false, false, false, '', true, 42444); ?>
+					
+					<span class="poppy_required">*All Fields Required</span><!-- poppy_required -->
+					
+				</div><!-- gb_form -->
+				
+			</div><!-- gb_form_wrapper -->
+			
 		</div><!-- gb_bottom_inner -->
 		
 	</div><!-- gb_bottom_wrapper -->

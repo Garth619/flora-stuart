@@ -76,7 +76,7 @@
 				
 				<span class="form_disclaimer">REMEMBER, YOU WON’T HAVE TO PAY ANY FEES OR COSTS UNLESS YOU RECEIVE COMPENSATION FOR YOUR INJURIES</span><!-- form_disclaimer -->
 			
-				<?php gravity_form(1, false, false, false, '', true, 12); ?>
+				<?php gravity_form(1, false, false, false, '', true, 1255); ?>
 				
 				<span class="myrequired">*All Fields Required</span><!-- myrequired -->
 			
