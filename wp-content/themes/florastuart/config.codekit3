@@ -688,7 +688,7 @@
 		"oAP": "/images/intl_givingback_img.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/images/intl_header_icon_01.svg": {
@@ -1597,14 +1597,6 @@
 		"oAP": "/page-templates/homepage_template_parts/section-6.php",
 		"oF": 0
 		},
-	"/page-templates/template-about.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/page-templates/template-about.php",
-		"oF": 0
-		},
 	"/page-templates/template-biobrown.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1643,6 +1635,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/page-templates/template-contact.php",
+		"oF": 0
+		},
+	"/page-templates/template-givingback.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-templates/template-givingback.php",
 		"oF": 0
 		},
 	"/page-templates/template-home.php": {
@@ -1872,6 +1872,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/scss/_page-default.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/scss/_page-givingback.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/scss/_page-givingback.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

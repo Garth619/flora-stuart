@@ -1,0 +1,267 @@
+
+
+.gb_top_wrapper {
+	display: flex;
+	margin:110px 0 0;
+}
+
+.gb_top_image {
+	flex-grow: 1;
+	flex-shrink: 0;
+	img {
+		max-width:100%;
+		height:auto;
+		display: block;
+	}
+}
+
+
+.gb_top_content {
+	border-top:2px solid $greylight;
+	padding:55px 0 0 0px;
+	margin:76px 155px 0 74px;
+}
+
+
+a.poppy_button {
+	background: $red;
+	color:#fff;
+	text-decoration: none;
+	border-radius: 3px;
+	margin-top:17px;
+	font-size: 18px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	display: inline-block;
+	padding:12px 40px;
+	transition: all 200ms ease-in-out;
+	@include source_bold;
+	&:hover {
+		background: $orange;
+	}
+}
+
+
+.sponsorship_wrapper {
+	padding-left:100px;
+	padding-right:100px;
+}
+
+.sponsorship_inner {
+	margin:130px auto 0;
+	max-width:1615px;
+}
+
+
+span.sponsorship_header {
+	font-size: 60px;
+	line-height: 60px;
+	display: block;
+	text-align: center;
+	@include escrow_banner_bold;
+}
+
+
+.sponsorship_list {
+	display: flex;
+	margin:95px 0 0;
+	padding-bottom:75px;
+	border-bottom:2px solid $greylight;
+}
+
+
+.single_sponsorship {
+	text-align: center;
+	padding:0 50px;
+	flex-basis:25%;
+	border-right:2px solid $greylight;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height:113px;
+	&:last-of-type {
+		border-right:0;
+	}
+	.single_sponsorship_inner {
+		span {
+			display: block;
+		}
+		span.single_sponsorship_title {
+			font-size:34px;
+			line-height: 38px;
+			@include source_bold;
+		}
+		span.single_sponsorship_subtitle {
+			text-transform: uppercase;
+			font-size: 20px;
+			margin-top:7px;
+			color:$orange;
+			font-size: 20px;
+			@include source_bold;
+		}
+	}
+}
+
+
+.sponsorship_businesses {
+	padding-top:85px;
+	ul {
+		list-style: none;
+		column-count:4;
+		column-gap:96px;
+		max-width:1535px;
+		margin:0 auto;
+		li {
+			color:$blue;
+			//width:100%;
+			//display: inline-block;
+			font-size: 22px;
+			line-height: 24px;
+			margin-bottom:15px;
+			@include source_semibold;
+			a {
+				color:$blue;
+				text-decoration: none;
+				transition: all 200ms ease-in-out;
+				&:hover {
+					color:$orange;
+				}
+			}
+		}
+	}
+}
+
+.gb_bottom_wrapper {
+	width:100%;
+	height:1000px;
+	background: $greylight;
+	margin-top:575px;
+	padding:1px 0 0 0;
+}
+
+.gb_bottom_inner {
+	margin-top:-440px;
+	padding-left:110px;
+	padding-right:110px;
+}
+
+
+.gb_community_header {
+	img {
+		max-width:100%;
+		height:auto;
+		margin:0 auto;
+		display: block;
+	}
+	img.heart {
+		margin-top:-33px;
+	}
+	span {
+		display: block;
+		text-align: center;
+		font-size: 60px;
+		margin-top:24px;
+		@include escrow_banner_bold;
+	}
+}
+
+
+.gb_slider_wrapper {
+	display: flex;
+	align-items: center;
+	margin-top:63px;
+}
+
+.gb_arrow {
+	background: $red;
+	width:74px;
+	height:74px;
+	border-radius: 3px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 200ms ease-in-out;
+	cursor: pointer;
+	flex-shrink: 0;
+	&:after {
+		content:"";
+		display: block;
+		width: 0; 
+		height: 0; 
+		border-top: 15px solid transparent;
+		border-bottom: 15px solid transparent; 
+	}
+	&:hover {
+		background: $orange;
+	}
+}
+
+.gb_arrow_left {
+	&:after {
+		margin-left:-3px;
+		border-right:15px solid #fff; 
+	}
+}
+
+
+.gb_arrow_right {
+	&:after {
+		margin-right:-3px;
+		border-left:15px solid #fff; 
+	}
+}
+
+
+.gb_slider {
+	width:calc(100% - 148px);
+	padding:0 60px;
+	margin-left:auto;
+  margin-right:auto;
+	.slick-slide {
+	   margin: 0 19px;
+	   padding:20px 0;
+	 }
+	.slick-list {
+	  margin: 0 -19px;
+	}
+}
+
+
+.gb_slide {
+	position: relative;
+	&:hover {
+		.gb_slide_overlay {
+			opacity: 1;
+		}
+	}
+	img {
+		width:100%;
+		height:auto;
+		display: block;
+		box-shadow: 0px 2px 17px 0px rgba(5, 21, 63, 0.2);
+	}
+	.gb_slide_overlay {
+		position: absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		background:rgba(5,21,63,0.8);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		opacity: 0;
+		transition: all 400ms ease-in-out;
+		span {
+			color:$yellow;
+			font-size: 25px;
+			line-height: 31px;
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+			max-width:310px;
+			text-align: center;
+			@include source_black;
+		}
+	}
+}
+

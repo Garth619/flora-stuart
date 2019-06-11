@@ -448,6 +448,37 @@ checksliderwidth();
      }
 	]
  });
+ 
+ 
+ 
+ 
+ $('.gb_slider').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+	arrows:true,
+	dots:false,
+	prevArrow:'.gb_arrow_left',
+	nextArrow:'.gb_arrow_right',
+  responsive: [
+/*
+    {
+      breakpoint: 1800,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      }
+     },
+*/
+     {
+      breakpoint: 1310,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+     }
+	]
+ });
 
  
  

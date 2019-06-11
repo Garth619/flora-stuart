@@ -9,8 +9,6 @@ get_header(); ?>
 	
 	<h1 class="internal_centered_header">Millions in Settlements</h1><!-- internal_centered_header -->
 		
-	
-		
 		<div class="cr_grid">
 			
 			<?php if(get_field('case_results_page')): ?>
