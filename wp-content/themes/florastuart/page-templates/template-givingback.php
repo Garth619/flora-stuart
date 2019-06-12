@@ -25,7 +25,7 @@ get_header(); ?>
 
 			<p>BgOnStage was founded a decade ago by Ms. Stuart which is a 501 C charity bringing theater arts to schools and all ages. Ms. Stuart is proud to serve as president of the BGNoon Lions Club in 2019 to fundraise for charities. Her law firm has been a major sponsor for Toys For Tots, Stuff the Bus, Kawanis Thunderfest, Kids On The Block, International Center where she serves on the board.</p>
 			
-			<a class="poppy_button" href="">Invite Poppy To Your Event</a><!-- poppy_button -->
+			<a class="poppy_button" href="#poppy-request">Invite Poppy To Your Event</a><!-- poppy_button -->
 			
 		</div><!-- gb_top_content -->
 		
@@ -226,7 +226,7 @@ get_header(); ?>
 				
 			</div><!-- gb_slider_wrapper -->
 			
-			<div class="gb_form_wrapper">
+			<div id="poppy-request" class="gb_form_wrapper">
 				
 				<span class="gb_form_title">Invite Poppy to Your Next Community Event!</span><!-- gb_form_title -->
 				
