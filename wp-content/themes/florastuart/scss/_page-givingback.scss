@@ -431,7 +431,7 @@ span.poppy_required {
 	
 	
 	.gb_top_image {
-    margin-top: 39px;
+    margin-top: 0px;
    }
    
    
@@ -506,6 +506,31 @@ span.poppy_required {
 } /* Media Query */
 
 
+
+@media screen and (max-width: 1410px) {
+	
+	
+	
+	.gb_form_wrapper {
+		span.gb_form_title {
+			display: block;
+			max-width:660px;
+			margin-left:auto;
+			margin-right:auto;
+		}
+	}
+	
+	
+	.gb_bottom_inner {
+		//padding-left:100px;
+		//padding-right:100px;
+	}
+	
+	
+	
+} /* Media Query */
+
+
 @media screen and (max-width: 1350px) {
 	
 	
@@ -551,8 +576,19 @@ span.poppy_required {
 		}
 	}
 
-
 	
+} /* Media Query */
+
+
+@media screen and (max-width: 1310px) {
+	
+	.gb_slider_wrapper {
+		max-width: 900px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	
+	    
 	
 	
 	
@@ -621,7 +657,42 @@ span.poppy_required {
 		padding-top:0;
 	}
 	
+	.gb_bottom_wrapper {
+		margin-top: 530px;
+	}
 	
+	.gb_bottom_inner {
+		padding-left:35px;
+		padding-right:35px;
+	}
+	
+	.gb_slider {
+		padding: 0 50px;
+	}
+	
+	
+	.gb_form_wrapper {
+		padding-left:35px;
+		padding-right:35px;
+	}
+	
+	
+	
+	.gb_form {
+		max-width: 630px;
+		ul {
+			display: block;
+		}
+		input[type="submit"] {
+			margin-top:53px;
+		}
+	}
+	
+	
+	span.poppy_required {
+		bottom: 149px;
+	}
+	    
 	
 } /* Media Query */
 
@@ -644,8 +715,90 @@ span.poppy_required {
 	
 	.sponsorship_list {
 		display: block;
+		margin: 40px auto 0;
+		max-width:300px;
+		padding-bottom: 35px;
 	}
 	
+	
+	.single_sponsorship {
+		border-right:none;
+		border-bottom: 2px solid #e8ecef;
+		&:last-of-type {
+			border-bottom: none;
+		}
+	}
+	
+	
+	.sponsorship_businesses {
+		ul {
+			column-count:1;
+			text-align: center;
+		}
+	}
+	
+	
+	.sponsorship_wrapper {
+		padding-left: 40px;
+    padding-right: 40px;
+	}
+	
+	
+	.sponsorship_inner {
+    margin: 64px auto 0;
+	}
+	
+	
+	span.sponsorship_header {
+		font-size: 50px;
+    line-height: 51px;
+	}
+	
+	 
+	.gb_community_header {
+		display: none;
+	}
+	
+	
+	.gb_slider_wrapper {
+		display: none;
+	}
+	
+	
+	.gb_bottom_inner {
+		margin-top: 0px;
+	}
+	
+	.gb_bottom_wrapper {
+    margin-top: 75px;
+    padding: 0px 0 50px 0;
+	}
+	
+	
+	.gb_form_wrapper {
+		padding-top:1px;
+		padding-left:5px;
+		padding-right:5px;
+		span.gb_form_title {
+			font-size: 50px;
+			max-width: 330px;
+		}
+	}
+	
+	
+	
+	.gb_form {
+		input[type="submit"] {
+			font-size: 20px;
+			padding: 16px 63px;
+		}
+	}
+	
+	
+	span.poppy_required {
+		bottom: 135px;
+		font-size: 16px;
+	}
 	
 	
 	
