@@ -646,6 +646,41 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
 			$('.cr_overlay').removeClass('open');
 		
 		});
+		
+		
+		
+		// form labels 
+		
+		function customLabel() {
+		
+		$("#poppy-request input, #poppy-request textarea, .sidebar_wrapper input, .sidebar_wrapper textarea").focus(function(){
+    	
+    	$(this).parent().prev('label').fadeOut(200);
+  	
+  	});
+  	
+  	
+  	$("#poppy-request input, #poppy-request textarea, .sidebar_wrapper input, .sidebar_wrapper textarea").blur(function(){
+	  	
+	  	if( !$(this).val() ) {
+          
+        $(this).parent().prev('label').fadeIn(200);
+    	
+    	}
+    	
+    });
+    
+    }
+    
+    
+    customLabel();
+    
+    
+    jQuery(document).bind('gform_post_render', function(){
+		
+			customLabel();
+  	
+  	});
   
   
 

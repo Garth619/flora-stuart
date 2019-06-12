@@ -104,6 +104,13 @@ h1,h2,h3,h4 {
 	p, ul, ol {
 		margin-bottom:37px;
 	}
+	a {
+		color:$orange;
+		transition: all 200ms ease-in-out;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 	ul {
 		list-style: none;
 		li {

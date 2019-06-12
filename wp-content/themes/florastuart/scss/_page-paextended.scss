@@ -64,8 +64,21 @@ span.sidebar_description {
 		margin-top:26px;
 		li {
 			margin-bottom:21px;
+			position: relative;
 			label {
-				display: none;
+				//display: none;
+				color:$blue;
+				font-size: 18px;
+				position: absolute;
+				top:12px;
+				left:16px;
+				letter-spacing: 0.1em;
+				@include source_bold;
+				span.gfield_required {
+					color:$orange;
+					display: inline-block;
+					margin-left:6px;
+				}
 			}
 			input, textarea {
 				width:100%;
