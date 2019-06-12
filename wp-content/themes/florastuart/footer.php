@@ -8,7 +8,7 @@
 				
 			<div class="footer_play_wrapper">
 				
-				<a href="">
+				<a href="https://www.youtube.com/embed/4993sBLAzGA?autoplay=1" data-lity>
 				
 					<img class="footer_redline" src="<?php bloginfo('template_directory');?>/images/test_image_icon_01.svg"/>
 				
@@ -30,7 +30,7 @@
 			
 			<span class="comm_description">Flora Stuart is dedicated to making a difference in the lives of her clients. Our law firm is in the community to make a difference in the lives of others. </span><!-- comm_description -->
 			
-			<a class="visit_comm" href="">Visit Our Community Page</a><!-- visit_comm -->
+			<a class="visit_comm" href="<?php the_permalink(46);?>">Visit Our Community Page</a><!-- visit_comm -->
 			
 			
 			
@@ -52,7 +52,7 @@
 					
 					<span class="address">213 S Green St<br/> Glasgow, KY 42141</span><!-- address -->
 					
-					<a class="get_directions" href="" target="_blank" rel="noopener">Get Directions</a><!-- get_directions -->
+					<a class="get_directions" href="https://www.google.com/maps/place/Flora+Templeton+Stuart+Injury+Attorney/@36.9946457,-85.9150533,17z/data=!4m13!1m7!3m6!1s0x88663d94520e6fa7:0x6d02561487d93714!2s213+S+Green+St,+Glasgow,+KY+42141!3b1!8m2!3d36.9946457!4d-85.9128646!3m4!1s0x88663d9452f60c9b:0x3f3726e705948599!8m2!3d36.9946356!4d-85.9128512" target="_blank" rel="noopener">Get Directions</a><!-- get_directions -->
 					
 				</div><!-- single_location -->
 				
@@ -60,7 +60,7 @@
 					
 					<span class="address">607 E 10th Ave<br/> Bowling Green, KY 42101</span><!-- address -->
 					
-					<a class="get_directions" href="" target="_blank" rel="noopener">Get Directions</a><!-- get_directions -->
+					<a class="get_directions" href="https://www.google.com/maps/place/607+E+10th+Ave,+Bowling+Green,+KY+42101/@36.9899355,-86.4428427,17z/data=!3m1!4b1!4m5!3m4!1s0x8865ef35a43dd4fd:0xb592fff131e6b9ff!8m2!3d36.9899355!4d-86.440654" target="_blank" rel="noopener">Get Directions</a><!-- get_directions -->
 					
 				</div><!-- single_location -->
 				
@@ -89,9 +89,9 @@
 	<div class="copyright">
 		
 		<ul>
-			<li>&copy; 2019 Flora Templeton Stuart, Personal Injury Lawyer</li>
-			<li><a href="">Privacy Policy</a></li>
-			<li><a href="">Disclaimer</a></li>
+			<li>&copy; <?php echo date("Y"); ?> Flora Templeton Stuart, Personal Injury Lawyer</li>
+			<li><a href="<?php the_permalink(943);?>">Privacy Policy</a></li>
+			<li><a href="<?php the_permalink(945);?>">Disclaimer</a></li>
 		</ul>
 		
 		<a class="ilawyer" href="//ilawyermarketing.com" target="_blank" rel="noopener">

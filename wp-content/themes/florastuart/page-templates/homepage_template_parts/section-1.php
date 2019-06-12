@@ -84,7 +84,7 @@
 		
 		<div class="play_wrapper">
 			
-			<a class="" href="">
+			<a class="" href="https://www.youtube.com/embed/4993sBLAzGA?autoplay=1" data-lity>
 				
 				<img class="play_text" src="<?php bloginfo('template_directory');?>/images/play_text.svg"/>
 			

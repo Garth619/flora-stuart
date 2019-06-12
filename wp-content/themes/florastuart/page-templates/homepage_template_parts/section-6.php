@@ -4,7 +4,7 @@
 		
 		<span class="sec_six_title">We have recovered millions in settlements & verdicts</span><!-- sec_six_title -->
 		
-		<a class="sec_six_button" href="">View More Results</a><!-- sec_six_button -->
+		<a class="sec_six_button" href="<?php the_permalink(54);?>">View More Results</a><!-- sec_six_button -->
 		
 		<div class="sec_six_grid">
 			

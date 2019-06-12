@@ -54,9 +54,9 @@
 					
 					<span class="meet_attorney_title">Meet Our Attorneys</span><!-- meet_attorney_title -->
 					
-					<a class="att_button" href="">Attorney Flora Stuart</a><!-- att_button -->
+					<a class="att_button" href="<?php the_permalink(789);?>">Attorney Flora Stuart</a><!-- att_button -->
 					
-					<a class="att_button" href="">Attorney Kent Brown</a><!-- att_button -->
+					<a class="att_button" href="<?php the_permalink(60);?>">Attorney Kent Brown</a><!-- att_button -->
 					
 				</div><!-- meet_attorneys -->
 				
