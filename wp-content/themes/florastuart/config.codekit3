@@ -1597,6 +1597,14 @@
 		"oAP": "/page-templates/homepage_template_parts/section-6.php",
 		"oF": 0
 		},
+	"/page-templates/template-banner.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-templates/template-banner.php",
+		"oF": 0
+		},
 	"/page-templates/template-biobrown.php": {
 		"cB": 0,
 		"ft": 8192,

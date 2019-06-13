@@ -7,27 +7,78 @@
 
 <div id="internal_trigger" class="internal_main">
 	
-	<div class="internal_banner extended">
+	<?php if(!get_field('remove_top_banner') == 'Yes') : ?>
+	
+		<div class="internal_banner extended">
 		
-		<div class="internal_banner_content extended">
+			<div class="internal_banner_content extended">
+				
+				<?php if(!get_field('make_top_banner_h1_tags') == 'Yes') : ?>
+				
+					<?php if(get_field('banner_title_extended')) : ?>
 			
-			<span class="banner_title_extended">Semi-Truck Accidents Two Lines</span><!-- banner_title -->
+						<span class="banner_title_extended"><?php the_field( 'banner_title_extended' ); ?></span><!-- banner_title -->
+				
+						<?php else:?>
+				
+						<span class="banner_title_extended">Enter Title</span><!-- banner_title -->
+				
+						<?php endif;?>
+					
+					<?php else: ?>
+					
 						
-		</div><!-- internal_banner_content -->
+					<?php if(get_field('banner_title_extended')) : ?>
+			
+						<h1 class="banner_title_extended"><?php the_field( 'banner_title_extended' ); ?></h1><!-- banner_title -->
+				
+						<?php else:?>
+				
+						<h1 class="banner_title_extended">Enter Title</h1><!-- banner_title -->
+				
+						<?php endif;?>
+					
+					<?php endif;?>
+			
+			</div><!-- internal_banner_content -->
 		
-		<img class="banner_bg" src="<?php bloginfo('template_directory');?>/images/intl_mainPA_header_img_01.jpg"/>
+			<?php $banner_image_extended = get_field( 'banner_image_extended' ); ?>
+			
+			<?php if($banner_image_extended) :?>
+
+				<img class="banner_bg" src="<?php echo $banner_image_extended['url']; ?>" alt="<?php echo $banner_image_extended['alt']; ?>" />
+				
+				<?php else:?>
+				
+				<img class="banner_bg" src="<?php bloginfo('template_directory');?>/images/intl_mainPA_header_img_01.jpg" />
+			
+			<?php endif;?>
 		
-	</div><!-- internal_banner -->
+		</div><!-- internal_banner -->
+	
+	<?php endif;?>
 	
 	<div class="internal_wrapper">
 		
 		<div class="internal_container two_col">
 			
-			<div class="internal_content content">
+			<div class="internal_content">
 				
-				<h1 class="internal_header"><?php the_title();?></h1><!-- internal_header -->
+				<?php if(!get_field('make_top_banner_h1_tags') == 'Yes') : ?>
 				
-				<?php get_template_part( 'loop', 'page' ); ?>
+					<h1 class="internal_header"><?php the_title();?></h1><!-- internal_header -->
+					
+					<?php else: ?>
+					
+					<h2 class="internal_header"><?php the_title();?></h2><!-- internal_header -->
+				
+				<?php endif;?>
+				
+				<div class="content">
+				
+					<?php get_template_part( 'loop', 'page' ); ?>
+				
+				</div><!-- content -->
 				
 			</div><!-- internal_content -->
 			
