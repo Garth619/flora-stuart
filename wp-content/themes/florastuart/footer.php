@@ -28,7 +28,7 @@
 			
 			<span class="poppy_title">poppy’s field trip visits</span><!-- poppy_title -->
 			
-			<span class="comm_description">Flora Stuart is dedicated to making a difference in the lives of her clients. Our law firm is in the community to make a difference in the lives of others. </span><!-- comm_description -->
+			<span class="comm_description">Flora Stuart is dedicated to making a difference in the lives of her clients. Our law firm is in the community to make a difference in the lives<br/> of others. </span><!-- comm_description -->
 			
 			<a class="visit_comm" href="<?php the_permalink(46);?>">Visit Our Community Page</a><!-- visit_comm -->
 			

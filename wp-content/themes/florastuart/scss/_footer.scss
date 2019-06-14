@@ -51,6 +51,9 @@ footer {
 		line-height: 37px;
 		margin-top:26px;
 		@include escrow_banner_semibold;
+		br {
+			display: none;
+		}
 	}
 	a.visit_comm {
 		color:#fff;
@@ -690,7 +693,10 @@ span.myrequired {
 		span.comm_description {
 			font-size: 30px;
 			line-height: 33px;
-			max-width: 314px;
+			max-width: 335px;
+			br {
+				display: inline-block;
+			}
 		}
 		a.visit_comm {
 			font-size: 18px;
