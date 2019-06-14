@@ -112,7 +112,6 @@ a.internal_button {
 		> li.menu-item-has-children {
 				> a {
 					position: relative;
-					
 					&:after {
 						content:"";
 						display: block;
@@ -132,6 +131,7 @@ a.internal_button {
 			font-size: 18px;
 			line-height: 20px;
 			letter-spacing: 0.02em;
+			color:#fff;
 			//margin-bottom:32px;
 			@include source_reg;
 			&:last-of-type {

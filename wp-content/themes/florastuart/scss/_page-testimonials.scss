@@ -214,7 +214,7 @@ span.testi_quote {
 .single_bottom_testi {
 	background: $greylight;
 	text-align: center;
-	padding:58px 43px 65px;
+	padding:58px 67px 65px;
 	margin-bottom:40px;
 	display: none;
 	img {
@@ -416,7 +416,10 @@ a.testimonials_button {
 
 
 
-
+.single_bottom_testi {
+	padding-left:47px;
+	padding-right:47px;
+}
     
     
 	    
