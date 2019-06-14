@@ -179,10 +179,147 @@
 	}
 	
 	
+	// meet the attorneys
+	
+	
+	.single_attorney {
+		&:hover {
+			.single_att_img {
+				img {
+					transform: scale(1.1);
+				}
+			}
+		}
+		.single_att_img {
+			overflow: hidden;
+			img {
+				transform: scale(1);
+				transition: all 800ms cubic-bezier(.17,.66,.34,.98);
+			}
+		}
+	}
+	
+	
+	// att profile
+	
+	
+	.internal_banner {
+		overflow: hidden;
+		img.banner_bg {
+			transform: scale(1.15);
+			transition: all 1600ms cubic-bezier(.17,.66,.34,.98);
+		}
+	}
+	
+	body.ready {
+		.internal_banner {
+			img.banner_bg {
+				transform: scale(1);
+			}
+		}
+	}
+	
+	// pa directory
+	
+	.pa_directory_box {
+		&:hover {
+			.pa_img {
+				img {
+					transform: scale(1.1);
+				}
+			}
+		}
+		.pa_img {
+			overflow: hidden;
+			img {
+				transform: scale(1);
+				transition: all 1200ms cubic-bezier(.17,.66,.34,.98);
+			}
+		}
+	}
+	
+	
+	// case results
+	
+	
+	.single_cr {
+		overflow: hidden;
+		&:hover {
+			img {
+				transform: scale(1.1);
+			}	
+		}
+		img {
+			transform: scale(1);
+			transition: all 1200ms cubic-bezier(.17,.66,.34,.98);
+		}
+	}
+	
+	
+	// testimonials
+	
+	
+	.testi_vid {
+		overflow: hidden;
+		&:hover {
+			img.video_thumb {
+				transform: scale(1.1);
+			}
+		}
+		img.video_thumb {
+			transform: scale(1);
+			transition: transform 1200ms cubic-bezier(.17,.66,.34,.98);
+		}
+	}
+	
+	// locations
 	
 	
 	
+	.single_locations {
+		&:hover {
+			a {
+				img {
+					transform: scale(1.1);
+				}
+			}
+		}
+		a {
+			display: block;
+			overflow: hidden;
+			img {
+				transform: scale(1);
+				transition: transform 1200ms cubic-bezier(.17,.66,.34,.98);
+			}
+		}
+		.single_location_content {
+			background: #fff;
+			position: relative;
+			z-index: 5;
+		}
+	}
 	
+	
+	.bottom_single_location {
+		&:hover {
+			a {
+				.bottom_location_img {
+					img {
+						transform: scale(1.1);
+					}
+				}
+			}
+		}
+		a {
+			.bottom_location_img {
+				overflow: hidden;
+				img {
+					transform: scale(1);
+					transition: transform 1200ms cubic-bezier(.17,.66,.34,.98);
+				}
+			}
+		}
+	}
 	
 	
 	

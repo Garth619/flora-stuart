@@ -466,6 +466,7 @@ a.get_consultation_button {
 	@include source_bold;
 	&:hover {
 		background: $orange;
+		text-decoration: none;
 	}
 }
 
