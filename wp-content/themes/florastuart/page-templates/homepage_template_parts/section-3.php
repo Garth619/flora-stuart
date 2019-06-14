@@ -24,7 +24,7 @@
 		
 	</div><!-- sec_three_inner -->
 	
-	<div class="sec_three_bottom">
+	<div id="sec_three_bottom_trigger" class="sec_three_bottom">
 				
 				<div class="sec_three_image_wrapper">
 					

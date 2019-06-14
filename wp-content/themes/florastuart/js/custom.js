@@ -225,9 +225,16 @@ jQuery(document).ready(function($){
     }
 		
 		
+		$('body').addClass('ready');
 		
 
-    // createWaypoint('section_one', '.sticky_header', 'visible', -300, null, true);
+    createWaypoint('section_three', '#section_three', 'visible', 200, null, false);
+    
+    createWaypoint('sec_three_bottom_trigger', '#sec_three_bottom_trigger', 'visible', 600, null, false);
+    
+    createWaypoint('section_five', '#section_five', 'visible', 400, null, false);
+    
+    createWaypoint('footer_trigger', '#footer_trigger', 'visible', 400, null, true);
     
    
 
