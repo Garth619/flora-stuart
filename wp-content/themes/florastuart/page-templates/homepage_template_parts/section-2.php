@@ -3,7 +3,7 @@
 	
 	<div class="sec_two_slider">
 		
-		<div class="sec_two_slide">
+		<div class="sec_two_slide one">
 			
 			<img class="redline" src="<?php bloginfo('template_directory');?>/images/test_image_icon_01.svg"/>
 			
@@ -16,7 +16,7 @@ won over <strong>90%</strong> of our personal<br/>injury cases for our clients.<
 			
 		</div><!-- sec_two_slide -->
 		
-		<div class="sec_two_slide">
+		<div class="sec_two_slide two">
 			
 			<img class="redline" src="<?php bloginfo('template_directory');?>/images/test_image_icon_01.svg"/>
 			
@@ -28,7 +28,7 @@ won over <strong>90%</strong> of our personal<br/>injury cases for our clients.<
 			
 		</div><!-- sec_two_slide -->
 		
-		<div class="sec_two_slide">
+		<div class="sec_two_slide three">
 			
 			<img class="redline" src="<?php bloginfo('template_directory');?>/images/test_image_icon_01.svg"/>
 			
@@ -36,7 +36,7 @@ won over <strong>90%</strong> of our personal<br/>injury cases for our clients.<
 			
 			<span class="sp_title">We care</span><!-- sp_title -->
 			
-			<span class="sp_description">Our passion is to make a difference in the<br/>lives of our clients and <strong>a difference</strong> in our<br/> community.</span><!-- sp_description -->
+			<span class="sp_description">Our passion is to make a difference<br/> in the lives of our clients and<br/> <strong>a difference</strong> in our community.</span><!-- sp_description -->
 			
 		</div><!-- sec_two_slide -->
 		
