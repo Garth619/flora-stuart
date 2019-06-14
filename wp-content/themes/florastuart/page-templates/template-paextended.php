@@ -177,20 +177,8 @@
 				<?php if(get_field('case_result_slider')): ?>
 				 
 					<?php while(has_sub_field('case_result_slider')): ?>
-				 
-						<?php $case_result_image_extended = get_sub_field( 'case_result_image_extended' ); ?>
-						
-						<?php if ( $case_result_image_extended ) { ?>
-						
-							<div class="ex_cr_slide">
 					
-								<img class="ex_cr_img" src="<?php echo $case_result_image_extended['url']; ?>" alt="<?php echo $case_result_image_extended['alt']; ?>"/><!-- ex_cr_img -->
-					
-							</div><!-- ex_cr_slide -->
-							
-						<?php } ?>
-						
-					<?php if(get_sub_field('case_result_amount_extended')) { ?>
+						<?php if(get_sub_field('case_result_amount_extended')) { ?>
 							
 							<div class="ex_cr_slide">
 					
@@ -207,6 +195,20 @@
 							</div><!-- ex_cr_slide -->
 							
 						<?php } ?>
+				 
+						<?php $case_result_image_extended = get_sub_field( 'case_result_image_extended' ); ?>
+						
+						<?php if ( $case_result_image_extended ) { ?>
+						
+							<div class="ex_cr_slide">
+					
+								<img class="ex_cr_img" src="<?php echo $case_result_image_extended['url']; ?>" alt="<?php echo $case_result_image_extended['alt']; ?>"/><!-- ex_cr_img -->
+					
+							</div><!-- ex_cr_slide -->
+							
+						<?php } ?>
+						
+					
 				    
 					<?php endwhile; ?>
 				 
