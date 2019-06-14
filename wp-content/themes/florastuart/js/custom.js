@@ -234,7 +234,7 @@ jQuery(document).ready(function($){
     
     createWaypoint('section_five', '#section_five', 'visible', 400, null, false);
     
-    createWaypoint('footer_trigger', '#footer_trigger', 'visible', 400, null, true);
+    createWaypoint('footer_trigger', '#footer_trigger', 'visible', 400, null, false);
     
    
 
