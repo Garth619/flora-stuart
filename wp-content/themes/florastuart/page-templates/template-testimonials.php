@@ -92,7 +92,7 @@ get_header(); ?>
 			
 			<div class="bottom_test_grid">
 				
-				<div class="bottom_test_col">
+				<div class="bottom_test_col bottom_test_col_one">
 					
 					<?php if(get_field('bottom_testimonials_column_one_copy')): ?>
 					 
@@ -114,7 +114,7 @@ get_header(); ?>
 					
 				</div><!-- bottom_test_col -->
 				
-				<div class="bottom_test_col">
+				<div class="bottom_test_col bottom_test_col_two">
 					
 					<?php if(get_field('bottom_testimonials_column_two')): ?>
 					 
@@ -136,7 +136,7 @@ get_header(); ?>
 					
 				</div><!-- bottom_test_col -->
 				
-				<div class="bottom_test_col">
+				<div class="bottom_test_col bottom_test_col_three">
 					
 					<?php if(get_field('bottom_testimonials_column_three')): ?>
 					 
@@ -162,10 +162,64 @@ get_header(); ?>
 				
 		</div><!-- bottom_testi_inner -->
 		
-		<a class="testimonials_button">View More Testimonials</a><!-- testimonials_button -->
+		<a id="load_more" class="testimonials_button">View More Testimonials</a><!-- testimonials_button -->
 				
 	</div><!-- bottom_testi_wrapper -->
 
 </div><!-- internal_main -->
 		
 <?php get_footer(); ?>
+
+
+<script type="text/javascript">
+
+jQuery(document).ready(function($){
+	
+	
+	function slideTestimonials() {
+	    
+	    size_li = $(".bottom_test_col_one .single_bottom_testi, .bottom_test_col_two .single_bottom_testi, .bottom_test_col_three .single_bottom_testi").size();
+   
+			
+	    
+	    
+	    if ($(window).width() >= 1280) {
+		    
+		    x=2;
+	        
+	      
+	    	$('.bottom_test_col_one .single_bottom_testi:lt('+x+'), .bottom_test_col_two .single_bottom_testi:lt('+x+'), .bottom_test_col_three .single_bottom_testi:lt('+x+') ').show();
+   
+				$('#load_more').click(function () {
+        
+        	x= (x+2 <= size_li) ? x+2 : size_li;
+					
+					$('.bottom_test_col_one .single_bottom_testi:lt('+x+'), .bottom_test_col_two .single_bottom_testi:lt('+x+'), .bottom_test_col_three .single_bottom_testi:lt('+x+')').fadeIn();
+    		
+    		});
+	    	   		
+	    }
+	    
+	    else {
+		    
+		    x=1;
+		    
+		    $('#load_more').click(function () {
+        
+        	x= (x+1 <= size_li) ? x+1 : size_li;
+					
+					$('.bottom_test_col_two .single_bottom_testi:lt('+x+'), .bottom_test_col_three .single_bottom_testi:lt('+x+')').fadeIn();
+    		
+    		});
+		    
+	    }
+	    
+		};
+		
+		
+		slideTestimonials();
+	
+
+}); // Document Ready
+
+</script>

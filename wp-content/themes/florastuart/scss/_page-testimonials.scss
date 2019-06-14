@@ -216,6 +216,7 @@ span.testi_quote {
 	text-align: center;
 	padding:58px 43px 65px;
 	margin-bottom:40px;
+	display: none;
 	img {
 		display: block;
 		margin:0 auto;
@@ -296,6 +297,15 @@ a.testimonials_button {
 			margin-left:auto;
 			margin-right:auto;
 		}
+		
+		
+		.bottom_test_col_one {
+			.single_bottom_testi {
+				display: block;
+			}
+		}
+		
+		
 
 	
 	
