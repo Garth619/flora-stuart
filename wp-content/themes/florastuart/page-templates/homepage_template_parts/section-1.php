@@ -11,7 +11,7 @@
 				
 			</a><!-- tablet_logo -->
 		
-			<span class="sec_one_header">The law firm that cares about you</span><!-- sec_one_header -->
+			<span class="sec_one_header"><?php the_field( 'section_one_title' ); ?></span><!-- sec_one_header -->
 		
 			<a class="free_consulation" href="#consultation">
 			
@@ -19,61 +19,31 @@
 			
 			</a><!-- free_consulation -->
 		
-			<span class="featured_on">Flora's Story Featured On</span><!-- featured_on -->
+			<span class="featured_on"><?php the_field( 'featured_story_title' ); ?></span><!-- featured_on -->
 		
 			<div class="featured_wrapper">
 			
 				<div class="featured_slider">
-				
-					<div class="featured_slide">
+					
+					<?php if(get_field('featured_story_slider')): ?>
+					 
+						<?php while(has_sub_field('featured_story_slider')): ?>
+					 
+							<div class="featured_slide">
 						
-						<div class="featured_inner_slide">
+								<div class="featured_inner_slide">
 					
-							<img src="<?php bloginfo('template_directory');?>/images/header_logo-01.svg"/>
+									<?php $logo = get_sub_field( 'logo' ); ?>
+		
+									<img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>" />
 						
-						</div><!-- featured_inner_slide -->
+								</div><!-- featured_inner_slide -->
 					
-					</div><!-- featured_slide -->
-					
-					<div class="featured_slide">
-						
-						<div class="featured_inner_slide">
-					
-							<img src="<?php bloginfo('template_directory');?>/images/header_logo-02.svg"/>
-						
-						</div><!-- featured_inner_slide -->
-					
-					</div><!-- featured_slide -->
-					
-					<div class="featured_slide">
-						
-						<div class="featured_inner_slide">
-					
-							<img src="<?php bloginfo('template_directory');?>/images/header_logo-03.svg"/>
-						
-						</div><!-- featured_inner_slide -->
-					
-					</div><!-- featured_slide -->
-					
-					<div class="featured_slide">
-						
-						<div class="featured_inner_slide">
-					
-							<img src="<?php bloginfo('template_directory');?>/images/header_logo-04.svg"/>
-						
-						</div><!-- featured_inner_slide -->
-					
-					</div><!-- featured_slide -->
-					
-					<div class="featured_slide">
-						
-						<div class="featured_inner_slide">
-					
-							<img src="<?php bloginfo('template_directory');?>/images/header_logo-05.svg"/>
-						
-						</div><!-- featured_inner_slide -->
-					
-					</div><!-- featured_slide -->
+							</div><!-- featured_slide -->
+					    
+						<?php endwhile; ?>
+					 
+					<?php endif; ?>
 					
 				
 				</div><!-- featured_slider -->
@@ -84,17 +54,14 @@
 		
 		<div class="play_wrapper">
 			
-			<a class="" href="https://www.youtube.com/embed/4993sBLAzGA?autoplay=1" data-lity>
+			<a class="" href="https://www.youtube.com/embed/<?php the_field( 'section_one_youtube_video' ); ?>
+?autoplay=1" data-lity>
 				
 				<img class="play_text" src="<?php bloginfo('template_directory');?>/images/play_text.svg"/>
 			
 				<div class="play_outer">
 				
-					<div class="play_inner">
-					
-					
-					
-					</div><!-- play_inner -->
+					<div class="play_inner"></div><!-- play_inner -->
 				
 				</div><!-- play_outer -->
 			
