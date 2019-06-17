@@ -54,7 +54,7 @@ a.free_consulation {
 	transition: all 200ms ease-in-out;
 	@include source_bold;
 	&:hover {
-		background: $yellow;
+		background: $orange;
 	}
 	&:after {
 		content:"request free case evaluation";

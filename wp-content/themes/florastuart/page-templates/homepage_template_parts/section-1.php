@@ -107,7 +107,7 @@
 	
 	<picture>
 		
-		<source type="image/webp" media="(max-width: 500px)" srcset="<?php bloginfo('template_directory');?>/images/header_img_mob.jpg">
+		<source type="image/jpg" media="(max-width: 500px)" srcset="<?php bloginfo('template_directory');?>/images/header_img_mob.jpg">
 			
 		<source type="image/jpg" media="(max-width: 935px)" srcset="<?php bloginfo('template_directory');?>/images/header_img_tab.jpg">
 				

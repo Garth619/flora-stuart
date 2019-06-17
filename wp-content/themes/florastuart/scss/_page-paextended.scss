@@ -115,7 +115,7 @@ span.sidebar_description {
 		transition: all 200ms ease-in-out;
 		@include source_bold;
 		&:hover {
-			background: $yellow;
+			background: $orange;
 		}
 	}
 	.sidebar_myrequired {
@@ -283,6 +283,14 @@ span.sidebar_description {
 				line-height: 31px;
 				margin-top:5px;
 				//display: none;
+				a {
+					color:$yellow;
+					transition: all 200ms ease-in-out;
+					text-decoration: none;
+					&:hover {
+						color:$red;
+					}
+				}
 				@include source_reg;
 			}
 		}

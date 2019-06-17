@@ -38,6 +38,7 @@ a.poppy_button {
 	transition: all 200ms ease-in-out;
 	@include source_bold;
 	&:hover {
+		text-decoration: none;
 		background: $orange;
 	}
 }
@@ -117,7 +118,7 @@ span.sponsorship_header {
 			//width:100%;
 			//display: inline-block;
 			font-size: 22px;
-			line-height: 24px;
+			line-height: 30px;
 			margin-bottom:15px;
 			@include source_semibold;
 			a {

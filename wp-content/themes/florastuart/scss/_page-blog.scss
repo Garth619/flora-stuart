@@ -59,6 +59,11 @@
 		a {
 			color:$blue;
 			text-decoration: none;
+			transition: all 200ms ease-in-out;
+			&:hover {
+				text-decoration: none;
+				color:$red;
+			}
 		}
 	}
 	a.read_more_blog {
@@ -103,6 +108,7 @@
 				text-decoration: none;
 				transition: all 200ms ease-in-out;
 				&:hover {
+					text-decoration: none;
 					color:$orange;
 				}
 			}

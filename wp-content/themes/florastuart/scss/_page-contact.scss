@@ -51,6 +51,9 @@ a.contact_phone {
 	font-size: 36px;
 	text-decoration: none;
 	@include escrow_banner_semibold;
+	br {
+		display: none;
+	}
 }
 
 
@@ -268,6 +271,26 @@ a.contact_phone {
 	span.contact_title.locations {
     margin-top: 33px;
 	}
+	
+	.google_map {
+		display: none;
+	}
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 767px) {
+	
+	
+	
+	a.contact_phone {
+		br {
+			display: inline-block;
+		}
+	}
+	
+	
 	
 	
 } /* Media Query */

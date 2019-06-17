@@ -306,7 +306,7 @@ footer {
 		margin-top:29px;
 		@include source_bold;
 		&:hover {
-			background: $yellow;
+			background: $orange;
 		}
 	}
 }
@@ -519,7 +519,7 @@ span.myrequired {
 	}
 	
 	.field_trip_wrapper, .footer_locations, .footer_form {
-		flex-basis:100%;
+		flex-basis: 100%;
 	}
 	
 	.field_trip_wrapper {
@@ -564,6 +564,11 @@ span.myrequired {
 			}
 		}
 	}  
+	
+	
+	.footer_locations {
+		height:auto;
+	}
 	
 	
 	span.myrequired {

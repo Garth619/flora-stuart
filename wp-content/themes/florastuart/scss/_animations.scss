@@ -35,7 +35,7 @@
 	a.free_consulation {
 		transform: translateY(-25px);
 		opacity: 0;
-		transition: transform 1200ms cubic-bezier(.17,.66,.34,.98), opacity 300ms linear;
+		transition: background 200ms cubic-bezier(.17,.66,.34,.98), transform 1200ms cubic-bezier(.17,.66,.34,.98), opacity 300ms linear;
 	}
 	
 	

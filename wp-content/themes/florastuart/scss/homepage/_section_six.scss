@@ -36,7 +36,7 @@ a.sec_six_button {
 	transition: all 200ms ease-in-out;
 	@include source_black;
 	&:hover {
-		background:$yellow;
+		background:$orange;
 	}
 }
 
