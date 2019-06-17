@@ -8,13 +8,15 @@
 				
 			<div class="footer_play_wrapper">
 				
-				<a href="https://www.youtube.com/embed/4993sBLAzGA?autoplay=1" data-lity>
+				<a href="https://www.youtube.com/embed/<?php the_field( 'footer_youtube_video','option'); ?>?autoplay=1" data-lity>
 				
 					<img class="footer_redline" src="<?php bloginfo('template_directory');?>/images/test_image_icon_01.svg"/>
 				
 					<div class="play_image_wrapper">
-					
-						<img class="play_image" src="<?php bloginfo('template_directory');?>/images/footer_play.png"/>
+						
+						<?php $footer_video_image = get_field( 'footer_video_image','option'); ?>
+
+						<img class="play_image" src="<?php echo $footer_video_image['url']; ?>" alt="<?php echo $footer_video_image['alt']; ?>" />
 					
 					</div><!-- play_image_wrapper -->
 					
@@ -24,13 +26,15 @@
 				
 			</div><!-- footer_play_wrapper -->
 			
-			<img class="poppy_img" src="<?php bloginfo('template_directory');?>/images/footer_img_01.jpg"/>
+			<?php $poppy_image = get_field( 'poppy_image','option'); ?>
+
+			<img class="poppy_img" src="<?php echo $poppy_image['url']; ?>" alt="<?php echo $poppy_image['alt']; ?>" />
 			
-			<span class="poppy_title">poppy’s field trip visits</span><!-- poppy_title -->
+			<span class="poppy_title"><?php the_field( 'poppy_title' ); ?></span><!-- poppy_title -->
 			
-			<span class="comm_description">Flora Stuart is dedicated to making a difference in the lives of her clients. Our law firm is in the community to make a difference in the lives<br/> of others. </span><!-- comm_description -->
+			<span class="comm_description"><?php the_field( 'community_description','option'); ?></span><!-- comm_description -->
 			
-			<a class="visit_comm" href="<?php the_permalink(46);?>">Visit Our Community Page</a><!-- visit_comm -->
+			<a class="visit_comm" href="<?php the_field( 'community_button_page_link','option'); ?>"><?php the_field( 'community_button_verbaige','option'); ?></a><!-- visit_comm -->
 			
 			
 			
@@ -42,7 +46,7 @@
 			
 			<span class="footer_location_title">Phone</span><!-- footer_location_title -->
 			
-			<a class="footer_phone" href="tel:888782909"><span>Call 24/7</span> <span>(888) 782-9090</span></a>
+			<a class="footer_phone" href="tel:<?php echo str_replace(['-', '(', ')', ' '], '', get_field('firm_phone', 'option')); ?>"><span><?php the_field( 'call_247','option'); ?></span> <span><?php the_field( 'firm_phone','option'); ?></span></a>
 			
 			<span class="footer_location_title">Office Locations</span><!-- footer_location_title -->
 			
@@ -50,17 +54,17 @@
 				
 				<div class="single_location">
 					
-					<span class="address">213 S Green St<br/> Glasgow, KY 42141</span><!-- address -->
+					<span class="address"><?php the_field( 'firm_glasgow_street_address','option'); ?></span><!-- address -->
 					
-					<a class="get_directions" href="https://www.google.com/maps/place/Flora+Templeton+Stuart+Injury+Attorney/@36.9946457,-85.9150533,17z/data=!4m13!1m7!3m6!1s0x88663d94520e6fa7:0x6d02561487d93714!2s213+S+Green+St,+Glasgow,+KY+42141!3b1!8m2!3d36.9946457!4d-85.9128646!3m4!1s0x88663d9452f60c9b:0x3f3726e705948599!8m2!3d36.9946356!4d-85.9128512" target="_blank" rel="noopener">Get Directions</a><!-- get_directions -->
+					<a class="get_directions" href="<?php the_field( 'firm_glasgow_directions_link','option'); ?>" target="_blank" rel="noopener">Get Directions</a><!-- get_directions -->
 					
 				</div><!-- single_location -->
 				
 				<div class="single_location">
 					
-					<span class="address">607 E 10th Ave<br/> Bowling Green, KY 42101</span><!-- address -->
+					<span class="address"><?php the_field( 'firm_bowling_green_street_address','option'); ?></span><!-- address -->
 					
-					<a class="get_directions" href="https://www.google.com/maps/place/607+E+10th+Ave,+Bowling+Green,+KY+42101/@36.9899355,-86.4428427,17z/data=!3m1!4b1!4m5!3m4!1s0x8865ef35a43dd4fd:0xb592fff131e6b9ff!8m2!3d36.9899355!4d-86.440654" target="_blank" rel="noopener">Get Directions</a><!-- get_directions -->
+					<a class="get_directions" href="<?php the_field( 'firm_bowling_green_link','option'); ?>" target="_blank" rel="noopener">Get Directions</a><!-- get_directions -->
 					
 				</div><!-- single_location -->
 				
@@ -72,9 +76,15 @@
 			
 			<div class="footer_form_inner">
 				
-				<span class="form_title">Request<br class="mobile"/> your <strong>free</strong><br class="tablet"/> case<br class="mobile"/> evaluation</span><!-- form_title -->
+				<span class="form_title">
 				
-				<span class="form_disclaimer">REMEMBER, YOU WON’T HAVE TO PAY ANY FEES OR COSTS UNLESS YOU RECEIVE COMPENSATION FOR YOUR INJURIES</span><!-- form_disclaimer -->
+					<?php the_field( 'footer_form_verbaige','option'); ?>
+				
+<!-- 					Request<br class="mobile"/> your <strong>free</strong><br class="tablet"/> case<br class="mobile"/> evaluation -->
+				
+				</span>
+				
+				<span class="form_disclaimer"><?php the_field( 'footer_form_description','option'); ?></span><!-- form_disclaimer -->
 			
 				<?php gravity_form(1, false, false, false, '', true, 1255); ?>
 				
@@ -89,9 +99,13 @@
 	<div class="copyright">
 		
 		<ul>
-			<li>&copy; <?php echo date("Y"); ?> Flora Templeton Stuart, Personal Injury Lawyer</li>
-			<li><a href="<?php the_permalink(943);?>">Privacy Policy</a></li>
-			<li><a href="<?php the_permalink(945);?>">Disclaimer</a></li>
+			<li>&copy; <?php echo date("Y"); ?> <?php the_field( 'copyright','option'); ?></li>
+			<?php if(get_field('privacy_policy','option')) { ?>
+				<li><a href="<?php the_field( 'privacy_policy','option'); ?>">Privacy Policy</a></li>
+			<?php } ?>
+			<?php if(get_field('disclaimer','option')) { ?>
+				<li><a href="<?php the_field( 'disclaimer','option'); ?>">Disclaimer</a></li>
+			<?php } ?>
 		</ul>
 		
 		<a class="ilawyer" href="//ilawyermarketing.com" target="_blank" rel="noopener">

@@ -57,7 +57,9 @@
 			
 			<a class="logo" href="<?php bloginfo('url');?>">
 				
-				<img src="<?php bloginfo('template_directory');?>/images/hero_logo-01.svg" alt=""/>
+				<?php $firm_logo = get_field( 'firm_logo','option'); ?>
+				
+				<img src="<?php echo $firm_logo['url']; ?>" alt="<?php echo $firm_logo['alt']; ?>" />
 	
 			</a><!-- logo -->
 			
@@ -67,11 +69,11 @@
 			
 			<div class="phone_wrapper">
 				
-				<span>Call 24/7</span>
+				<span><?php the_field( 'call_247','option'); ?></span>
 				
-				<span>No Fee Unless You Win</span>
+				<span><?php the_field( 'no_fee_unless_you_win','option'); ?></span>
 				
-				<a class="phone" href="tel:(888) 782-9090">(888) 782-9090</a>
+				<a class="phone" href="tel:<?php echo str_replace(['-', '(', ')', ' '], '', get_field('firm_phone', 'option')); ?>"><?php the_field( 'firm_phone','option'); ?></a>
 				
 			</div><!-- phone_wrapper -->
 			
@@ -115,7 +117,9 @@
 				
 				<a class="int_logo" href="<?php bloginfo('url');?>">
 					
-					<img src="<?php bloginfo('template_directory');?>/images/hero_logo-01.svg" alt=""/>
+					<?php $firm_logo = get_field( 'firm_logo','option'); ?>
+				
+					<img src="<?php echo $firm_logo['url']; ?>" alt="<?php echo $firm_logo['alt']; ?>" />
 					
 				</a><!-- int_logo -->
 				
@@ -131,11 +135,11 @@
 				
 				<div class="int_header_right_inner">
 				
-					<span class="int_call">Call 24/7</span><!-- no_fees -->
+					<span class="int_call"><?php the_field( 'call_247','option'); ?></span><!-- no_fees -->
 				
-					<span class="no_fees">No Fee Unless You Win</span><!-- no_fees -->
+					<span class="no_fees"><?php the_field( 'no_fee_unless_you_win','option'); ?></span><!-- no_fees -->
 				
-					<a class="int_phone" href="tel:8887829090">(888) 782-9090</a><!-- int_phone -->
+					<a class="int_phone" href="tel:<?php echo str_replace(['-', '(', ')', ' '], '', get_field('firm_phone', 'option')); ?>"><?php the_field( 'firm_phone','option'); ?></a><!-- int_phone -->
 				
 				</div><!-- int_header_right_inner -->
 				
