@@ -204,7 +204,7 @@ footer {
 			line-height: 72px;
 			width:100%;
 			@include escrow_banner_bold;
-			br.mobile {
+			br.mobile, br.tablet {
 				display: none;
 			}
 			&:after {

@@ -2,74 +2,42 @@
 	
 	<div class="sec_five_inner">
 		
-		<span class="sec_five_title">What Our Clients Are Saying</span><!-- sec_five_title -->
+		<span class="sec_five_title"><?php the_field( 'section_five_title' ); ?></span><!-- sec_five_title -->
 		
 		<div class="sec_five_slider_wrapper">
 			
 			<div class="sec_five_slider">
 				
-				<div class="sec_five_slide">
+				<?php if(get_field('section_five_quotes')): ?>
+				 
+					<?php while(has_sub_field('section_five_quotes')): ?>
+				 
+						<div class="sec_five_slide">
 					
-					<div class="sec_five_profile">
+							<div class="sec_five_profile">
 						
-						<img class="red_arch" src="<?php bloginfo('template_directory');?>/images/test_image_icon_01.svg"/>
+								<img class="red_arch" src="<?php bloginfo('template_directory');?>/images/test_image_icon_01.svg"/>
+								
+								<?php $profile_image = get_sub_field( 'profile_image' ); ?>
+		
+								<img class="profile" src="<?php echo $profile_image['url']; ?>" alt="<?php echo $profile_image['alt']; ?>" />
 						
-						<img class="profile" src="<?php bloginfo('template_directory');?>/images/sec_five_1.png"/>
+								<img class="stars" src="<?php bloginfo('template_directory');?>/images/test_image_icon_02.svg"/>
 						
-						<img class="stars" src="<?php bloginfo('template_directory');?>/images/test_image_icon_02.svg"/>
-						
-					</div><!-- sec_five_profile -->
+						</div><!-- sec_five_profile -->
 					
-					<span class="sec_five_slide_title">“This particular law firm has organization skills; they have good people skills.</span><!-- sec_five_slide_title -->
+					<span class="sec_five_slide_title"><?php the_sub_field( 'quote_header' ); ?></span><!-- sec_five_slide_title -->
 					
-					<span class="sec_five_description">They were able to anticipate the next step in the process and kept me informed the whole way through. I felt like she did such a good job, and she would do a good job for everyone who is involved in a motor vehicle collision.”</span><!-- sec_five_description -->
+					<span class="sec_five_description"><?php the_sub_field( 'quote_content' ); ?></span><!-- sec_five_description -->
 					
-					<span class="sec_five_name">Laura P.</span><!-- sec_five_name -->
+					<span class="sec_five_name"><?php the_sub_field( 'quote_name' ); ?></span><!-- sec_five_name -->
 					
 				</div><!-- sec_five_slide -->
-				
-				<div class="sec_five_slide">
-					
-					<div class="sec_five_profile">
-						
-						<img class="red_arch" src="<?php bloginfo('template_directory');?>/images/test_image_icon_01.svg"/>
-						
-						<img class="profile" src="<?php bloginfo('template_directory');?>/images/sec_five_2.png"/>
-						
-						<img class="stars" src="<?php bloginfo('template_directory');?>/images/test_image_icon_02.svg"/>
-						
-					</div><!-- sec_five_profile -->
-					
-					<span class="sec_five_slide_title">“Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed.</span><!-- sec_five_slide_title -->
-					
-					<span class="sec_five_description">They were able to anticipate the next step in the process and kept me informed the whole way through. I felt like she did such a good job, and she would do a good job for everyone who is involved in a motor vehicle collision.”</span><!-- sec_five_description -->
-					
-					<span class="sec_five_name">Name</span><!-- sec_five_name -->
-					
-				</div><!-- sec_five_slide -->
-				
-				<div class="sec_five_slide">
-					
-					<div class="sec_five_profile">
-						
-						<img class="red_arch" src="<?php bloginfo('template_directory');?>/images/test_image_icon_01.svg"/>
-						
-						<img class="profile" src="<?php bloginfo('template_directory');?>/images/sec_five_3.png"/>
-						
-						<img class="stars" src="<?php bloginfo('template_directory');?>/images/test_image_icon_02.svg"/>
-						
-					</div><!-- sec_five_profile -->
-					
-					<span class="sec_five_slide_title">“Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed.</span><!-- sec_five_slide_title -->
-					
-					<span class="sec_five_description">They were able to anticipate the next step in the process and kept me informed the whole way through. I felt like she did such a good job, and she would do a good job for everyone who is involved in a motor vehicle collision.”</span><!-- sec_five_description -->
-					
-					<span class="sec_five_name">Name</span><!-- sec_five_name -->
-					
-				</div><!-- sec_five_slide -->
-				
-				
-				
+				    
+					<?php endwhile; ?>
+				 
+				<?php endif; ?>
+								
 			</div><!-- sec_five_slider -->
 			
 	
