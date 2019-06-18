@@ -210,7 +210,7 @@ body.page-template-template-biostuart {
 		width:100%;
 		display: block;
 		height:calc(100% - 395px);
-		background:url(images/dash.svg) repeat-y;
+		background: url(#{$themePath}images/dash.svg) repeat-y;
 	}
 }
 

@@ -18,7 +18,7 @@ h1.not_found_header {
 		width:158px;
 		height:25px;
 		margin:0 auto 27px;
-		background: url(images/stars-orange.svg) no-repeat;
+		background: url(#{$themePath}images/stars-orange.svg) no-repeat;
 	}
 }
 

@@ -115,7 +115,9 @@ jQuery(document).ready(function($){
       console.log('images loaded');
     }
 
-    // createWaypoint('section_two', null, null, '100%', loadImages, false);
+    createWaypoint('section_one', null, null, -10, loadImages, false);
+    
+    createWaypoint('internal_trigger', null, null, -10, loadImages, false);
 
 
 
@@ -638,7 +640,69 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
 			customLabel();
   	
   	});
+  	
+  	
+  // nav
   
+  
+  if($('nav').length >0 ){ // just show on homepage class 'nav'
+  
+  
+  
+  $('.current-menu-item').addClass('active');
+	
+
+		$(function() {
+
+        var $el, leftPos, newWidth,
+            $mainNav = $('nav').find("ul.menu");
+
+        $mainNav.append("<li id='magic-line'></li>");
+        var $magicLine = $("#magic-line");
+
+
+
+        if($('nav ul.menu > li').hasClass('active')) {
+            $magicLine
+                .css({
+                    "left": $('nav').find("ul.menu > li.active").position().left,
+                    "width": $('nav ul.menu > li.active a').width()
+                }).data("origLeft", $magicLine.position().left);
+        } else {
+            $magicLine
+                .css({
+                    "left": -100,
+                    "width": $('nav ul.menu > li:first a').width()
+                }).data("origLeft", $magicLine.position().left);
+        }
+
+
+
+
+        $('nav').find("ul.menu > li:not(#magic-line)").hover(function() {
+            $el = $(this);
+            leftPos = $el.position().left;
+            newWidth = $el.children().width();
+            $magicLine.stop().animate({
+                left: leftPos,
+                width: newWidth
+            });
+        }, function() {
+            $magicLine.stop().animate({
+                left: $magicLine.data("origLeft"),
+                width: $('nav ul.menu > li.active a').width()
+            });
+        });
+
+
+
+    });
+
+  
+  
+  
+   //your code here 
+}
   
 
   

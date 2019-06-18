@@ -7,7 +7,9 @@
 			
 			<a class="tablet_logo" href="<?php bloginfo('url');?>">
 				
-				<img src="<?php bloginfo('template_directory');?>/images/hero_logo-01.svg"/>
+				<?php $firm_logo = get_field( 'firm_logo','option'); ?>
+				
+				<img src="<?php echo $firm_logo['url']; ?>" alt="<?php echo $firm_logo['alt']; ?>" />
 				
 			</a><!-- tablet_logo -->
 		

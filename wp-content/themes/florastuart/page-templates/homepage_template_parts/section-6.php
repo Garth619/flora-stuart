@@ -38,7 +38,7 @@
 			
 						<div class="sec_six_box">
 				
-							<img src="<?php echo $case_result_image['url']; ?>" alt="<?php echo $case_result_image['alt']; ?>" />
+							<img data-src="<?php echo $case_result_image['url']; ?>" alt="<?php echo $case_result_image['alt']; ?>" />
 				
 						</div><!-- sec_six_box -->
 			 

@@ -10,13 +10,13 @@
 				
 				<a href="https://www.youtube.com/embed/<?php the_field( 'footer_youtube_video','option'); ?>?autoplay=1" data-lity>
 				
-					<img class="footer_redline" src="<?php bloginfo('template_directory');?>/images/test_image_icon_01.svg"/>
+					<img class="footer_redline" data-src="<?php bloginfo('template_directory');?>/images/test_image_icon_01.svg"/>
 				
 					<div class="play_image_wrapper">
 						
 						<?php $footer_video_image = get_field( 'footer_video_image','option'); ?>
 
-						<img class="play_image" src="<?php echo $footer_video_image['url']; ?>" alt="<?php echo $footer_video_image['alt']; ?>" />
+						<img class="play_image" data-src="<?php echo $footer_video_image['url']; ?>" alt="<?php echo $footer_video_image['alt']; ?>" />
 					
 					</div><!-- play_image_wrapper -->
 					
@@ -28,7 +28,7 @@
 			
 			<?php $poppy_image = get_field( 'poppy_image','option'); ?>
 
-			<img class="poppy_img" src="<?php echo $poppy_image['url']; ?>" alt="<?php echo $poppy_image['alt']; ?>" />
+			<img class="poppy_img" data-src="<?php echo $poppy_image['url']; ?>" alt="<?php echo $poppy_image['alt']; ?>" />
 			
 			<span class="poppy_title"><?php the_field( 'poppy_title' ); ?></span><!-- poppy_title -->
 			
@@ -110,7 +110,7 @@
 		
 		<a class="ilawyer" href="//ilawyermarketing.com" target="_blank" rel="noopener">
 			
-			<img src="<?php bloginfo('template_directory');?>/images/footer_logo-01.svg"/>
+			<img data-src="<?php bloginfo('template_directory');?>/images/footer_logo-01.svg"/>
 			
 		</a><!-- ilawyer -->
 		
@@ -120,72 +120,6 @@
 
 
 <?php wp_footer();?>
-
-
-<?php if(is_front_page()) { ?>
-
-
-<script type="text/javascript">
-
-jQuery(document).ready(function($){
-
-// nav
-	
-		$('.current-menu-item').addClass('active');
-	
-
-		$(function() {
-
-        var $el, leftPos, newWidth,
-            $mainNav = $('nav').find("ul.menu");
-
-        $mainNav.append("<li id='magic-line'></li>");
-        var $magicLine = $("#magic-line");
-
-
-
-        if($('nav ul.menu > li').hasClass('active')) {
-            $magicLine
-                .css({
-                    "left": $('nav').find("ul.menu > li.active").position().left,
-                    "width": $('nav ul.menu > li.active a').width()
-                }).data("origLeft", $magicLine.position().left);
-        } else {
-            $magicLine
-                .css({
-                    "left": -100,
-                    "width": $('nav ul.menu > li:first a').width()
-                }).data("origLeft", $magicLine.position().left);
-        }
-
-
-
-
-        $('nav').find("ul.menu > li:not(#magic-line)").hover(function() {
-            $el = $(this);
-            leftPos = $el.position().left;
-            newWidth = $el.children().width();
-            $magicLine.stop().animate({
-                left: leftPos,
-                width: newWidth
-            });
-        }, function() {
-            $magicLine.stop().animate({
-                left: $magicLine.data("origLeft"),
-                width: $('nav ul.menu > li.active a').width()
-            });
-        });
-
-
-
-    });
-
-}); // Document Ready
-
-</script>
-
-
-<?php } ?>
 
 
 </body>

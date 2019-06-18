@@ -6,7 +6,7 @@
 		
 		<div class="kentucky_wrapper">
 			
-			<img src="<?php bloginfo('template_directory');?>/images/content01_icon-01.svg"/>
+			<img data-src="<?php bloginfo('template_directory');?>/images/content01_icon-01.svg"/>
 			
 		</div><!-- kentucky_wrapper -->
 		
@@ -30,7 +30,7 @@
 								
 								<?php $image = get_sub_field( 'image' ); ?>
 
-								<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+								<img data-src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 		
 							</div>
 					    
@@ -40,7 +40,7 @@
 					
 					<?php $section_three_tablet_image = get_field( 'section_three_tablet_image' ); ?>
 
-					<img class="sec_three_tablet_img" src="<?php echo $section_three_tablet_image['url']; ?>" alt="<?php echo $section_three_tablet_image['alt']; ?>" />
+					<img class="sec_three_tablet_img" data-src="<?php echo $section_three_tablet_image['url']; ?>" alt="<?php echo $section_three_tablet_image['alt']; ?>" />
 					
 				</div><!-- sec_three_image_wrapper -->
 				

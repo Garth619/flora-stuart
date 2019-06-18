@@ -16,13 +16,13 @@
 					
 							<div class="sec_five_profile">
 						
-								<img class="red_arch" src="<?php bloginfo('template_directory');?>/images/test_image_icon_01.svg"/>
+								<img class="red_arch" data-src="<?php bloginfo('template_directory');?>/images/test_image_icon_01.svg"/>
 								
 								<?php $profile_image = get_sub_field( 'profile_image' ); ?>
 		
-								<img class="profile" src="<?php echo $profile_image['url']; ?>" alt="<?php echo $profile_image['alt']; ?>" />
+								<img class="profile" data-src="<?php echo $profile_image['url']; ?>" alt="<?php echo $profile_image['alt']; ?>" />
 						
-								<img class="stars" src="<?php bloginfo('template_directory');?>/images/test_image_icon_02.svg"/>
+								<img class="stars" data-src="<?php bloginfo('template_directory');?>/images/test_image_icon_02.svg"/>
 						
 						</div><!-- sec_five_profile -->
 					

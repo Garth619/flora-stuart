@@ -9,11 +9,11 @@
 		 
 				<div class="sec_two_slide <?php the_sub_field( 'class' ); ?>">
 			
-					<img class="redline" src="<?php bloginfo('template_directory');?>/images/test_image_icon_01.svg"/>
+					<img class="redline" data-src="<?php bloginfo('template_directory');?>/images/test_image_icon_01.svg"/>
 					
 					<?php $sec_two_svg = get_sub_field( 'sec_two_svg' ); ?>
 		
-					<img class="sp_icon" src="<?php echo $sec_two_svg['url']; ?>" alt="<?php echo $sec_two_svg['alt']; ?>" />
+					<img class="sp_icon" data-src="<?php echo $sec_two_svg['url']; ?>" alt="<?php echo $sec_two_svg['alt']; ?>" />
 			
 					<span class="sp_title"><?php the_sub_field( 'title' ); ?></span><!-- sp_title -->
 			

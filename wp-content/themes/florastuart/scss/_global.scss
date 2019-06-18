@@ -79,7 +79,7 @@ h1,h2,h3,h4 {
 	&:after {
 		content:"";
 		display: block;
-		background: url(images/stars-orange.svg) top left no-repeat;
+		background: url(#{$themePath}images/stars-orange.svg) top left no-repeat;
 		width: 158px;
 		height: 25px;
 		margin:37px auto 28px;
@@ -149,7 +149,7 @@ h1,h2,h3,h4 {
 		&:before {
 			content:"";
 			display: block;
-			background: url(images/stars-orange.svg) top left no-repeat;
+			background: url(#{$themePath}images/stars-orange.svg) top left no-repeat;
 			width: 158px;
 			height: 25px;
 			margin:0 auto 28px;
