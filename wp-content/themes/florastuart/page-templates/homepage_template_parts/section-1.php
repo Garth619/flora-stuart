@@ -73,14 +73,30 @@
 		
 	</div><!-- inner_sec_one -->
 
+
+
 	
 	<picture>
-		
-		<source type="image/jpg" media="(max-width: 500px)" srcset="<?php bloginfo('template_directory');?>/images/header_img_mob.jpg">
+	
+		<?php 
 			
-		<source type="image/jpg" media="(max-width: 935px)" srcset="<?php bloginfo('template_directory');?>/images/header_img_tab.jpg">
+			$desktop_image = get_field( 'desktop_image' ); 
+		
+			$tablet_image = get_field( 'tablet_image' ); 
+		
+			$mobile_image = get_field( 'mobile_image' ); 
+		
+			$mobile_image_webp = get_field( 'mobile_image_webp' );
+		
+		?>
+		
+		<source type="image/webp" media="(max-width: 500px)" srcset="<?php echo $mobile_image_webp['url']; ?>">
+		
+		<source type="image/jpg" media="(max-width: 500px)" srcset="<?php echo $mobile_image['url']; ?>">
+			
+		<source type="image/jpg" media="(max-width: 935px)" srcset="<?php echo $tablet_image['url']; ?>">
 				
-		<img class="hero" src="<?php bloginfo('template_directory');?>/images/header_img_desk.jpg" alt=""/>
+		<img class="hero" src="<?php echo $desktop_image['url']; ?>" alt="<?php echo $desktop_image['alt']; ?>"/>
 	
 	</picture>
 	

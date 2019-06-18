@@ -291,7 +291,7 @@
 		"oAP": "/images/header_img_desk.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/images/header_img_lap.jpg": {
@@ -1171,6 +1171,14 @@
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
+		},
+	"/images/mobile.webp": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/images/mobile.webp",
+		"oF": 0
 		},
 	"/images/mta_img_01_desk.jpg": {
 		"ft": 16384,
