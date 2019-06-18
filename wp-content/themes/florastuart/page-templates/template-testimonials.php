@@ -86,7 +86,7 @@ get_header(); ?>
 					
 				<img class="star" src="<?php bloginfo('template_directory');?>/images/intl_test_icon-01.svg"/>
 				
-				<span>Hear what more clients are saying about us</span>
+				<span><?php the_field( 'bottom_testimonials_title' ); ?></span>
 					
 			</div><!-- bottom_test_title -->
 			

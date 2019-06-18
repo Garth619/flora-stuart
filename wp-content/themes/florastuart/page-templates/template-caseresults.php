@@ -7,7 +7,7 @@ get_header(); ?>
 
 <div id="internal_trigger" class="internal_main">
 	
-	<h1 class="internal_centered_header">Millions in Settlements</h1><!-- internal_centered_header -->
+	<h1 class="internal_centered_header"><?php the_field( 'case_results_title' ); ?></h1><!-- internal_centered_header -->
 		
 		<div class="cr_grid">
 			

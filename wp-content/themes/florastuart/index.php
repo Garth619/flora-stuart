@@ -11,7 +11,7 @@
 			
 			<div class="internal_content content">
 				
-				<h1 class="internal_header">All About Law Blog</h1><!-- internal_header -->
+				<h1 class="internal_header"><?php the_field( 'blog_title','option'); ?></h1><!-- internal_header -->
 				
 				<div class="blog_feed">
 				
