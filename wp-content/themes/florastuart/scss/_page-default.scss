@@ -105,10 +105,32 @@ a.internal_button {
 		padding:24px 92px;
 		@include source_black;
 	}
+	ul.menu {
+		> li.current-menu-item {
+			> a {
+					background:$red;
+			}
+		}
+	}
 	ul {
 		list-style: none;
 		margin:14px 0 0;
 		//padding:0 92px;
+		>li.active {
+			> a {
+				background:$red;
+			}
+		}
+		> li.current-cat {
+			 > a {
+				 	background:$red;
+			 }
+		}
+		> li.current-menu-ancestor {
+				> a {
+						background:$red;
+				}
+		}
 		> li.menu-item-has-children {
 				> a {
 					position: relative;
@@ -156,6 +178,11 @@ a.internal_button {
 				background:#fff;
 				margin:0;
 				display: none;
+				li.current-menu-item {
+					a {
+						color:$orange;
+					}
+				}
 				li {
 					a {
 						//border:1px solid red;
@@ -163,7 +190,7 @@ a.internal_button {
 						padding:12px 92px;
 						transition: all 200ms ease-in-out;
 						&:hover {
-							color:$yellow;
+							color:$orange;
 							background: transparent;
 						}
 					}

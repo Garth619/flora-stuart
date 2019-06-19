@@ -561,13 +561,27 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
 		
 		$('.sidebar_box ul.menu > li.menu-item-has-children > a').on('click', function(e) {
 		  
-			$('.sidebar_box ul.menu > li.menu-item-has-children > a').removeClass('active');
+			//$('.sidebar_box ul.menu > li.menu-item-has-children > a').removeClass('active');
 			
-			$(this).addClass('active');
+			$(this).toggleClass('active');
 			
 			$(this).next('ul.sub-menu').slideToggle(200);
 		
 		});
+		
+		// current for blog sidebar
+		
+		
+			var pgurl = window.location.href;
+			
+			$(".widget ul li").each(function(){
+		  
+		  if($(this).find('a').attr("href") == pgurl)
+		    
+		    $(this).addClass("active");
+			
+			})
+		
 		
 		
 		// faqs
