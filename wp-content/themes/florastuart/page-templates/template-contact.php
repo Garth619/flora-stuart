@@ -20,7 +20,19 @@
 					
 					<span class="contact_title">Phone</span><!-- contact_title -->
 					
-					<a class="contact_phone" href="tel:<?php echo str_replace(['-', '(', ')', ' '], '', get_field('phone_number')); ?>"><?php the_field( 'phone_number_verbiage' ); ?> <?php the_field( 'phone_number' ); ?></a><!-- contact_phone -->
+					<a class="contact_phone" href="tel:<?php echo str_replace(['-', '(', ')', ' '], '', get_field('phone_number')); ?>">
+						
+						<span><?php the_field( 'phone_number_verbiage' ); ?></span> <?php the_field( 'phone_number' ); ?>
+					
+					</a><!-- contact_phone -->
+					
+					<a class="contact_button_scroll" href="#consultation">
+						
+						<span class="button_text">Request Free Evaluation</span><!-- button_text -->
+						
+						<?php echo file_get_contents("wp-content/themes/florastuart/images/arrow-blue.svg"); ?>
+					
+					</a><!-- contact_button_scroll -->
 					
 				</div><!-- contact_phone_row -->
 				
@@ -41,6 +53,14 @@
 						<span class="contact_address"><?php the_field( 'address_two' ); ?></span><!-- contact_address -->
 						
 						<a class="contact_get_directions" href="<?php the_field( 'address_two_link' ); ?>" target="_blank" rel="noopener">Get Directions</a><!-- contact_get_directions -->
+						
+					</div><!-- contact_single_location -->
+					
+					<div class="contact_single_location">
+						
+						<span class="contact_address"><?php the_field( 'address_three' ); ?></span><!-- contact_address -->
+						
+						<a class="contact_get_directions" href="<?php the_field( 'address_three_link' ); ?>" target="_blank" rel="noopener">Get Directions</a><!-- contact_get_directions -->
 						
 					</div><!-- contact_single_location -->
 					

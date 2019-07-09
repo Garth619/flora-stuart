@@ -466,8 +466,8 @@ checksliderwidth();
  
  $('.gb_slider').slick({
   infinite: true,
-  slidesToShow: 3,
-  slidesToScroll: 1,
+  slidesToShow: 5,
+  slidesToScroll: 5,
 	arrows:true,
 	dots:false,
 	prevArrow:'.gb_arrow_left',
@@ -492,6 +492,18 @@ checksliderwidth();
 	]
  });
 
+
+
+
+$('.faq_extended_slider').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+	arrows:false,
+	adaptiveHeight: true,
+	fade:true,
+	dots:true
+ });
  
  
  
@@ -658,10 +670,10 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
   	
   // nav
   
+ 
   
-  if($('nav').length >0 ){ // just show on homepage class 'nav'
   
-  
+ if($('nav').length >0 ){// just show on homepage class 'nav'
   
   $('.current-menu-item').addClass('active');
 	
@@ -707,17 +719,66 @@ $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
                 width: $('nav ul.menu > li.active a').width()
             });
         });
-
-
-
-    });
-
-  
-  
-  
-   //your code here 
+ });
+    
+    
 }
-  
+
+
+
+
+// load more testimonials
+
+
+if($('.testimonials_wrapper').length >0 ){
+
+		
+		function slideTestimonials() {
+	    
+	    size_li = $(".bottom_test_col_one .single_bottom_testi, .bottom_test_col_two .single_bottom_testi, .bottom_test_col_three .single_bottom_testi").size();
+   
+			
+	    
+	    
+	    if ($(window).width() >= 1280) {
+		    
+		    x=2;
+	        
+	      
+	    	$('.bottom_test_col_one .single_bottom_testi:lt('+x+'), .bottom_test_col_two .single_bottom_testi:lt('+x+'), .bottom_test_col_three .single_bottom_testi:lt('+x+') ').show();
+   
+				$('#load_more').click(function () {
+        
+        	x= (x+2 <= size_li) ? x+2 : size_li;
+					
+					$('.bottom_test_col_one .single_bottom_testi:lt('+x+'), .bottom_test_col_two .single_bottom_testi:lt('+x+'), .bottom_test_col_three .single_bottom_testi:lt('+x+')').fadeIn();
+    		
+    		});
+	    	   		
+	    }
+	    
+	    else {
+		    
+		    x=1;
+		    
+		    $('#load_more').click(function () {
+        
+        	x= (x+1 <= size_li) ? x+1 : size_li;
+					
+					$('.bottom_test_col_two .single_bottom_testi:lt('+x+'), .bottom_test_col_three .single_bottom_testi:lt('+x+')').fadeIn();
+    		
+    		});
+		    
+	    }
+	    
+		};
+		
+		
+		slideTestimonials();
+
+
+}
+
 
   
 }); // document ready

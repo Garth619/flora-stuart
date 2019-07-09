@@ -88,6 +88,7 @@
 		
 	</div><!-- internal_wrapper -->
 	
+	
 	<div class="faq_wrapper">
 		
 		<div class="faq_inner">
@@ -96,75 +97,133 @@
 				
 				<div class="faq_extended_slider">
 					
-					<div class="faq_extended_slide">
+					<?php if(get_field('testimonial_slider')): ?>
+					 
+						<?php while(has_sub_field('testimonial_slider')): ?>
 						
-						<div class="faq_profile">
-							
-							<img class="red_img" src="<?php bloginfo('template_directory');?>/images/test_image_icon_01.svg"/>
-							
-							<?php $testimonial_profile_image = get_field( 'testimonial_profile_image_extended' ); ?>
-							
-							<?php if ( $testimonial_profile_image ) { ?>
-							
-							<img class="faq_profile_img" src="<?php echo $testimonial_profile_image['url']; ?>" alt="<?php echo $testimonial_profile_image['alt']; ?>" />
-							
-							<?php } ?>
-							
-							<img class="faq_stars" src="<?php bloginfo('template_directory');?>/images/intl_header_icon_01.svg"/>
-							
-							<span class="faq_quote_title"><?php the_field( 'testimonial_title_extended' ); ?></span><!-- faq_quote_title -->
-							
-							<span class="faq_quote_description"><?php the_field( 'testimonial_description_extended' ); ?></span><!-- faq_quote_description -->
-							
-							<span class="faq_profile_name"><?php the_field( 'testimonial_name_extended' ); ?></span><!-- faq_profile_name -->
-							
-						</div><!-- faq_profile -->
+							<div class="faq_extended_slide">
 						
-					</div><!-- faq_extended_slide -->
+								<div class="faq_profile">
+										
+										<?php $image = get_sub_field( 'image' ); ?>
+						
+										<?php if ( $image ) { ?>
+							
+										<img class="red_img" src="<?php bloginfo('template_directory');?>/images/test_image_icon_01.svg"/>
+							
+										<img class="faq_profile_img" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+							
+										<img class="faq_stars" src="<?php bloginfo('template_directory');?>/images/intl_header_icon_01.svg"/>
+										
+										<?php } ?>
+							
+										<span class="faq_quote_title"><?php the_sub_field( 'testimonial_title' ); ?></span><!-- faq_quote_title -->
+							
+										<span class="faq_quote_description"><?php the_sub_field( 'testimonial_description' ); ?></span><!-- faq_quote_description -->
+							
+										<span class="faq_profile_name"><?php the_sub_field( 'testimonial_name' ); ?></span><!-- faq_profile_name -->
+							
+									</div><!-- faq_profile -->
+						
+								</div><!-- faq_extended_slide -->
+					 
+						<?php endwhile; ?>
+					 
+					<?php endif; ?>
 					
 				</div><!-- fag_extended_slider -->
 				
 			</div><!-- faq_quote_wrapper -->
-			
-			<div class="faq_questions">
+
+
+			<?php if(get_field('faq_qa')): ?>
 				
-				<span class="faq_header"><?php the_field( 'faq_title' ); ?></span><!-- faq_header -->
-				
-				
-				<?php if(get_field('faq_qa')): ?>
-				
+				<div class="faq_questions">
+					
+					<span class="faq_header"><?php the_field( 'faq_title' ); ?></span><!-- faq_header -->
+					
 					<ul>
-				 
+					
 					<?php while(has_sub_field('faq_qa')): ?>
-				 
+					
 						<li>
 						
 							<span class="question"><?php the_sub_field( 'question' ); ?></span><!-- question -->
 							<span class="answer"><?php the_sub_field( 'answer' ); ?></span><!-- answer -->
 						
 						</li>
-				    
+					
 					<?php endwhile; ?>
 					
 					</ul>
-				 
-				<?php endif; ?>
-				
-			</div><!-- faq_questions -->
+					
+				</div><!-- faq_questions -->
+
+			<?php endif; ?>
 			
 		</div><!-- faq_inner -->
 		
 	</div><!-- faq_wrapper -->
 	
-	<div class="extended_content">
+	
+	<?php if(get_field('middle_content_extended')) : ?>
+	
+		<div class="extended_content">
 		
-		<div class="extended_content_inner content">
+			<div class="extended_content_inner content">
 		
-			<?php the_field( 'middle_content_extended' ); ?>
+				<?php the_field( 'middle_content_extended' ); ?>
 		
-		</div><!-- extended_content_inner -->
+			</div><!-- extended_content_inner -->
 		
-	</div><!-- extended_content -->
+		</div><!-- extended_content -->
+	
+	<?php endif;?>
+	
+	
+	
+	<?php if(get_field('pa_extended_community_slider')): ?>
+	
+		<span class="pa_extended_community_title"><?php the_field( 'pa_extended_community_slider_title' ); ?></span><!-- pa_extended_community_title -->
+	
+		<div class="att_bio_community pa_extended_community_slider">
+			
+			<div class="att_bio_community_inner">
+				
+				<div class="att_bio_arrow att_bio_arrow_left"></div><!-- att_bio_arrow -->
+				
+				<div class="att_bio_slider">
+					
+					<?php while(has_sub_field('pa_extended_community_slider')): ?>
+					 
+							<div class="att_bio_slide">
+								
+								<?php $image = get_sub_field( 'image' ); ?>
+						
+								<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+						
+							</div><!-- att_bio_slide -->
+					    
+						<?php endwhile; ?>
+					 
+					</div><!-- att_bio_slider -->
+				
+				<div class="att_bio_arrow att_bio_arrow_right"></div><!-- att_bio_arrow -->
+				
+			</div><!-- att_bio_community_inner -->
+			
+			<span class="comm_title"><?php the_field( 'att_community_title' ); ?></span><!-- comm_title -->
+			
+		</div><!-- att_bio_community -->
+		
+		<?php endif; ?>
+	
+	
+	
+	
+	
+	
+	<?php if(get_field('case_result_slider')): ?>
 	
 	<div class="extended_case_results_wrapper content">
 		
@@ -174,9 +233,7 @@
 			
 			<div class="ex_cr_slider">
 				
-				<?php if(get_field('case_result_slider')): ?>
-				 
-					<?php while(has_sub_field('case_result_slider')): ?>
+				<?php while(has_sub_field('case_result_slider')): ?>
 					
 						<?php if(get_sub_field('case_result_amount_extended')) { ?>
 							
@@ -208,11 +265,7 @@
 							
 						<?php } ?>
 						
-					
-				    
 					<?php endwhile; ?>
-				 
-				<?php endif; ?>
 				
 			</div><!-- ex_cr_slider -->
 			
@@ -235,6 +288,30 @@
 		</div><!-- extended_bottom_content -->
 		
 	</div><!-- extended_case_results_wrapper -->
+	
+	<?php endif;?>
+	
+	<?php if(!get_field('case_result_slider')): ?>
+	
+	<div class="extended_case_results_wrapper content no_slider">
+		
+		<div class="extended_bottom_content">
+		
+			<span class="ex_cr_title"><?php the_field( 'bottom_title_extended' ); ?></span><!-- ex_cr_title -->
+			
+			<div class="extended_bottom_content_inner">
+		
+				<?php the_field( 'bottom_content_extended' ); ?>
+				
+				<a class="get_consultation_button" href="#consultation"><?php the_field( 'bottom_button_extended' ); ?></a><!-- get_consultation_button -->
+			
+			</div><!-- extended_bottom_content_inner -->
+		
+		</div><!-- extended_bottom_content -->
+		
+	</div><!-- extended_case_results_wrapper -->
+	
+	<?php endif;?>
 	
 </div><!-- internal_main -->
 		

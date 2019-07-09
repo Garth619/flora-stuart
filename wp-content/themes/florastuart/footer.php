@@ -68,6 +68,15 @@
 					
 				</div><!-- single_location -->
 				
+				<div class="single_location">
+					
+					<span class="address"><?php the_field( 'firm_greenville_address','option'); ?></span><!-- address -->
+					
+					<a class="get_directions" href="<?php the_field( 'firm_greenville_directions_link','option'); ?>" target="_blank" rel="noopener">Get Directions</a><!-- get_directions -->
+					
+				</div><!-- single_location -->
+
+				
 			</div><!-- locations -->
 			
 		</div><!-- footer_locations -->

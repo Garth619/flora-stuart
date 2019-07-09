@@ -10,11 +10,16 @@ footer {
 	margin:0 auto;
 	display: flex;
 	flex-wrap: wrap;
-	
+	justify-content: space-between;
 }
 
-.field_trip_wrapper, .footer_locations, .footer_form {
+.field_trip_wrapper, .footer_locations {
 	flex-basis:50%;
+}
+
+
+.footer_form {
+	flex-basis:48%;
 }
 
 
@@ -76,6 +81,8 @@ footer {
 }
 
 
+
+
 .footer_play_wrapper {
 	position: absolute;
 	top:30px;
@@ -87,10 +94,12 @@ footer {
 		display: block;
 		text-align: center;
 		&:hover {
+			span.play_tri {
+				border-left: 16px solid $yellow;
+			}
 			.play_image_wrapper {
 				img.play_image {
 					transform: scale(1.1);
-					
 				}
 			}
 		}
@@ -115,7 +124,7 @@ footer {
 			img.play_image {
 				transform: scale(1);
 				border-radius: 50%;
-				transition: all 800ms cubic-bezier(.17,.66,.34,.98);
+				transition: all 600ms cubic-bezier(.17,.66,.34,.98);
 			}
 		}
 		span.play_tri {
@@ -129,6 +138,7 @@ footer {
 			border-bottom: 13px solid transparent;
 			border-left: 16px solid #fff;
 			z-index: 1;
+			transition: all 500ms ease-in-out;
 		}
 	}
 }
@@ -159,11 +169,23 @@ footer {
 
 .locations {
 	display: flex;
+	//justify-content: space-between;
 }
 
 .single_location {
+	br {
+		display: none;
+	}
 	&:first-of-type {
-		margin-right:80px;
+		flex-basis:200px;
+		margin-right:5%;
+	}
+	&:nth-of-type(2) {
+		flex-basis: 235px;
+		margin-right:5%;
+	}
+	&:nth-of-type(3) {
+		flex-basis: 220px;
 	}
 	span.address {
 		display: block;
@@ -191,7 +213,7 @@ footer {
 .footer_form {
 	order:2;
 	margin:119px 0 0;
-	padding-left:25px;
+	//padding-left:25px;
 	.footer_form_inner {
 		background: $blue;
 		box-shadow: 0px 2px 40px 0px rgba(0, 0, 0, 0.7);
@@ -325,9 +347,10 @@ span.myrequired {
 
 .copyright {
 	display: flex;
+	max-width:1715px;
 	justify-content: space-between;
 	align-items: center;
-	margin-top:130px;
+	margin:130px auto 0;
 	padding-bottom:80px;
 	ul {
 		list-style: none;
@@ -361,6 +384,28 @@ span.myrequired {
 }
 
 
+@media screen and (max-width: 1660px) {
+	
+	
+.single_location {
+	&:first-of-type {
+		flex-basis:200px;
+		margin-right:2%;
+	}
+	&:nth-of-type(2) {
+		flex-basis: 217px;
+		margin-right:2%;
+	}
+	&:nth-of-type(3) {
+		flex-basis:200px;
+	}
+}
+	
+	
+	
+} /* Media Query */
+
+
 @media screen and (max-width: 1640px) {
 	
 	
@@ -370,7 +415,7 @@ span.myrequired {
 	}
 	
 	.footer_form {
-		padding-left:45px;
+		//padding-left:45px;
 		.footer_form_inner {
 			padding: 83px 53px 90px;
 			span.form_title {
@@ -402,6 +447,29 @@ span.myrequired {
 	
 	
 	
+	
+	.single_location {
+		span.address {
+			font-size: 20px;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.single_location {
+		&:nth-of-type(1) {
+			flex-basis: 175px;
+		}
+		&:nth-of-type(2) {
+			flex-basis: 170px;
+		}
+		&:nth-of-type(3) {
+			flex-basis: 170px;
+		}
+	}
+	
+	
+	
 } /* Media Query */
 
 
@@ -411,7 +479,7 @@ span.myrequired {
 	
 	
 	.footer_form {
-		flex-basis: 52%;
+		//flex-basis: 52%;
 	}
 	
 	.footer_locations, .field_trip_wrapper {
@@ -490,7 +558,10 @@ span.myrequired {
    
    .single_location {
 	   &:first-of-type {
-		   margin-right:10%;
+		 	margin-right:3%;
+	   }
+	   &:nth-of-type(2) {
+		   margin-right: 5%;
 	   }
    }
    
@@ -499,6 +570,24 @@ span.myrequired {
 	   margin-top: 82px;
 	   padding-bottom: 56px;
    }
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1325px) {
+	
+	
+	.single_location {
+	  &:first-of-type {
+		 margin-right:4%;
+		 flex-basis:143px;
+	  }
+	  &:nth-of-type(2) {
+		  margin-right: 3%;
+	  }
+  }
+	
 	
 	
 } /* Media Query */
@@ -615,7 +704,7 @@ span.myrequired {
 		margin-bottom: 25px;
 	}
 	a.get_directions {
-		margin: 30px 0 35px;
+		margin: 37px 0 28px;
 	}
 }
 
@@ -624,8 +713,18 @@ span.myrequired {
 }
 	
 .single_location {
+	br {
+		display: inline-block;
+	}
 	&:first-of-type {
 		margin-right:0;
+	}
+	&:nth-of-type(2) {
+		margin-right:0;
+	}
+	span.address {
+		font-size: 24px;
+		line-height: 30px;
 	}
 }
 
@@ -634,7 +733,7 @@ span.myrequired {
 	margin-top: 40px;
 	display: block;
 	text-align: center;
-	padding-bottom: 80px;
+	padding-bottom: 58px;
 	ul {
 		max-width:525px;
 		margin:0 auto 30px;
@@ -780,6 +879,13 @@ span.myrequired {
 				display: block;
 			}
 		}
+		.single_location {
+			&:nth-of-type(3) {
+				a.get_directions {
+					margin-bottom: 12px;
+				}
+			}
+		}
 	}
 	
 	
@@ -791,7 +897,8 @@ span.myrequired {
 	
 	
 	.copyright {
-		padding-bottom: 40px;
+		padding-bottom: 60px;
+		margin-top:0;
 		ul {
 			max-width: 360px;
 		}
