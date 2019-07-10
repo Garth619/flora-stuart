@@ -502,7 +502,7 @@ if(!function_exists('is_descendant_of')){
 
 
 
-add_filter('acf/validate_value/key=field_5cc0984cf5836', 'ilaw_validate_sidebar_name', 20, 4); // this may be different each time after import check screen option key value
+add_filter('acf/validate_value/key=field_5cc0984cf5836', 'ilaw_validate_sidebar_name', 20, 4); // this may be different each time after import check screen option key value. get it from sidebar_menu_title acf
 function ilaw_validate_sidebar_name( $valid, $value, $field, $input ) {
   // bail early if value is already invalid
   if( !$valid ) {
