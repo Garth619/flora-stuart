@@ -2,9 +2,9 @@
 				
 	<div class="sidebar_box form">
 		
-		<span class="sidebar_form_title"><?php the_field( 'sidebar_form_title' ); ?></span><!-- sidebar_form_title -->
+		<span class="sidebar_form_title"><?php the_field( 'sidebar_form_title_new','option'); ?></span><!-- sidebar_form_title -->
 		
-		<span class="sidebar_description"><?php the_field( 'sidebar_form_description' ); ?></span><!-- sidebar_description -->
+		<span class="sidebar_description"><?php the_field( 'sidebar_form_description','option'); ?></span><!-- sidebar_description -->
 
 		<?php gravity_form(4, false, false, false, '', true, 12213); ?>
 		

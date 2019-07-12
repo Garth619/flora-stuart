@@ -139,7 +139,7 @@ get_header(); ?>
 								
 											<?php $single_event_image = get_sub_field( 'single_event_image' ); ?>
 		
-											<img src="<?php bloginfo('template_directory');?>/images/timeline_2013.jpg" />
+											<img src="<?php echo $single_event_image['url']; ?>" alt="<?php echo $single_event_image['alt']; ?>" />
 		
 										</div><!-- single_event_overlay -->
 								
@@ -177,7 +177,7 @@ get_header(); ?>
 								
 											<?php $single_event_image = get_sub_field( 'single_event_image' ); ?>
 		
-											<img src="<?php bloginfo('template_directory');?>/images/timeline_2013.jpg" />
+											<img src="<?php echo $single_event_image['url']; ?>" alt="<?php echo $single_event_image['alt']; ?>" />
 		
 										</div><!-- single_event_overlay -->
 								
