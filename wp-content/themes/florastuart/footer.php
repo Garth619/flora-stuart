@@ -36,6 +36,8 @@
 			
 			<a class="visit_comm" href="<?php the_field( 'community_button_page_link','option'); ?>"><?php the_field( 'community_button_verbaige','option'); ?></a><!-- visit_comm -->
 			
+			<a class="visit_comm visit_team" href="<?php the_field( 'meet_team_button_page_link','option'); ?>"><?php the_field( 'meet_team_button_verbiage','option'); ?></a><!-- visit_comm -->
+			
 			
 			
 			</div><!-- field_trip_inner -->

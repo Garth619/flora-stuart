@@ -29,7 +29,7 @@ footer {
 }
 
 .field_trip_inner {
-	max-width:520px;
+	max-width:530px;
 	position: relative;
 	margin:0 auto;
 	left: -44px;
@@ -69,8 +69,9 @@ footer {
 		display: inline-block;
 		border-radius: 3px;
 		border:1px solid $yellow;
-		margin-top:51px;
-		padding:26px 34px;
+		margin:51px 7px 0;
+		width:249px;
+		padding:26px 10px;
 		transition: all 200ms ease-in-out;
 		background: transparent;
 		@include source_bold;
@@ -532,7 +533,7 @@ span.myrequired {
    }
    
    .field_trip_inner {
-	   max-width: 459px;
+	   max-width: 535px;
 	   margin:0;
 	   left:0;
 	   span.comm_description {
@@ -549,7 +550,7 @@ span.myrequired {
    
    
    .footer_play_wrapper {
-	   right: -90px;
+	   right: -28px;
    }
    
    .footer_locations {
@@ -804,9 +805,15 @@ span.myrequired {
 		}
 		a.visit_comm {
 			font-size: 18px;
-			padding: 19px 15px;
-			width:100%;
+			padding: 23px 15px;
+			width:233px;
 			max-width:332px;
+			display: block;
+			margin-left:auto;
+			margin-right:auto;
+		}
+		a.visit_comm.visit_team {
+			margin-top:13px;
 		}
 		span.poppy_title {
 			margin-top:45px;

@@ -87,6 +87,14 @@ get_header(); ?>
 				<img class="star" src="<?php bloginfo('template_directory');?>/images/intl_test_icon-01.svg"/>
 				
 				<span><?php the_field( 'bottom_testimonials_title' ); ?></span>
+				
+				<?php $hear_clients_image = get_field( 'hear_clients_image' ); ?>
+				
+				<?php if ( $hear_clients_image ) { ?>
+				
+				<img  class="flora_couple" src="<?php echo $hear_clients_image['url']; ?>" alt="<?php echo $hear_clients_image['alt']; ?>" />
+				
+				<?php } ?>
 					
 			</div><!-- bottom_test_title -->
 			

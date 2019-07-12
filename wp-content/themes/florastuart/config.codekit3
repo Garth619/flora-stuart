@@ -1171,6 +1171,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/images/intl_test_img_large.jpg": {
+		"ft": 16384,
+		"iS": 129857,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/intl_test_img_large.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/images/intl_video_img.jpg": {
 		"ft": 16384,
 		"iS": 0,

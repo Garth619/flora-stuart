@@ -106,22 +106,21 @@
 .bottom_single_location {
 	flex-basis:calc(25% - 40px);
 	margin:0 20px 50px;
+	overflow: hidden;
 	&:hover {
 		a {
 			.bottom_location_img {
 				.bottom_location_overlay {
-					opacity: 1;
+					transform: translateY(0%);
 				}
 			}
 		}
 	}
 	a {
 		text-decoration: none;
-		//height:366px;
 		display: block;
 		.bottom_location_img {
 			position: relative;
-			//height:296px;
 			img {
 				width: 100%;
 				height:auto;
@@ -138,8 +137,9 @@
 				display: flex;
 				justify-content: center;
 				align-items: center;
-				opacity: 0;
-				transition: all 400ms ease-in-out;
+				//opacity: 0;
+				transform: translateY(-100%);
+				transition: transform 1000ms cubic-bezier(.17,.66,.34,.98);
 				span {
 					content:"Explore This Location";
 					color:$yellow;
@@ -157,7 +157,7 @@
 			text-align: center;
 			span.bottom_location_title {
 				display: inline-block;
-				color:$blue;
+				color:$red;
 				font-size: 30px;
 				margin-top:19px;
 				padding-bottom:20px;

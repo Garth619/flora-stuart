@@ -776,14 +776,17 @@ header.internal {
 		height:100vh;
 		background: $blue;
 		z-index:1;
+		padding-right:0;
 		display: none;
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
 		.menu-header {
 			max-width:100%;
 		}
 		ul.menu {
 			display: block;
 			text-align: center;
-			padding:0;
+			padding:0 0 200px 0;
 			> li {
 					font-size:18px;
 					padding-bottom: 32px;
