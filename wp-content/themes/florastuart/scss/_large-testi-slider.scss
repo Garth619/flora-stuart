@@ -1,0 +1,314 @@
+#large_testi_quotes {
+	width:100%;
+	//height:906px;
+	background: $blue;
+	padding:0 110px 185px;
+}
+
+
+.large_testi_quotes_inner {
+	padding:108px 0 0;
+}
+
+
+span.large_testi_quotes_title {
+	text-transform: uppercase;
+	color:$yellow;
+	font-size: 20px;
+	display: block;
+	letter-spacing: 0.1em;
+	@include source_black;
+}
+
+
+
+.large_testi_quotes_slider_wrapper {
+	display: flex;
+	max-width:1325px;
+	margin:0 auto;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.large_testi_quotes_slider {
+	order:2;
+	max-width:880px;
+	width:calc(100% - 142px);
+}
+
+.large_testi_quotes_slide {
+	text-align: center;
+}
+
+.large_testi_quotes_profile {
+	img {
+		max-width:100%;
+		height: auto;
+		display: block;
+		margin:0 auto;
+	}
+	img.red_arch {
+		width:169px;
+		height:84px;
+	}
+	img.profile {
+		border-radius: 50%;
+		width:137px;
+		height:137px;
+		margin-top:-67px;
+	}
+	img.stars {
+		margin-top:-13px;
+	}
+}
+
+span.large_testi_quotes_slide_title {
+	color:#fff;
+	margin:30px auto 43px;
+	display: block;
+	font-size: 65px;
+	max-width:800px;
+	line-height: 77px;
+	@include escrow_banner_bold;
+}
+
+
+span.large_testi_quotes_description {
+	display: block;
+	color:#fff;
+	font-size: 25px;
+	line-height: 44px;
+	@include source_semibold;
+}
+
+span.large_testi_quotes_name {
+	color:$yellow;
+	text-transform: uppercase;
+	font-size: 18px;
+	display: block;
+	letter-spacing: 0.1em;
+	margin:47px 0 0;
+	@include source_black;
+}
+
+
+.large_testi_quotes_arrows {
+	
+}
+
+
+
+.large_testi_quotes_arrow {
+	width:71px;
+	height:71px;
+	position: relative;
+	z-index:1;
+	flex-shrink:0;
+	border:1px solid $yellow;
+	border-radius: 3px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: transparent;
+	transition: all 200ms ease-in-out;
+	cursor: pointer;
+	&:hover {
+		background: $yellow;
+	}
+	&:before {
+		content:"";
+		display: block;
+		width: 0; 
+		height: 0; 
+		border-top: 15px solid transparent;
+		border-bottom: 15px solid transparent;
+	}
+}
+
+.large_testi_quotes_left_arrow {
+	order:1;
+	&:before {
+		 border-right:15px solid #fff;
+		margin-left:-2px;
+	}
+}
+
+
+.large_testi_quotes_right_arrow {
+	order:3;
+	&:before {
+		border-left:15px solid #fff; 
+		margin-right:-2px;
+	}
+}
+
+
+@media screen and (max-width: 1450px) {
+	
+	#section_five {
+		padding:0 100px 111px;
+	}
+	
+	.large_testi_quotes_inner {
+		padding: 96px 0 0;
+	}
+	
+	.large_testi_quotes_slider_wrapper {
+		margin: 42px auto 0;
+	}
+	
+	
+	span.large_testi_quotes_slide_title {
+		font-size: 55px;
+		line-height: 67px;
+		max-width: 701px;
+	}
+	
+	span.large_testi_quotes_name {
+		margin: 72px 0 0;
+	}
+	
+	
+	
+	
+} /* Media Query */
+
+
+
+
+@media screen and (max-width: 1100px) {
+	
+	
+	#section_five {
+		padding:0 70px 122px;
+	}
+	
+	.large_testi_quotes_inner {
+		position: relative;
+	}
+	
+	
+	.large_testi_quotes_slider_wrapper {
+		margin:120px auto 0;
+	}
+	
+	.large_testi_quotes_arrow {
+		position: absolute;
+		top:68px;
+		
+	}
+	
+	.large_testi_quotes_left_arrow {
+		right:82px;
+	}
+	
+	.large_testi_quotes_right_arrow {
+		right:0;
+	}
+	
+	.large_testi_quotes_slider {
+		width:100%;
+		max-width: 100%;
+	}
+	
+	span.large_testi_quotes_name {
+    margin: 62px 0 0;
+	}
+	
+	
+	span.large_testi_quotes_slide_title {
+		font-size: 49px;
+		line-height: 61px;
+		max-width: 619px;
+	}
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 767px) {
+	
+	
+	
+	#section_five {
+		padding: 0 40px 85px;
+	}
+	
+	span.large_testi_quotes_title {
+		font-size: 18px;
+	}
+	
+	.large_testi_quotes_inner {
+    padding: 77px 0 0;
+	}
+	
+	
+	.large_testi_quotes_profile {
+		img.red_arch {
+			width:147px;
+			height:73px;
+		}
+		img.profile {
+			width:114px;
+			height:114px;
+			margin-top: -57px;
+		}
+		img.stars {
+			width:135px;
+			height:18px;
+			margin-top: -9px;
+		}
+	}
+	
+	
+	span.large_testi_quotes_slide_title {
+		font-size: 36px;
+		line-height: 44px;
+		max-width: 304px;
+		margin: 38px auto 26px;
+	}
+	
+	span.large_testi_quotes_description {
+		font-size: 18px;
+		line-height: 36px;
+	}
+	
+	
+	.large_testi_quotes_arrow {
+		position: static;
+		margin:0 6px;
+	}
+	
+	
+	.large_testi_quotes_slider_wrapper {
+		flex-direction: column;
+		margin: 74px auto 0;
+	}
+	
+	
+	.large_testi_quotes_slider {
+		order:1;
+	}
+	
+	.large_testi_quotes_arrows {
+		order:2;
+		display: flex;
+	}
+	
+	
+	.large_testi_quotes_left_arrow {
+		order:2;
+	}
+	
+	.large_testi_quotes_right_arrow {
+		order:3;
+	}
+	
+	
+	span.large_testi_quotes_name {
+    margin: 30px 0 76px;
+	}
+	
+	
+} /* Media Query */

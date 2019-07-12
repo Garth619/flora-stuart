@@ -329,6 +329,20 @@ jQuery(document).ready(function($){
  });
  
  
+ 
+ $('.large_testi_quotes_slider').slick({
+  infinite: true,
+  slidesToShow: 1,
+  fade:true,
+  slidesToScroll: 1,
+	arrows:true,
+	prevArrow:'.large_testi_quotes_left_arrow',
+	nextArrow:'.large_testi_quotes_right_arrow',
+	dots:false,
+
+ });
+ 
+ 
  	// adds a div to center arrows 
  
  	function checksliderwidth() {
@@ -337,6 +351,8 @@ jQuery(document).ready(function($){
             
           
         	$('.sec_five_arrow').wrapAll('<div class="sec_five_arrows"></div>');
+        	
+        	$('.large_testi_quotes_arrow').wrapAll('<div class="large_testi_quotes_arrows"></div>');
         	   		
         		
         } 

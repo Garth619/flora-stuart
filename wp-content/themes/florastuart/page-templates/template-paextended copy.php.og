@@ -89,58 +89,82 @@
 	</div><!-- internal_wrapper -->
 	
 	
-	<?php if(get_field('pa_extended_testimonial_quotes')): ?>
-	
-		<section id="large_testi_quotes">
-	
-			<div class="large_testi_quotes_inner">
+	<div class="faq_wrapper">
 		
-				<span class="large_testi_quotes_title"><?php the_field( 'pa_extended_testimonial_title' ); ?></span><!-- large_testi_quotes_title -->
-		
-					<div class="large_testi_quotes_slider_wrapper">
+		<div class="faq_inner">
 			
-						<div class="large_testi_quotes_slider">
+			<div class="faq_quote_wrapper">
 				
-							<?php while(has_sub_field('pa_extended_testimonial_quotes')): ?>
-				 
-								<div class="large_testi_quotes_slide">
+				<div class="faq_extended_slider">
 					
-									<div class="large_testi_quotes_profile">
+					<?php if(get_field('testimonial_slider')): ?>
+					 
+						<?php while(has_sub_field('testimonial_slider')): ?>
 						
-										<img class="red_arch" data-src="<?php bloginfo('template_directory');?>/images/test_image_icon_01.svg"/>
-								
-										<?php $profile_image = get_sub_field( 'profile_image' ); ?>
-		
-										<img class="profile" data-src="<?php echo $profile_image['url']; ?>" alt="<?php echo $profile_image['alt']; ?>" />
+							<div class="faq_extended_slide">
 						
-										<img class="stars" data-src="<?php bloginfo('template_directory');?>/images/test_image_icon_02.svg"/>
+								<div class="faq_profile">
+										
+										<?php $image = get_sub_field( 'image' ); ?>
 						
-									</div><!-- large_testi_quotes_profile -->
+										<?php if ( $image ) { ?>
+							
+										<img class="red_img" src="<?php bloginfo('template_directory');?>/images/test_image_icon_01.svg"/>
+							
+										<img class="faq_profile_img" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+							
+										<img class="faq_stars" src="<?php bloginfo('template_directory');?>/images/intl_header_icon_01.svg"/>
+										
+										<?php } ?>
+							
+										<span class="faq_quote_title"><?php the_sub_field( 'testimonial_title' ); ?></span><!-- faq_quote_title -->
+							
+										<span class="faq_quote_description"><?php the_sub_field( 'testimonial_description' ); ?></span><!-- faq_quote_description -->
+							
+										<span class="faq_profile_name"><?php the_sub_field( 'testimonial_name' ); ?></span><!-- faq_profile_name -->
+							
+									</div><!-- faq_profile -->
+						
+								</div><!-- faq_extended_slide -->
+					 
+						<?php endwhile; ?>
+					 
+					<?php endif; ?>
 					
-									<span class="large_testi_quotes_slide_title"><?php the_sub_field( 'quote_header' ); ?></span><!-- large_testi_quotes_slide_title -->
-					
-									<span class="large_testi_quotes_description"><?php the_sub_field( 'quote_content' ); ?></span><!-- large_testi_quotes_description -->
-					
-									<span class="large_testi_quotes_name"><?php the_sub_field( 'quote_name' ); ?></span><!-- large_testi_quotes_name -->
-					
-								</div><!-- large_testi_quotes_slide -->
-				    
-							<?php endwhile; ?>
-				 
-						</div><!-- large_testi_quotes_slider -->
-			
-						<div class="large_testi_quotes_arrow large_testi_quotes_left_arrow"></div><!-- large_testi_quotes_left_arrow -->
+				</div><!-- fag_extended_slider -->
 				
-						<div class="large_testi_quotes_arrow large_testi_quotes_right_arrow"></div><!-- large_testi_quotes_right_arrow -->
-				
-				</div><!-- large_testi_quotes_slider_wrapper -->
-		
-	</div><!-- large_testi_quotes_inner -->
-	
-</section><!-- large_testi_quotes -->
+			</div><!-- faq_quote_wrapper -->
 
-	<?php endif; ?>
+
+			<?php if(get_field('faq_qa')): ?>
+				
+				<div class="faq_questions">
+					
+					<span class="faq_header"><?php the_field( 'faq_title' ); ?></span><!-- faq_header -->
+					
+					<ul>
+					
+					<?php while(has_sub_field('faq_qa')): ?>
+					
+						<li>
+						
+							<span class="question"><?php the_sub_field( 'question' ); ?></span><!-- question -->
+							<span class="answer"><?php the_sub_field( 'answer' ); ?></span><!-- answer -->
+						
+						</li>
+					
+					<?php endwhile; ?>
+					
+					</ul>
+					
+				</div><!-- faq_questions -->
+
+			<?php endif; ?>
+			
+		</div><!-- faq_inner -->
 		
+	</div><!-- faq_wrapper -->
+	
 	
 	<?php if(get_field('middle_content_extended')) : ?>
 	
@@ -148,17 +172,7 @@
 		
 			<div class="extended_content_inner content">
 		
-				<div class="extended_content_col">
-					
-					<?php the_field( 'middle_content_extended' ); ?>
-					
-				</div><!-- extended_content_col -->
-				
-				<div class="extended_content_col">
-					
-					<?php the_field( 'middle_content_column_two' ); ?>
-					
-				</div><!-- extended_content_col -->
+				<?php the_field( 'middle_content_extended' ); ?>
 		
 			</div><!-- extended_content_inner -->
 		

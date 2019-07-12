@@ -341,13 +341,10 @@ span.sidebar_description {
 .extended_content_inner {
 	max-width:1415px;
 	margin:0 auto;
-	column-count:2;
-	column-gap:100px;
-	h1, h1, h3, p, ul, ol, li {
-/*
-		display: block;
-		width:100%;
-*/
+	display: flex;
+	justify-content: space-between;
+	.extended_content_col {
+		flex-basis:47%;
 	}
 }
 
@@ -617,11 +614,22 @@ span.pa_extended_community_title {
 	
 	.extended_content_inner {
 		column-count:1;
+		display: block;
+		.extended_content_col {
+			&:last-of-type {
+				margin-top:35px;
+			}
+		}
 	}
 	
 	.extended_content {
 		padding: 90px 70px 135px;
 	}
+	
+	
+	
+	
+	
 	
 } /* Media Query */
 

@@ -1733,6 +1733,14 @@
 		"oAP": "/page-templates/template-padirectory.php",
 		"oF": 0
 		},
+	"/page-templates/template-paextended copy.php.og": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/page-templates/template-paextended copy.php.og",
+		"oF": 0
+		},
 	"/page-templates/template-paextended.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1824,6 +1832,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/scss/_header.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/scss/_large-testi-slider.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/scss/_large-testi-slider.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
