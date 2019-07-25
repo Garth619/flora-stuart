@@ -111,41 +111,60 @@
 		
 		<ul>
 			<li>&copy; <?php echo date("Y"); ?> <?php the_field( 'copyright','option'); ?></li>
+			
 			<?php if(get_field('privacy_policy','option')) { ?>
 				<li><a href="<?php the_field( 'privacy_policy','option'); ?>">Privacy Policy</a></li>
 			<?php } ?>
+			
 			<?php if(get_field('disclaimer','option')) { ?>
 				<li><a href="<?php the_field( 'disclaimer','option'); ?>">Disclaimer</a></li>
 			<?php } ?>
+		
 		</ul>
 		
 		<div class="copyright_right">
 		
 			<div class="social_icons">
 				
-				<a class="fb" href="" target="_blank">
-					
-					<?php echo file_get_contents("wp-content/themes/florastuart/images/social-fb.svg"); ?>
-					
-				</a>
+				<?php if(get_field('facebook','option')) { ?> 
 				
-				<a class="" href="" target="_blank">
+					<a class="fb" href="<?php the_field( 'facebook','option'); ?>" target="_blank">
 					
-					<?php echo file_get_contents("wp-content/themes/florastuart/images/social-twitter.svg"); ?>
+						<?php echo file_get_contents("wp-content/themes/florastuart/images/social-fb.svg"); ?>
 					
-				</a>
+					</a>
 				
-				<a class="" href="" target="_blank">
-					
-					<?php echo file_get_contents("wp-content/themes/florastuart/images/social-insta.svg"); ?>
-					
-				</a>
+				<?php } ?>
 				
-				<a class="" href="" target="_blank">
+				<?php if(get_field('twitter','option')) { ?> 
+				
+					<a class="" href="<?php the_field( 'twitter','option'); ?>" target="_blank">
 					
-					<?php echo file_get_contents("wp-content/themes/florastuart/images/social-youtube.svg"); ?>
+						<?php echo file_get_contents("wp-content/themes/florastuart/images/social-twitter.svg"); ?>
 					
-				</a>
+					</a>
+				
+				<?php } ?>
+				
+				<?php if(get_field('instagram','option')) { ?>
+				
+					<a class="" href="<?php the_field( 'instagram','option'); ?>" target="_blank">
+					
+						<?php echo file_get_contents("wp-content/themes/florastuart/images/social-insta.svg"); ?>
+					
+					</a>
+				
+				<?php } ?>
+				
+				<?php if(get_field('youtube','option')) { ?>
+				
+					<a class="" href="<?php the_field( 'youtube','option'); ?>" target="_blank">
+					
+						<?php echo file_get_contents("wp-content/themes/florastuart/images/social-youtube.svg"); ?>
+					
+					</a>
+				
+				<?php } ?>
 				
 			</div><!-- social_icons -->
 			
