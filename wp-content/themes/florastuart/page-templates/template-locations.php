@@ -17,35 +17,31 @@
 				 
 					<?php while(has_sub_field('primary_locations')): ?>
 				 
-						<div class="single_locations">
+						<div class="new_single_location">
 					
-							<a href="<?php the_sub_field( 'location_page_link' ); ?>">
+							<a class="" href="<?php the_sub_field( 'location_page_link' ); ?>">
 						
-								<div class="single_location_img">
+								<div class="new_single_locations_image">
 									
 									<?php $image = get_sub_field( 'image' ); ?>
-									
-									<?php if ( $image ) { ?>
-									
-										<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-									
-									<?php } ?>
 							
-								</div><!-- single_location_img -->
+									<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+							
+								</div><!-- new_single_locations_image -->
 						
-								<div class="single_location_content">
+								<div class="new_single_location_content">
 							
-									<span class="location_title"><?php the_sub_field( 'location_title' ); ?></span><!-- location_title -->
+									<span class="new_single_location_title"><?php the_sub_field( 'location_title' ); ?></span><!-- new_single_location_title -->
 							
-									<span class="location_adress"><?php the_sub_field( 'location_address' ); ?></span><!-- location_adress -->
+									<span class="new_single_location_address"><?php the_sub_field( 'location_address' ); ?></span><!-- new_single_location_address -->
 							
-								</div><!-- single_location_content -->
+								</div><!-- new_single_location_content -->
 						
 							</a>
 					
-						</div><!-- single_locations -->
-				    
-					<?php endwhile; ?>
+						</div><!-- new_single_location -->
+				
+				<?php endwhile; ?>
 				 
 				<?php endif; ?>
 				
@@ -86,17 +82,19 @@
 								
 									<div class="bottom_location_overlay">
 								
-										<span>Explore <br/>This Location</span>
+										<span><?php the_sub_field( 'location_title' ); ?></span>
 								
 									</div><!-- bottom_location_overlay -->
 								
 								</div><!-- bottom_location_img -->
 						
+<!--
 								<div class="bottom_location_content">
 							
-									<span class="bottom_location_title"><?php the_sub_field( 'location_title' ); ?></span><!-- bottom_location_title -->
+									<span class="bottom_location_title"><?php the_sub_field( 'location_title' ); ?></span>
 							
-								</div><!-- bottom_location_content -->
+								</div>
+-->
 							
 							</a>
 						

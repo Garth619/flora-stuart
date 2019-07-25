@@ -13,9 +13,19 @@
 			</a><!-- internal_button -->
 			
 		</div><!-- internal_banner_content -->
+			
+			<?php $internal_banner_image_default_override = get_field( 'internal_banner_image_default_override' ); ?>
+			
+			<?php $internal_banner_image = get_field( 'internal_banner_image','option'); ?>
+			
+			<?php if ( $internal_banner_image_default_override ) : ?>
+			
+			<img class="banner_bg" src="<?php echo $internal_banner_image_default_override['url']; ?>" alt="<?php echo $internal_banner_image_default_override['alt']; ?>" />
+			
+			<?php else: ?>
+			
+			<img class="banner_bg" src="<?php echo $internal_banner_image['url']; ?>" alt="<?php echo $internal_banner_image['alt']; ?>" />
+			
+			<?php endif; ?>
 		
-		<?php $internal_banner_image = get_field( 'internal_banner_image','option'); ?>
-
-		<img class="banner_bg" src="<?php echo $internal_banner_image['url']; ?>" alt="<?php echo $internal_banner_image['alt']; ?>" />
-		
-	</div><!-- internal_banner -->
+		</div><!-- internal_banner -->

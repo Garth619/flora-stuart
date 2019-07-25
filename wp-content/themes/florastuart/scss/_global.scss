@@ -91,7 +91,7 @@ h1,h2,h3,h4 {
 	line-height: 36px;
 	@include source_reg;
 	h2 {
-		color:#ffae00;
+		color:$orange;
 		text-transform: uppercase;
 		font-size: 30px;
 		line-height: 31px;

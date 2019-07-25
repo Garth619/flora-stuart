@@ -46,11 +46,11 @@
 			
 			<?php if($banner_image_extended) :?>
 
-				<img class="banner_bg" src="<?php echo $banner_image_extended['url']; ?>" alt="<?php echo $banner_image_extended['alt']; ?>" />
+				<img class="banner_bg" src="<?php echo $banner_image_extended['url']; ?>" title="<?php echo $banner_image_extended['title']; ?>" alt="<?php echo $banner_image_extended['alt']; ?>" />
 				
 				<?php else:?>
 				
-				<img class="banner_bg" src="<?php bloginfo('template_directory');?>/images/intl_mainPA_header_img_01.jpg" />
+				<img class="banner_bg" src="<?php bloginfo('template_directory');?>/images/intl_mainPA_header_img_01.jpg" alt="<?php the_title();?>"/>
 			
 			<?php endif;?>
 		
@@ -148,18 +148,8 @@
 		
 			<div class="extended_content_inner content">
 		
-				<div class="extended_content_col">
+				<?php the_field( 'middle_content_extended' ); ?>
 					
-					<?php the_field( 'middle_content_extended' ); ?>
-					
-				</div><!-- extended_content_col -->
-				
-				<div class="extended_content_col">
-					
-					<?php the_field( 'middle_content_column_two' ); ?>
-					
-				</div><!-- extended_content_col -->
-		
 			</div><!-- extended_content_inner -->
 		
 		</div><!-- extended_content -->
@@ -187,6 +177,12 @@
 								<?php $image = get_sub_field( 'image' ); ?>
 						
 								<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+								
+								<div class="pa_extended_community_overlay">
+								
+									<span class="pa_extended_community_slide_caption"><?php the_sub_field( 'description' ); ?></span><!-- gb_slide_caption -->
+								
+								</div><!-- gb_slide_overlay -->
 						
 							</div><!-- att_bio_slide -->
 					    
@@ -211,7 +207,9 @@
 	
 	<?php if(get_field('case_result_slider')): ?>
 	
-	<div class="extended_case_results_wrapper content">
+	<span class="ex_cr_title new_task"><?php the_field( 'bottom_title_extended' ); ?></span><!-- ex_cr_title -->
+	
+	<div class="extended_case_results_wrapper content new_task">
 		
 		<div class="extended_cr_slider_wrapper">
 			
@@ -260,8 +258,6 @@
 		</div><!-- extended_cr_slider_wrapper -->
 		
 		<div class="extended_bottom_content">
-		
-			<span class="ex_cr_title"><?php the_field( 'bottom_title_extended' ); ?></span><!-- ex_cr_title -->
 			
 			<div class="extended_bottom_content_inner">
 		

@@ -37,7 +37,7 @@
 			
 		</div><!-- blog_content -->
 		
-		<a class="read_more_blog" href="">Read More</a><!-- read_more_blog -->
+		<a class="read_more_blog" href="<?php the_permalink();?>">Read More</a><!-- read_more_blog -->
 		
 		<?php edit_post_link( __( 'Edit'), '', '' ); ?>
 		

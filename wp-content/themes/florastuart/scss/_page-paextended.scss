@@ -339,12 +339,12 @@ span.sidebar_description {
 
 
 .extended_content_inner {
-	max-width:1415px;
+	max-width: 1195px;
 	margin:0 auto;
-	display: flex;
-	justify-content: space-between;
+	//display: flex;
+	//justify-content: space-between;
 	.extended_content_col {
-		flex-basis:47%;
+		//flex-basis:47%;
 	}
 }
 
@@ -376,6 +376,7 @@ span.sidebar_description {
 	padding:0 60px;
 	margin-left:auto;
 	margin-right:auto;
+	margin-bottom:50px;
 	.slick-slide {
 	   margin: 0 21px;
 	   padding:20px 0;
@@ -426,7 +427,7 @@ span.sidebar_description {
 
 
 .ex_cr_slide {
-	background: #fff;
+	background: $blue;
 	height:405px;
 	position: relative;
 	box-shadow: 0px 2px 25px 0px rgba(5, 21, 63, 0.1);
@@ -442,6 +443,7 @@ span.sidebar_description {
 	span.ex_cr_amount {
 		font-size: 55px;
 		line-height: 50px;
+		color:#fff;
 		@include escrow_banner_bold;
 	}
 	span.ex_cr_type {
@@ -451,6 +453,7 @@ span.sidebar_description {
 		margin-top:27px;
 		display: inline-block;
 		padding-bottom:25px;
+		color:$yellow;
 		border-bottom: 2px solid $red;
 		@include source_black;
 	}
@@ -481,6 +484,13 @@ span.ex_cr_title {
 	margin-bottom:23px;
 	display: block;
 	@include escrow_banner_bold;
+}
+
+
+span.ex_cr_title.new_task {
+	text-align: center;
+	margin-bottom:200px;
+	padding:0 100px;
 }
 
 
@@ -539,6 +549,42 @@ span.pa_extended_community_title {
 }
 
 
+body.page-template-template-paextended { // so many changes that are now being overridden results in things like this
+	.att_bio_slide {
+		position: relative;
+		&:hover {
+			.pa_extended_community_overlay {
+				opacity: 1;
+			}
+		}
+		.pa_extended_community_overlay {
+			position: absolute;
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
+			background:rgba(5,21,63,0.8);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			opacity: 0;
+			padding:0 20px;
+			transition: all 400ms ease-in-out;
+			.pa_extended_community_slide_caption {
+				color:$yellow;
+				font-size: 25px;
+				line-height: 31px;
+				letter-spacing: 0.1em;
+				text-transform: uppercase;
+				max-width:310px;
+				text-align: center;
+				@include source_black;
+			}
+		}
+	}
+}
+
+
 
 @media screen and (max-width: 1700px) {
 
@@ -586,7 +632,13 @@ span.pa_extended_community_title {
 
 @media screen and (max-width: 1260px) {
 	
-	
+	span.ex_cr_title.new_task {
+		padding-left:70px;
+		padding-right:70px;
+		max-width: 796px;
+		margin-left:auto;
+		margin-right:auto;
+	}
 	
 	.faq_wrapper {
 		padding-left:70px;
@@ -613,13 +665,15 @@ span.pa_extended_community_title {
 	
 	
 	.extended_content_inner {
-		column-count:1;
-		display: block;
+		//column-count:1;
+		//display: block;
+/*
 		.extended_content_col {
 			&:last-of-type {
 				margin-top:35px;
 			}
 		}
+*/
 	}
 	
 	.extended_content {
@@ -715,11 +769,33 @@ span.pa_extended_community_title {
 	}
 	
 	
+	span.ex_cr_title.new_task {
+		padding:40px 40px;
+		margin-bottom: 0;
+		background: $greylight;
+	}
+	
+	
 } /* Media Query */
 
 
 @media screen and (max-width: 767px) {
 	
+	.extended_case_results_wrapper.new_task {
+		margin-top:0;
+	}
+	
+	span.ex_cr_title {
+		font-size: 40px;
+    line-height: 40px;
+	}
+	
+	
+	span.ex_cr_title:not(.new_task) {
+		margin-top:20px;
+	}
+	
+	   
 	
 	span.pa_extended_community_title {
 		display: none;

@@ -119,11 +119,43 @@
 			<?php } ?>
 		</ul>
 		
-		<a class="ilawyer" href="//ilawyermarketing.com" target="_blank" rel="noopener">
+		<div class="copyright_right">
+		
+			<div class="social_icons">
+				
+				<a class="fb" href="" target="_blank">
+					
+					<?php echo file_get_contents("wp-content/themes/florastuart/images/social-fb.svg"); ?>
+					
+				</a>
+				
+				<a class="" href="" target="_blank">
+					
+					<?php echo file_get_contents("wp-content/themes/florastuart/images/social-twitter.svg"); ?>
+					
+				</a>
+				
+				<a class="" href="" target="_blank">
+					
+					<?php echo file_get_contents("wp-content/themes/florastuart/images/social-insta.svg"); ?>
+					
+				</a>
+				
+				<a class="" href="" target="_blank">
+					
+					<?php echo file_get_contents("wp-content/themes/florastuart/images/social-youtube.svg"); ?>
+					
+				</a>
+				
+			</div><!-- social_icons -->
 			
-			<img data-src="<?php bloginfo('template_directory');?>/images/footer_logo-01.svg"/>
-			
-		</a><!-- ilawyer -->
+			<a class="ilawyer" href="//ilawyermarketing.com" target="_blank" rel="noopener">
+				
+				<img data-src="<?php bloginfo('template_directory');?>/images/footer_logo-01.svg"/>
+				
+			</a><!-- ilawyer -->
+		
+		</div><!-- copyright_right -->
 		
 	</div><!-- copyright -->
 		
