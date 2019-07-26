@@ -51,6 +51,21 @@ h1,h2,h3,h4 {
    color: #000; }
  .gform_wrapper ul li ::-moz-placeholder {
     opacity: 1; }
+    
+    
+    
+    
+    
+.searchbar_wrapper ::-webkit-input-placeholder {
+  color: $blue; }
+.searchbar_wrapper ::-moz-placeholder {
+  color: $blue; }
+ .searchbar_wrapper :-moz-placeholder {
+   color: $blue; }
+ .searchbar_wrapper :-ms-input-placeholder {
+   color: $blue; }
+ .searchbar_wrapper ::-moz-placeholder {
+    opacity: 1; }
 
 
 .internal_header {
@@ -104,6 +119,9 @@ h1,h2,h3,h4 {
 		line-height: 33px;
 		margin-bottom:37px;
 		@include source_bold;
+	}
+	h3.red {
+		color:$red;
 	}
 	p, ul, ol {
 		margin-bottom:37px;

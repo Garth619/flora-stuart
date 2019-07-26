@@ -96,4 +96,17 @@
 	
 	
 	
-				</div></div>
+				</div><!-- sidebar_box -->
+				
+				<div class="sidebar_box search">
+					
+					<div class="searchbar_wrapper">
+					
+						<?php get_search_form();?>
+					
+					</div><!-- searchbar_wrapper -->
+					
+				</div><!-- sidebar_box -->
+				
+				
+			</div><!-- sidebar_wrapper -->

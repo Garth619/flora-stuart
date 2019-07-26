@@ -2260,6 +2260,14 @@
 		"oAP": "/search.php",
 		"oF": 0
 		},
+	"/searchform.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/searchform.php",
+		"oF": 0
+		},
 	"/sidebar-blog.php": {
 		"cB": 0,
 		"ft": 8192,
