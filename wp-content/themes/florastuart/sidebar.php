@@ -98,6 +98,9 @@
 	
 				</div><!-- sidebar_box -->
 				
+				
+				<?php if(get_field('search_sidebar') == 'Yes') { ?>
+				
 				<div class="sidebar_box search">
 					
 					<div class="searchbar_wrapper">
@@ -108,5 +111,6 @@
 					
 				</div><!-- sidebar_box -->
 				
-				
+				<?php } ?>
+							
 			</div><!-- sidebar_wrapper -->

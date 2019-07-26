@@ -17,7 +17,6 @@
 				
 			</div><!-- internal_content -->
 			
-						
 			<?php get_sidebar(); ?>
 			
 		</div><!-- internal_container -->

@@ -66,6 +66,19 @@ h1,h2,h3,h4 {
    color: $blue; }
  .searchbar_wrapper ::-moz-placeholder {
     opacity: 1; }
+    
+    
+ .search_page_wrapper ::-webkit-input-placeholder {
+  color: $blue; }
+.search_page_wrapper ::-moz-placeholder {
+  color: $blue; }
+ .search_page_wrapper :-moz-placeholder {
+   color: $blue; }
+ .search_page_wrapper :-ms-input-placeholder {
+   color: $blue; }
+ .search_page_wrapper ::-moz-placeholder {
+    opacity: 1; }
+
 
 
 .internal_header {
