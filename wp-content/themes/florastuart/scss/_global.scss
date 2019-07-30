@@ -135,6 +135,7 @@ h1,h2,h3,h4 {
 	}
 	h3.red {
 		color:$red;
+		font-size: 25px;
 	}
 	p, ul, ol {
 		margin-bottom:37px;
@@ -190,6 +191,21 @@ h1,h2,h3,h4 {
 		}
 	}
 }
+
+
+
+
+.content {
+	iframe {
+		display: inline-block;
+		margin-right:10px;
+	}
+}
+
+.embed-container {
+	
+}
+
 
 
 @media screen and (max-width: 1350px) {

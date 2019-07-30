@@ -18,8 +18,6 @@
 					<?php if(get_field('banner_title_extended')) : ?>
 			
 						<span class="banner_title_extended"><?php the_field( 'banner_title_extended' ); ?></span><!-- banner_title -->
-						
-						
 				
 						<?php else:?>
 				
@@ -41,8 +39,6 @@
 						<?php endif;?>
 					
 					<?php endif;?>
-					
-					<span class="banner_subheader">Personal Injury Attorney</span><!-- banner_subheader -->
 			
 			</div><!-- internal_banner_content -->
 		
