@@ -42,7 +42,11 @@
 					
 					<?php endif;?>
 					
+					<?php // acf if ?>
+					
 					<span class="banner_subheader">Personal Injury Attorney</span><!-- banner_subheader -->
+					
+					<?php ?>
 			
 			</div><!-- internal_banner_content -->
 		
@@ -86,7 +90,13 @@
 				
 			</div><!-- internal_content -->
 			
-			<?php get_sidebar('paextended'); ?>
+			<?php 
+				
+				// https://codepen.io/pudan_k/pen/EgEakA
+				
+				get_sidebar('paextended'); ?>
+			
+			
 			
 		</div><!-- internal_container -->
 		
