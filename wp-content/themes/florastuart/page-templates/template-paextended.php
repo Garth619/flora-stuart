@@ -129,18 +129,22 @@
 						<?php while(has_sub_field('reviews_ex')): ?>
 						 
 							<div class="new_reviews_slide">
+								
+								<?php $image = get_sub_field( 'image' ); ?>
+								
+								<?php if($image) { ?>
 						
 								<div class="large_testi_quotes_profile">
 						
 									<img class="red_arch" data-src="<?php bloginfo('template_directory');?>/images/test_image_icon_01.svg"/>
 									
-									<?php $image = get_sub_field( 'image' ); ?>
-		
 									<img class="profile" data-src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 						
 									<img class="stars" data-src="<?php bloginfo('template_directory');?>/images/test_image_icon_02.svg"/>
 						
 								</div><!-- large_testi_quotes_profile -->
+								
+								<?php } ?>
 							
 								<span class="new_reviews_description"><?php the_sub_field( 'description' ); ?></span><!-- new_reviews_description -->
 
@@ -150,9 +154,7 @@
 						    
 							<?php endwhile; ?>
 						 
-						<?php endif; ?>
-						
-					</div><!-- new_reviews_slider -->
+						</div><!-- new_reviews_slider -->
 					
 					<div class="new_reviews_arrow_wrapper">
 						
@@ -162,8 +164,9 @@
 						
 					</div><!-- new_reviews_arrow_wrapper -->
 					
-					
 				</div><!-- new_reviews_wrapper -->
+				
+			<?php endif; ?>
 
 					
 				<?php if(get_field('middle_content_extended')) : ?>
@@ -192,15 +195,19 @@
 	
 	<div class="pa_extended_community_wrapper">
 		
-		<div class="pa_extended_title_wrapper">
-			
-			<img class="pa_ed_arch" src="<?php bloginfo('template_directory');?>/images/test_image_icon_01.svg"/>
-			
-			<img class="pa_heart" src="<?php bloginfo('template_directory');?>/images/intl_givingback_icon-01.svg"/>
+		<?php if(get_field('pa_extended_community_slider_title')) { ?>
 		
-			<span class="pa_extended_community_new_title"><?php the_field( 'pa_extended_community_slider_title' ); ?></span><!-- pa_extended_community_new_title -->
+			<div class="pa_extended_title_wrapper">
+			
+				<img class="pa_ed_arch" src="<?php bloginfo('template_directory');?>/images/test_image_icon_01.svg"/>
+			
+				<img class="pa_heart" src="<?php bloginfo('template_directory');?>/images/intl_givingback_icon-01.svg"/>
 		
-		</div><!-- pa_extended_title_wrapper -->
+				<span class="pa_extended_community_new_title"><?php the_field( 'pa_extended_community_slider_title' ); ?></span><!-- pa_extended_community_new_title -->
+		
+			</div><!-- pa_extended_title_wrapper -->
+		
+		<?php } ?>
 		
 		<div class="pa_extended_community_inner">
 			
@@ -212,13 +219,19 @@
 				
 				<div class="pa_extended_community_slide">
 					
-					<img src="<?php bloginfo('template_directory');?>/images/img_09.jpg" />
+					<?php $image = get_sub_field( 'image' ); ?>
+		
+					<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+					
+					<?php if(get_sub_field('description')) { ?>
 								
 					<div class="pa_extended_community_overlay">
 								
-						<span class="pa_extended_community_slide_caption">Description</span><!-- gb_slide_caption -->
+						<span class="pa_extended_community_slide_caption"><?php the_sub_field( 'description' ); ?></span><!-- gb_slide_caption -->
 								
 					</div><!-- gb_slide_overlay -->
+					
+					<?php } ?>
 					
 				</div><!-- pa_extended_community_slide -->
 				
@@ -239,15 +252,19 @@
 	
 	<div class="extended_case_results_wrapper">
 		
-		<div class="extended_case_results_title_wrapper">
-			
-			<img class="extended_red_arch" src="<?php bloginfo('template_directory');?>/images/test_image_icon_01.svg"/>
-			
-			<img class="pa_law" src="<?php bloginfo('template_directory');?>/images/intl_attorneys_icon-01.svg"/>
+		<?php if(get_field('bottom_title_extended')) { ?>
 		
-			<span class="ex_cr_title"><?php the_field( 'bottom_title_extended' ); ?></span><!-- ex_cr_title -->
+			<div class="extended_case_results_title_wrapper">
+			
+				<img class="extended_red_arch" src="<?php bloginfo('template_directory');?>/images/test_image_icon_01.svg"/>
+			
+				<img class="pa_law" src="<?php bloginfo('template_directory');?>/images/intl_attorneys_icon-01.svg"/>
 		
-		</div><!-- extended_case_results_title_wrapper -->
+				<span class="ex_cr_title"><?php the_field( 'bottom_title_extended' ); ?></span><!-- ex_cr_title -->
+		
+			</div><!-- extended_case_results_title_wrapper -->
+		
+		<?php } ?>
 		
 		<div class="extended_cr_slider_wrapper">
 			
@@ -257,37 +274,19 @@
 				
 				<?php while(has_sub_field('case_result_slider')): ?>
 					
-						<?php if(get_sub_field('case_result_amount_extended')) { ?>
+					<div class="ex_cr_slide">
+					
+						<div class="ex_cr_slide_content">
+						
+							<span class="ex_cr_amount"><?php the_sub_field( 'case_result_amount_extended' ); ?></span><!-- ex_cr_amount -->
+						
+							<span class="ex_cr_type"><?php the_sub_field( 'case_result_type_extended' ); ?></span><!-- ex_cr_amount -->
+						
+						</div><!-- ex_cr_slide_content -->
+					
+					</div><!-- ex_cr_slide -->
 							
-							<div class="ex_cr_slide">
-					
-								<div class="ex_cr_slide_content">
-						
-									<span class="ex_cr_amount"><?php the_sub_field( 'case_result_amount_extended' ); ?></span><!-- ex_cr_amount -->
-						
-									<span class="ex_cr_type"><?php the_sub_field( 'case_result_type_extended' ); ?></span><!-- ex_cr_amount -->
-						
-									<span class="ex_cr_description"><?php the_sub_field( 'case_result_description_extended' ); ?></span><!-- ex_cr_description -->
-						
-								</div><!-- ex_cr_slide_content -->
-					
-							</div><!-- ex_cr_slide -->
-							
-						<?php } ?>
-				 
-						<?php $case_result_image_extended = get_sub_field( 'case_result_image_extended' ); ?>
-						
-						<?php if ( $case_result_image_extended ) { ?>
-						
-							<div class="ex_cr_slide">
-					
-								<img class="ex_cr_img" src="<?php echo $case_result_image_extended['url']; ?>" alt="<?php echo $case_result_image_extended['alt']; ?>"/><!-- ex_cr_img -->
-					
-							</div><!-- ex_cr_slide -->
-							
-						<?php } ?>
-						
-					<?php endwhile; ?>
+				<?php endwhile; ?>
 				
 			</div><!-- ex_cr_slider -->
 			
@@ -317,7 +316,19 @@
 		
 		<div class="extended_bottom_content">
 		
-			<span class="ex_cr_title"><?php the_field( 'bottom_title_extended' ); ?></span><!-- ex_cr_title -->
+			<?php if(get_field('bottom_title_extended')) { ?>
+		
+			<div class="extended_case_results_title_wrapper">
+			
+				<img class="extended_red_arch" src="<?php bloginfo('template_directory');?>/images/test_image_icon_01.svg"/>
+			
+				<img class="pa_law" src="<?php bloginfo('template_directory');?>/images/intl_attorneys_icon-01.svg"/>
+		
+				<span class="ex_cr_title"><?php the_field( 'bottom_title_extended' ); ?></span><!-- ex_cr_title -->
+		
+			</div><!-- extended_case_results_title_wrapper -->
+		
+			<?php } ?>
 			
 			<div class="extended_bottom_content_inner">
 		
