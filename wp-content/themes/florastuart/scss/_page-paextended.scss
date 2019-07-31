@@ -96,6 +96,11 @@ body.page-template-template-paextended {
 }
 
 
+.pa_extended_community_wrapper {
+	background: $greylight;
+	padding:110px 0 100px;
+}
+
 
 .new_reviews_arrow_wrapper {
 	display: flex;
@@ -150,6 +155,141 @@ body.page-template-template-paextended {
 }
 
 
+
+.pa_extended_title_wrapper {
+	text-align: center;
+	img {
+		display: block;
+		margin:0 auto;
+	}
+	img.pa_heart {
+		margin:-35px auto 0;
+	}
+	span.pa_extended_community_new_title {
+		font-size: 60px;
+		line-height: 65px;
+		display: block;
+		margin-top:55px;
+		@include escrow_banner_bold;
+	}
+}
+
+
+.pa_extended_community_inner {
+	max-width:1670px;
+	margin:0px auto 0;
+	display: flex;
+	align-items: center;
+}
+
+
+.pa_extended_community_slider {
+	width:calc(100% - 148px);
+	padding:0 60px;
+	margin:60px auto 0;
+	.slick-slide {
+	   margin: 0 19px;
+	   padding:20px 0;
+	 }
+	.slick-list {
+	  margin: 0 -19px;
+	}
+}
+
+
+.pa_extended_community_slide {
+	position: relative;
+	img {
+		width:100%;
+		height:auto;
+		display: block;
+		box-shadow: 0px 2px 17px 0px rgba(5, 21, 63, 0.2);
+	}
+	&:hover {
+			.pa_extended_community_overlay {
+				opacity: 1;
+			}
+		}
+		.pa_extended_community_overlay {
+			position: absolute;
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
+			background:rgba(5,21,63,0.8);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			opacity: 0;
+			padding:0 20px;
+			transition: all 400ms ease-in-out;
+			.pa_extended_community_slide_caption {
+				color:$yellow;
+				font-size: 25px;
+				line-height: 31px;
+				letter-spacing: 0.1em;
+				text-transform: uppercase;
+				max-width:310px;
+				text-align: center;
+				@include source_black;
+			}
+		}
+}
+
+
+.pa_extended_community_arrow {
+	background: $red;
+	width:74px;
+	height:74px;
+	border-radius: 3px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 200ms ease-in-out;
+	cursor: pointer;
+	flex-shrink: 0;
+	&:after {
+		content:"";
+		display: block;
+		width: 0; 
+		height: 0; 
+		border-top: 15px solid transparent;
+		border-bottom: 15px solid transparent; 
+	}
+	&:hover {
+		background: $orange;
+	}
+}
+
+
+.pa_extended_community_arrow_left {
+	&:after {
+		margin-left:-3px;
+		border-right:15px solid #fff; 
+	}
+}
+
+
+.pa_extended_community_arrow_right {
+	&:after {
+		margin-right:-3px;
+		border-left:15px solid #fff; 
+	}
+}
+
+
+
+.extended_case_results_title_wrapper {
+	position: relative;
+	z-index:1;
+	img {
+		display: block;
+		margin:0 auto;
+	}
+	img.pa_law {
+		margin:-40px auto 0;
+	}
+}
 
 
 .internal_banner.extended {
@@ -509,18 +649,29 @@ span.sidebar_description {
 
 
 .extended_case_results_wrapper {
-	background: $greylight;
-	padding:1px 110px 143px;
+	padding:90px 110px 143px;
 	text-align: center;
-	margin-top: 35px;
+	position: relative;
+	&:after {
+		content:"";
+		display: block;
+		position: absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:570px;
+		background: $greylight;
+	}
 }
 
 .extended_cr_slider_wrapper {
 	max-width:1700px;
-	margin:-110px auto 0;
+	margin:0px auto 150px;
 	width:100%;
 	display: flex;
 	align-items: center;
+	position: relative;
+	z-index: 1;
 }
 
 
@@ -529,7 +680,6 @@ span.sidebar_description {
 	padding:0 60px;
 	margin-left:auto;
 	margin-right:auto;
-	margin-bottom:50px;
 	.slick-slide {
 	   margin: 0 21px;
 	   padding:20px 0;
@@ -581,7 +731,7 @@ span.sidebar_description {
 
 .ex_cr_slide {
 	background: $blue;
-	height:405px;
+	height: 325px;
 	position: relative;
 	box-shadow: 0px 2px 25px 0px rgba(5, 21, 63, 0.1);
 }
@@ -589,7 +739,7 @@ span.sidebar_description {
 
 .ex_cr_slide_content {
 	text-align: center;
-	padding:93px 25px 0;
+	padding:75px 25px 0;
 	span {
 		display: block;
 	}
@@ -598,16 +748,24 @@ span.sidebar_description {
 		line-height: 50px;
 		color:#fff;
 		@include escrow_banner_bold;
+		&:after {
+			content:"";
+			display: block;
+			width:186px;
+			height:2px;
+			background: $red;
+			margin:45px auto 0;
+		}
 	}
 	span.ex_cr_type {
 		text-transform: uppercase;
 		font-size: 22px;
 		letter-spacing: 0.1em;
-		margin-top:27px;
+		margin-top:43px;
 		display: inline-block;
 		padding-bottom:25px;
 		color:$yellow;
-		border-bottom: 2px solid $red;
+		//border-bottom: 2px solid $red;
 		@include source_black;
 	}
 	span.ex_cr_description {
@@ -634,7 +792,7 @@ span.ex_cr_title {
 	font-size: 60px;
 	line-height: 55px;
 	margin-top:47px;
-	margin-bottom:23px;
+	margin-bottom:80px;
 	display: block;
 	@include escrow_banner_bold;
 }

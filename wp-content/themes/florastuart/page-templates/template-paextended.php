@@ -87,116 +87,70 @@
 					<?php get_template_part( 'loop', 'page' ); ?>
 				
 				</div><!-- content -->
+				
+				<?php if(get_field('faqs_ex')): ?>
 					
 				<div class="new_faqs_wrapper">
 						
-					<span class="new_faqs_header">Car Accidents FAQs</span><!-- new_faqs_header -->
+					<span class="new_faqs_header"><?php the_field( 'faqs_title_ex' ); ?></span><!-- new_faqs_header -->
 						
 					<div class="new_faqs_inner">
-							
-						<div class="new_faq_single">
+						
+						<?php while(has_sub_field('faqs_ex')): ?>
+						 
+							<div class="new_faq_single">
 								
-							<span class="new_faq_question">How do I pay for an attorney in a car accident injury case?</span><!-- new_faq_question -->
+								<span class="new_faq_question"><?php the_sub_field( 'question' ); ?></span><!-- new_faq_question -->
 								
-							<div class="new_faq_answer content">
+								<div class="new_faq_answer content">
 									
-								<p>The Law Firm of Flora Templeton Stuart works on a contingency fee basis. That means we only get paid if you get paid in your truck wreck injury case. Call the Office of Flora Templeton Stuart at (888) 782-9090 for a free initial consultation twenty-four hours a day/seven days a week</p>
+									<?php the_sub_field( 'answer' ); ?>
 																	
-							</div><!-- new_faq_answer -->
+								</div><!-- new_faq_answer -->
 								
-						</div><!-- new_faq_single -->
-						
-						<div class="new_faq_single">
-								
-							<span class="new_faq_question">How do I pay for an attorney in a car accident injury case?</span><!-- new_faq_question -->
-								
-							<div class="new_faq_answer content">
-									
-								<p>The Law Firm of Flora Templeton Stuart works on a contingency fee basis. That means we only get paid if you get paid in your truck wreck injury case. Call the Office of Flora Templeton Stuart at (888) 782-9090 for a free initial consultation twenty-four hours a day/seven days a week</p>
-									
-							</div><!-- new_faq_answer -->
-								
-						</div><!-- new_faq_single -->
-						
-						<div class="new_faq_single">
-								
-							<span class="new_faq_question">How do I pay for an attorney in a car accident injury case?</span><!-- new_faq_question -->
-								
-							<div class="new_faq_answer content">
-									
-								<p>The Law Firm of Flora Templeton Stuart works on a contingency fee basis. That means we only get paid if you get paid in your truck wreck injury case. Call the Office of Flora Templeton Stuart at (888) 782-9090 for a free initial consultation twenty-four hours a day/seven days a week</p>
-									
-							</div><!-- new_faq_answer -->
-								
-						</div><!-- new_faq_single -->
+							</div><!-- new_faq_single -->
+						    
+							<?php endwhile; ?>
 							
 					</div><!-- new_faqs_inner -->
 						
 				</div><!-- new_faqs_wrapper -->
 				
+				<?php endif; ?>
+				
+				<?php if(get_field('reviews_ex')): ?>
 				
 				<div class="new_reviews_wrapper">
 					
-					<span class="new_reviews_title">What Our Clients Are Saying</span><!-- new_reviews_title -->
+					<span class="new_reviews_title"><?php the_field( 'reviews_title_ex' ); ?></span><!-- new_reviews_title -->
 					
 					<div class="new_reviews_slider">
 						
-						<div class="new_reviews_slide">
+						<?php while(has_sub_field('reviews_ex')): ?>
+						 
+							<div class="new_reviews_slide">
 						
-							<div class="large_testi_quotes_profile">
+								<div class="large_testi_quotes_profile">
 						
-								<img class="red_arch" data-src="<?php bloginfo('template_directory');?>/images/test_image_icon_01.svg"/>
+									<img class="red_arch" data-src="<?php bloginfo('template_directory');?>/images/test_image_icon_01.svg"/>
+									
+									<?php $image = get_sub_field( 'image' ); ?>
 		
-								<img class="profile" data-src="<?php bloginfo('template_directory');?>/images/test_img_01.jpg" />
+									<img class="profile" data-src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 						
-								<img class="stars" data-src="<?php bloginfo('template_directory');?>/images/test_image_icon_02.svg"/>
+									<img class="stars" data-src="<?php bloginfo('template_directory');?>/images/test_image_icon_02.svg"/>
 						
-							</div><!-- large_testi_quotes_profile -->
+								</div><!-- large_testi_quotes_profile -->
 							
-							<span class="new_reviews_description">“This particular law firm has organization skills; they have good people skills. 
-They were able to anticipate the next step in the process and kept me informed the whole way through. I felt like she did such a good job, and she would do a good job for everyone who is involved in a motor vehicle collision.”</span><!-- new_reviews_description -->
+								<span class="new_reviews_description"><?php the_sub_field( 'description' ); ?></span><!-- new_reviews_description -->
 
-							<span class="new_reviews_name">Laura P.</span><!-- new_reviews_name -->
+								<span class="new_reviews_name"><?php the_sub_field( 'name' ); ?></span><!-- new_reviews_name -->
 						
-						</div><!-- new_reviews_slide -->
-						
-						<div class="new_reviews_slide">
-						
-							<div class="large_testi_quotes_profile">
-						
-								<img class="red_arch" data-src="<?php bloginfo('template_directory');?>/images/test_image_icon_01.svg"/>
-		
-								<img class="profile" data-src="<?php bloginfo('template_directory');?>/images/test_img_01.jpg" />
-						
-								<img class="stars" data-src="<?php bloginfo('template_directory');?>/images/test_image_icon_02.svg"/>
-						
-							</div><!-- large_testi_quotes_profile -->
-							
-							<span class="new_reviews_description">“This particular law firm has organization skills; they have good people skills. 
-They were able to anticipate the next step in the process and kept me informed the whole way through. I felt like she did such a good job, and she would do a good job for everyone who is involved in a motor vehicle collision.”</span><!-- new_reviews_description -->
-
-							<span class="new_reviews_name">Laura P.</span><!-- new_reviews_name -->
-						
-						</div><!-- new_reviews_slide -->
-						
-						<div class="new_reviews_slide">
-						
-							<div class="large_testi_quotes_profile">
-						
-								<img class="red_arch" data-src="<?php bloginfo('template_directory');?>/images/test_image_icon_01.svg"/>
-		
-								<img class="profile" data-src="<?php bloginfo('template_directory');?>/images/test_img_01.jpg" />
-						
-								<img class="stars" data-src="<?php bloginfo('template_directory');?>/images/test_image_icon_02.svg"/>
-						
-							</div><!-- large_testi_quotes_profile -->
-							
-							<span class="new_reviews_description">“This particular law firm has organization skills; they have good people skills. 
-They were able to anticipate the next step in the process and kept me informed the whole way through. I felt like she did such a good job, and she would do a good job for everyone who is involved in a motor vehicle collision.”</span><!-- new_reviews_description -->
-
-							<span class="new_reviews_name">Laura P.</span><!-- new_reviews_name -->
-						
-						</div><!-- new_reviews_slide -->
+							</div><!-- new_reviews_slide -->
+						    
+							<?php endwhile; ?>
+						 
+						<?php endif; ?>
 						
 					</div><!-- new_reviews_slider -->
 					
@@ -236,56 +190,64 @@ They were able to anticipate the next step in the process and kept me informed t
 	
 	<?php if(get_field('pa_extended_community_slider')): ?>
 	
-		<span class="pa_extended_community_title"><?php the_field( 'pa_extended_community_slider_title' ); ?></span><!-- pa_extended_community_title -->
-	
-		<div class="att_bio_community pa_extended_community_slider">
-			
-			<div class="att_bio_community_inner">
-				
-				<div class="att_bio_arrow att_bio_arrow_left"></div><!-- att_bio_arrow -->
-				
-				<div class="att_bio_slider">
-					
-					<?php while(has_sub_field('pa_extended_community_slider')): ?>
-					 
-							<div class="att_bio_slide">
-								
-								<?php $image = get_sub_field( 'image' ); ?>
-						
-								<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-								
-								<div class="pa_extended_community_overlay">
-								
-									<span class="pa_extended_community_slide_caption"><?php the_sub_field( 'description' ); ?></span><!-- gb_slide_caption -->
-								
-								</div><!-- gb_slide_overlay -->
-						
-							</div><!-- att_bio_slide -->
-					    
-						<?php endwhile; ?>
-					 
-					</div><!-- att_bio_slider -->
-				
-				<div class="att_bio_arrow att_bio_arrow_right"></div><!-- att_bio_arrow -->
-				
-			</div><!-- att_bio_community_inner -->
-			
-			<span class="comm_title"><?php the_field( 'att_community_title' ); ?></span><!-- comm_title -->
-			
-		</div><!-- att_bio_community -->
+	<div class="pa_extended_community_wrapper">
 		
-		<?php endif; ?>
+		<div class="pa_extended_title_wrapper">
+			
+			<img class="pa_ed_arch" src="<?php bloginfo('template_directory');?>/images/test_image_icon_01.svg"/>
+			
+			<img class="pa_heart" src="<?php bloginfo('template_directory');?>/images/intl_givingback_icon-01.svg"/>
+		
+			<span class="pa_extended_community_new_title"><?php the_field( 'pa_extended_community_slider_title' ); ?></span><!-- pa_extended_community_new_title -->
+		
+		</div><!-- pa_extended_title_wrapper -->
+		
+		<div class="pa_extended_community_inner">
+			
+			<div class="pa_extended_community_arrow pa_extended_community_arrow_left"></div><!-- pa_extended_community_arrow -->
+			
+			<div class="pa_extended_community_slider">
+				
+				<?php while(has_sub_field('pa_extended_community_slider')): ?>
+				
+				<div class="pa_extended_community_slide">
+					
+					<img src="<?php bloginfo('template_directory');?>/images/img_09.jpg" />
+								
+					<div class="pa_extended_community_overlay">
+								
+						<span class="pa_extended_community_slide_caption">Description</span><!-- gb_slide_caption -->
+								
+					</div><!-- gb_slide_overlay -->
+					
+				</div><!-- pa_extended_community_slide -->
+				
+				<?php endwhile; ?>
+				
+			</div><!-- pa_extended_community_slider -->
+			
+			<div class="pa_extended_community_arrow pa_extended_community_arrow_right"></div><!-- pa_extended_community_arrow -->
+			
+		</div><!-- pa_extended_community_inner -->
+		
+	</div><!-- pa_extended_community_wrapper -->
 	
+	<?php endif; ?>
 	
-	
-	
-	
-	
+		
 	<?php if(get_field('case_result_slider')): ?>
 	
-	<span class="ex_cr_title new_task"><?php the_field( 'bottom_title_extended' ); ?></span><!-- ex_cr_title -->
-	
-	<div class="extended_case_results_wrapper content new_task">
+	<div class="extended_case_results_wrapper">
+		
+		<div class="extended_case_results_title_wrapper">
+			
+			<img class="extended_red_arch" src="<?php bloginfo('template_directory');?>/images/test_image_icon_01.svg"/>
+			
+			<img class="pa_law" src="<?php bloginfo('template_directory');?>/images/intl_attorneys_icon-01.svg"/>
+		
+			<span class="ex_cr_title"><?php the_field( 'bottom_title_extended' ); ?></span><!-- ex_cr_title -->
+		
+		</div><!-- extended_case_results_title_wrapper -->
 		
 		<div class="extended_cr_slider_wrapper">
 			
@@ -333,7 +295,7 @@ They were able to anticipate the next step in the process and kept me informed t
 			
 		</div><!-- extended_cr_slider_wrapper -->
 		
-		<div class="extended_bottom_content">
+		<div class="extended_bottom_content content">
 			
 			<div class="extended_bottom_content_inner">
 		

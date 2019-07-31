@@ -303,8 +303,6 @@ jQuery(document).ready(function($){
   slidesToScroll: 1,
 	arrows:false,
 	dots:true,
-	//autoplay: true,
-  //autoplaySpeed: 3000,
   responsive: [
     {
       breakpoint: 1280,
@@ -413,6 +411,37 @@ checksliderwidth();
 	dots:false,
 	prevArrow:'.att_bio_arrow_left',
 	nextArrow:'.att_bio_arrow_right',
+  responsive: [
+/*
+    {
+      breakpoint: 1800,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      }
+     },
+*/
+     {
+      breakpoint: 1310,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+     }
+	]
+ });
+ 
+ 
+ 
+ 
+ $('.pa_extended_community_slider').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+	arrows:true,
+	dots:false,
+	prevArrow:'.pa_extended_community_arrow_left',
+	nextArrow:'.pa_extended_community_arrow_right',
   responsive: [
 /*
     {
