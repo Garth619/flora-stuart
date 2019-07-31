@@ -343,6 +343,19 @@ jQuery(document).ready(function($){
  });
  
  
+ 
+ $('.new_reviews_slider').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+	arrows:true,
+	fade:true,
+	dots:false,
+	prevArrow:'.new_reviews_arrow_left',
+	nextArrow:'.new_reviews_arrow_right'
+ });
+ 
+ 
  	// adds a div to center arrows 
  
  	function checksliderwidth() {
