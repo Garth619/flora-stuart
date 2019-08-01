@@ -578,3 +578,52 @@ function ilaw_id_friendly_text($string) {
 
 
 
+// faq shortcode
+
+
+function default_faqs( $atts, $content = null ) { 
+	
+	$atts = shortcode_atts( array(
+       'wistia' => '',
+   ), $atts );
+	
+	
+	ob_start();?>
+	
+	<?php if(get_field('faqs_ex_default_page')): ?>
+					
+				<div class="new_faqs_wrapper">
+						
+					<span class="new_faqs_header"><?php the_field( 'faqs_title_default_page' ); ?></span><!-- new_faqs_header -->
+						
+					<div class="new_faqs_inner">
+						
+						<?php while(has_sub_field('faqs_ex_default_page')): ?>
+						 
+							<div class="new_faq_single">
+								
+								<span class="new_faq_question"><?php the_sub_field( 'question' ); ?></span><!-- new_faq_question -->
+								
+								<div class="new_faq_answer content">
+									
+									<?php the_sub_field( 'answer' ); ?>
+																	
+								</div><!-- new_faq_answer -->
+								
+							</div><!-- new_faq_single -->
+						    
+							<?php endwhile; ?>
+							
+					</div><!-- new_faqs_inner -->
+						
+				</div><!-- new_faqs_wrapper -->
+				
+				<?php endif; ?>
+			
+	<?php return ob_get_clean(); }
+
+
+
+add_shortcode( 'faqs', 'default_faqs' );
+
+
