@@ -48,9 +48,9 @@ span.contact_title.locations {
 
 a.contact_phone {
 	color:$blue;
-	font-size: 36px;
+	font-size: 28px;
 	text-decoration: none;
-	@include escrow_banner_semibold;
+	@include source_bold;
 	span {
 		&:after {
 			content:"";

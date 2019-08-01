@@ -18,17 +18,17 @@
 				
 				<div class="contact_phone_row">
 					
-					<span class="contact_title">Phone</span><!-- contact_title -->
+					<span class="contact_title"><?php the_field( 'phone_number_verbiage' ); ?></span><!-- contact_title -->
 					
 					<a class="contact_phone" href="tel:<?php echo str_replace(['-', '(', ')', ' '], '', get_field('phone_number')); ?>">
 						
-						<span><?php the_field( 'phone_number_verbiage' ); ?></span> <?php the_field( 'phone_number' ); ?>
+						<?php the_field( 'phone_number' ); ?>
 					
 					</a><!-- contact_phone -->
 					
 					<a class="contact_button_scroll" href="#consultation">
 						
-						<span class="button_text">Request Free Evaluation</span><!-- button_text -->
+						<span class="button_text">request free case review</span><!-- button_text -->
 						
 						<?php echo file_get_contents("wp-content/themes/florastuart/images/arrow-blue.svg"); ?>
 					
