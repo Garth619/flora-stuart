@@ -72,7 +72,7 @@
 			
 			<div class="internal_content content">
 				
-				<?php if(get_field('make_top_banner_h1_tags') == 'Yes') : ?>
+				<?php if(!get_field('make_top_banner_h1_tags') == 'Yes') : ?>
 				
 					<h1 class="internal_header"><?php the_title();?></h1><!-- internal_header -->
 					
