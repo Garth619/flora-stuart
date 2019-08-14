@@ -199,13 +199,24 @@ h1,h2,h3,h4 {
 	iframe {
 		display: inline-block;
 		margin-right:10px;
+		width:48% !important;
 	}
 }
 
-.embed-container {
+@media screen and (max-width: 1399px) {
 	
+	
+	
+.content {
+	iframe {
+		width:100% !important;
+		height:400px !important;
+	}
 }
-
+	
+	
+	
+} /* Media Query */
 
 
 @media screen and (max-width: 1350px) {
@@ -228,7 +239,14 @@ h1,h2,h3,h4 {
 		blockquote {
 			max-width: 870px;
 		}
+		iframe {
+			width:48.5% !important;
+			height:400px !important;
+		}
 	}
+	
+	
+	
 	
 	
 	
@@ -254,6 +272,23 @@ h1,h2,h3,h4 {
 			margin: 25px auto 15px;
 		}
 	}
+	
+	
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 975px) {
+	
+	
+	.content {
+		iframe {
+			width:100% !important;
+			height:400px !important;
+			max-width:650px;
+		}
+	}	
 	
 	
 	

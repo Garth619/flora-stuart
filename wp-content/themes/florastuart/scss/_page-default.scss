@@ -40,9 +40,23 @@
 }
 
 
+body.page-template-default {
+	.internal_banner_content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height:100%;
+		.banner_title {
+			padding:0;
+		}
+	}
+}
+
+
 a.internal_button {
 	background:$red;
 	color:#fff;
+	width:368px;
 	text-decoration: none;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;

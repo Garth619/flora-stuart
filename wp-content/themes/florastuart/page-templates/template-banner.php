@@ -2,12 +2,20 @@
 		
 		<div class="internal_banner_content">
 			
-			<span class="banner_title"><?php the_field( 'internal_banner_text','option'); ?></span><!-- banner_title -->
+			<?php if(get_field('banner_title_default')) : ?>
+				
+					<span class="banner_title"><?php the_field('banner_title_default');?></span>
+				
+					<?php else:?>
+				
+					<span class="banner_title"><?php the_field( 'internal_banner_text','option'); ?></span><!-- banner_title -->
+					
+				<?php endif;?>
+				
+				<a class="internal_button" href="#consultation">
 			
-			<a class="internal_button" href="#consultation">
-				
 				<span>Request Free Evaluation</span>
-				
+					
 				<img src="<?php bloginfo('template_directory');?>/images/arrow.svg"/>
 			
 			</a><!-- internal_button -->
