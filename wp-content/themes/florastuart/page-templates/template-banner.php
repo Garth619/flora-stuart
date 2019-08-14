@@ -28,6 +28,12 @@
 					
 				<?php endif;?>
 				
+				<?php if(get_field('banner_sub_title_default')) { ?>
+				
+					<span class="default_page_subheader"><?php the_field( 'banner_sub_title_default' ); ?></span><!-- default_page_subheader-->
+				
+				<?php } ?>
+				
 				<?php if(!get_field('remove_banner_button_default') == "Yes") { ?>
 				
 					<a class="internal_button" href="#consultation">

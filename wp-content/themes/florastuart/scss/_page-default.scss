@@ -1,4 +1,4 @@
-.internal_main {
+ .internal_main {
 	width:100%;
 	min-height:500px;
 }
@@ -48,6 +48,15 @@ body.page-template-default {
 		height:100%;
 		.banner_title {
 			padding:0;
+		}
+		span.default_page_subheader {
+			color: #fff;
+			text-transform: uppercase;
+			font-size: 65px;
+			line-height: 80px;
+			max-width: 1040px;
+			display: block;
+			@include source_black;
 		}
 	}
 }
