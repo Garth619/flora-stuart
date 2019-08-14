@@ -81,19 +81,6 @@ h1,h2,h3,h4 {
 
 
 
-.internal_header {
-	padding-bottom: 23px;
-	font-size: 60px;
-	line-height: 60px;
-	margin-bottom: 36px;
-	//font-size: 75px;
-	//line-height: 75px;
-	//padding-bottom: 45px;
-	//margin-bottom:50px;
-	display: block;
-	border-bottom:2px solid $red;
-	@include escrow_banner_bold;
-}
 
 
 .internal_centered_header {
@@ -126,6 +113,21 @@ h1,h2,h3,h4 {
 		margin-bottom:35px;
 		@include source_black;
 	}
+	.internal_header {
+		padding-bottom: 23px;
+		font-size: 60px;
+		line-height: 60px;
+		margin-bottom: 36px;
+		color:$blue;
+		text-transform: none;
+		//font-size: 75px;
+		//line-height: 75px;
+		//padding-bottom: 45px;
+		//margin-bottom:50px;
+		display: block;
+		border-bottom:2px solid $red;
+		@include escrow_banner_bold;
+	}
 	h3 {
 		color:$blue;
 		font-size: 22px;
@@ -135,7 +137,8 @@ h1,h2,h3,h4 {
 	}
 	h3.red {
 		color:$red;
-		font-size: 25px;
+		font-size: 30px;
+		line-height: 31px;
 	}
 	p, ul, ol {
 		margin-bottom:37px;
@@ -221,10 +224,11 @@ h1,h2,h3,h4 {
 
 @media screen and (max-width: 1350px) {
 	
-	
-	.internal_header {
-		font-size:60px;
-		line-height: 60px;
+	.content {
+		.internal_header {
+			font-size:60px;
+			line-height: 60px;
+		}
 	}
 	
 	
@@ -330,9 +334,11 @@ img.aligncenter {
 }
 
 
-.internal_header {
-	font-size: 40px;
-	line-height: 40px;
+.content {
+	.internal_header {
+		font-size: 40px;
+		line-height: 40px;
+	}
 }
 
 
